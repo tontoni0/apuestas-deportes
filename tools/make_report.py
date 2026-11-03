@@ -32,6 +32,7 @@ st = {
     "small": ParagraphStyle("s", fontName="DV", fontSize=7.6, leading=10, textColor=INK2, spaceAfter=3),
     "cell": ParagraphStyle("c", fontName="DV", fontSize=7.6, leading=9.4, textColor=INK),
     "cellb": ParagraphStyle("cb", fontName="DVB", fontSize=7.6, leading=9.4, textColor=INK),
+    "cellh": ParagraphStyle("ch", fontName="DVB", fontSize=6.8, leading=8.2, textColor=INK),
 }
 P = lambda t, s="p": Paragraph(t, st[s])
 
@@ -54,15 +55,18 @@ roi = pd.read_csv(SAL / "roi.csv")
 goles = pd.read_csv(SAL / "goles.csv")
 tabla = pd.read_csv(SAL / "tabla_ucl.csv")
 marc = json.load(open(SAL / "marcadores.json"))
+est = pd.read_csv(SAL / "estadisticas.csv")
+bte = pd.read_csv(SAL / "backtest_estadisticas.csv")
 
 
 def tbl(data, widths, header_rows=1, zebra=True, align_right_from=None):
-    data = [[Paragraph(str(c), st["cellb"]) if isinstance(c, str) else c for c in row] if i < header_rows else row
+    data = [[Paragraph(str(c), st["cellh"]) if isinstance(c, str) else c for c in row] if i < header_rows else row
             for i, row in enumerate(data)]
     t = Table(data, colWidths=widths, repeatRows=header_rows)
     style = [("FONT", (0, 0), (-1, -1), "DV", 7.6), ("FONT", (0, 0), (-1, header_rows - 1), "DVB", 7.6),
              ("TEXTCOLOR", (0, 0), (-1, -1), INK), ("LINEBELOW", (0, header_rows - 1), (-1, header_rows - 1), 0.6, LINE),
-             ("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("TOPPADDING", (0, 0), (-1, -1), 2.2), ("BOTTOMPADDING", (0, 0), (-1, -1), 2.2)]
+             ("VALIGN", (0, 0), (-1, -1), "MIDDLE"), ("TOPPADDING", (0, 0), (-1, -1), 2.2), ("BOTTOMPADDING", (0, 0), (-1, -1), 2.2),
+             ("LEFTPADDING", (0, 0), (-1, -1), 3), ("RIGHTPADDING", (0, 0), (-1, -1), 3)]
     if zebra:
         for r in range(header_rows, len(data)):
             if (r - header_rows) % 2 == 1:
@@ -99,6 +103,9 @@ story += [P("Resumen", "h2"),
           P(f"<b>Qué se hizo.</b> Se juntaron 34,863 partidos de 15 ligas europeas y de la Champions/Europa League desde 2018. Con ellos se entrenaron cinco modelos (Dixon-Coles, regresión logística con Elo, regresión lineal, regresión de Poisson y XGBoost), se combinaron en un ensamble y se mezclaron con las cuotas del mercado. Cada partido se simuló 100,000 veces con Monte Carlo."),
           P(f"<b>Backtest con la regla de tu amigo.</b> Entrenado con 2021-22 a 2023-24 y probado en 2024-25 y 2025-26 sin ver esos resultados, el ensamble acertó el ganador en {acc_ucl_wf:.1%} de los partidos de Champions y en {acc_top_wf:.1%} de los de las cinco grandes ligas. En la versión literal (todo congelado dos años) baja a {acc_ucl_fr:.1%} en Champions."),
           P(f"<b>Lo más importante.</b> El modelo no le gana a Bet365. En los mismos partidos de liga el mercado acertó {acc_mk:.1%} contra {acc_en:.1%} del ensamble, con mejor log loss ({ll_mk:.3f} contra {ll_en:.3f}). Apostar cada vez que el modelo veía valor dio un ROI de {roi5.roi:.1%} en {int(roi5.apuestas):,} apuestas. Las probabilidades de abajo sirven para entender cada partido. No son una ventaja sobre las casas."),
+          P("<b>Estadísticas del partido.</b> Además del 1X2 el informe da goles totales por línea, goles por equipo y al descanso, córners, tarjetas, faltas, tiros, tiros a puerta y fueras de juego. En el backtest el modelo de estadísticas apenas le gana al promedio de la liga: acierta el over/under 9.5 de córners {:.0%} de las veces contra {:.0%} del promedio, y el 4.5 de tarjetas {:.0%} contra {:.0%}. Tómalas como referencia del partido típico, no como ventaja.".format(
+              *[float(bte[bte["estadística"] == n][c].iloc[0]) for n, c in [("Córners", "acierto O/U modelo"), ("Córners", "acierto O/U liga"),
+                ("Tarjetas (amarillas + rojas)", "acierto O/U modelo"), ("Tarjetas (amarillas + rojas)", "acierto O/U liga")]])),
           P("<b>Probabilidad final.</b> 75% mercado y 25% ensamble. El peso del modelo es mayor que el óptimo del backtest (casi 0%) porque varias cuotas de esta jornada son fotos de distintas casas, algunas con días de antigüedad, y en 11 partidos faltaba al menos una cuota."),
           ]
 
@@ -163,6 +170,58 @@ for team, d in AJUSTES_BAJAS.items():
     rows.append([N(team), f"{d}", Paragraph(comentarios.get(team, ""), st["cell"]), pct(sin), pct(con)])
 story.append(tbl(rows, [3.2 * cm, 1.0 * cm, 8.8 * cm, 2.0 * cm, 2.0 * cm]))
 story.append(P("Las dos últimas columnas son la probabilidad de victoria del equipo según el ensamble, antes y después del ajuste. La probabilidad final cambia menos porque 75% viene del mercado, que ya descuenta las bajas.", "small"))
+
+# ------------------------------------------------------------------ estadísticas
+E = est.copy()
+E["nombre"] = [" vs ".join(N(t) for t in p.split(" vs ")) for p in E.partido]
+story += [PageBreak(), P("Estadísticas del partido", "h2"),
+          P("Valores esperados del Monte Carlo (100,000 simulaciones por partido). Córners y tarjetas aparecen como local + visita. Tarjetas = amarillas + rojas. La última columna dice cuántos de los últimos 20 partidos de liga con estadísticas tiene cada equipo; con 0 el perfil del equipo es el promedio y solo cuenta la diferencia de Elo.", "small")]
+rows = [["Partido", "Goles", "Córners", "Tarjetas", "P(roja)", "Faltas", "Tiros", "A puerta", "F. juego", "Árbitro", "Datos"]]
+for d in E.to_dict("records"):
+    r = pd.Series(d)
+    rows.append([Paragraph(r.nombre, st["cell"]), f"{r.goles_total:.1f}", f"{r.corners_local:.1f}+{r.corners_visita:.1f}={r.corners_total:.1f}",
+                 f"{r.tarjetas_local:.1f}+{r.tarjetas_visita:.1f}={r.tarjetas_total:.1f}", pct(r.p_roja), f"{r.fouls_total:.0f}",
+                 f"{r.shots_total:.0f}", f"{r.sot_total:.1f}", f"{r.offsides_total:.1f}", Paragraph(str(r.arbitro), st["cell"]), r.partidos_con_estadisticas])
+story.append(tbl(rows, [3.3 * cm, 1.0 * cm, 2.2 * cm, 2.2 * cm, 1.1 * cm, 1.05 * cm, 1.0 * cm, 1.15 * cm, 1.15 * cm, 2.65 * cm, 1.0 * cm]))
+story += [Spacer(1, 6), IMG(SAL / "estadisticas.png", 16 * cm)]
+
+story += [PageBreak(), P("Goles: líneas, por equipo y primer tiempo", "h3")]
+rows = [["Partido", "O0.5", "O1.5", "O2.5", "O3.5", "O4.5", "BTTS", "Local O1.5", "Visita O1.5", "1T O0.5", "1T O1.5", "1X", "X2"]]
+for d in E.to_dict("records"):
+    rows.append([Paragraph(d["nombre"], st["cell"])] + [pct(d[k]) for k in ["goles_O0.5", "goles_O1.5", "goles_O2.5", "goles_O3.5", "goles_O4.5", "btts",
+                 "local_O1.5", "visita_O1.5", "ht_O0.5", "ht_O1.5", "doble_1X", "doble_X2"]])
+story.append(tbl(rows, [3.9 * cm] + [1.08 * cm] * 12, align_right_from=1))
+story += [P("Córners", "h3")]
+rows = [["Partido", "O7.5", "O8.5", "O9.5", "O10.5", "O11.5", "O12.5", "Local O4.5", "Visita O4.5", "Más córners local", "Rango 80%"]]
+for d in E.to_dict("records"):
+    rows.append([Paragraph(d["nombre"], st["cell"])] + [pct(d[k]) for k in ["corners_O7.5", "corners_O8.5", "corners_O9.5", "corners_O10.5", "corners_O11.5",
+                 "corners_O12.5", "corners_local_O4.5", "corners_visita_O4.5", "mas_corners_local"]] + [d["corners_p10_p90"]])
+story.append(tbl(rows, [3.9 * cm] + [1.1 * cm] * 6 + [1.4 * cm, 1.4 * cm, 1.6 * cm, 1.3 * cm], align_right_from=1))
+
+story += [PageBreak(), P("Tarjetas", "h3")]
+rows = [["Partido", "O2.5", "O3.5", "O4.5", "O5.5", "O6.5", "P(roja)", "Puntos (10/25)", "Más tarjetas local", "Árbitro"]]
+for d in E.to_dict("records"):
+    rows.append([Paragraph(d["nombre"], st["cell"])] + [pct(d[k]) for k in ["tarjetas_O2.5", "tarjetas_O3.5", "tarjetas_O4.5", "tarjetas_O5.5", "tarjetas_O6.5", "p_roja"]]
+                + [f"{d['puntos_tarjeta']:.0f}", pct(d["mas_tarjetas_local"]), Paragraph(f"{d['arbitro']} (x{d['factor_arbitro']:.2f})", st["cell"])])
+story.append(tbl(rows, [3.9 * cm] + [1.05 * cm] * 6 + [1.5 * cm, 1.6 * cm, 3.2 * cm], align_right_from=1))
+story += [PageBreak(), P("Faltas, tiros a puerta y fueras de juego", "h3")]
+rows = [["Partido", "Faltas O21.5", "Faltas O23.5", "A puerta O7.5", "A puerta O8.5", "A puerta O9.5", "F. de juego O2.5", "F. de juego O3.5"]]
+for d in E.to_dict("records"):
+    rows.append([Paragraph(d["nombre"], st["cell"])] + [pct(d[k]) for k in ["fouls_O21.5", "fouls_O23.5", "sot_O7.5", "sot_O8.5", "sot_O9.5", "offsides_O2.5", "offsides_O3.5"]])
+story.append(tbl(rows, [4.2 * cm] + [1.85 * cm] * 7, align_right_from=1))
+story.append(P("Fuera de juego: no hay datos libres por partido, así que es una estimación con el promedio de la Champions (3.1) repartido por volumen de tiros. No se pudo validar.", "small"))
+
+story += [PageBreak(), P("Backtest de las estadísticas (misma regla 3 + 2)", "h2"),
+          P("Entrenado en 2021-22 a 2023-24 y evaluado en 2024-25 y 2025-26, en las 11 ligas con estadísticas. La comparación es contra usar solo el promedio de la liga. Correlación = qué tanto se mueven juntos lo esperado y lo real (1 sería perfecto). No hay cuotas históricas de córners o tarjetas, así que no se pudo comparar contra el mercado.")]
+rows = [["Estadística", "Línea", "Partidos", "Promedio real", "Error modelo", "Error promedio liga", "Correlación", "Acierto O/U modelo", "Acierto O/U liga"]]
+for d in bte.to_dict("records"):
+    rows.append([d["estadística"], f"{d['línea']}", f"{d['partidos']:,}", f"{d['promedio real']:.2f}", f"{d['error abs. modelo']:.2f}",
+                 f"{d['error abs. promedio liga']:.2f}", f"{d['correlación']:.2f}", pct(d["acierto O/U modelo"]), pct(d["acierto O/U liga"])])
+story.append(tbl(rows, [4.2 * cm, 1.1 * cm, 1.4 * cm, 1.7 * cm, 1.6 * cm, 1.9 * cm, 1.6 * cm, 1.7 * cm, 1.6 * cm], align_right_from=1))
+story += [P("Error = diferencia absoluta media entre el total esperado y el real.", "small"),
+          P("<b>Lectura.</b> Faltas y tiros sí tienen señal: el estilo de cada equipo pesa y el modelo le saca entre 2 y 4 puntos de acierto al promedio. Córners y tarjetas casi no: la correlación con lo real es de 0.17 y 0.25, y el acierto en la línea más común queda a 1 punto o menos del promedio. En un partido concreto un córner o una tarjeta depende de jugadas sueltas y del árbitro. Las casas ponen la línea cerca de la media y cobran margen, así que apostar córners o tarjetas con este modelo no tiene ventaja demostrada."),
+          P("<b>Goles al descanso.</b> Se estiman como 46% de la tasa de gol del local y 45% de la del visitante (proporción medida en los datos). El acierto en over 0.5 y 1.5 al descanso es igual al de usar el promedio."),
+          P("<b>Cómo se calcula.</b> Para cada estadística: promedio de la competición por perfil del equipo (lo que produce en su liga respecto al promedio de esa liga) por lo que permite el rival, ajustado por la diferencia de Elo. Los coeficientes salen de una regresión de Poisson en 11 ligas. La dispersión es binomial negativa con un factor común del partido, porque los córners y las tarjetas de ambos equipos suben y bajan juntos. El árbitro multiplica las tarjetas cuando hubo un promedio publicado: Michael Oliver 0.90 (Porto vs Napoli) y Chris Kavanagh 1.04 (Galatasaray vs Stuttgart).")]
 
 # ------------------------------------------------------------------ tendencias
 story += [PageBreak(), P("Tendencias de la Champions 2026-27", "h2"),
@@ -245,6 +304,8 @@ limites = [
     "Equipos sin historial. Sabah, Slavia y Slovan dependen de un Elo por país más pocos partidos europeos.",
     "Bajas manuales y fuentes secundarias. Varias listas de lesionados salen de un solo medio y alguna mezcla jugadores de otros equipos. Si un titular juega, el ajuste sobra.",
     "Cuotas desiguales. Algunas son de Polymarket o Kalshi, otras de casas de EE. UU. y otras tienen 20 días. Antes de decidir revisa la cuota real del momento.",
+    "Córners y tarjetas casi no se predicen mejor que con el promedio de la liga (ver backtest de estadísticas). Las estadísticas de Champions salen de perfiles de liga escalados al promedio de la Champions, porque no hay datos libres de córners o tarjetas por partido de Champions.",
+    "Sin perfil de estadísticas para Bodø/Glimt, Viking, LASK, Shakhtar, Slavia, Slovan y Sabah: sus ligas no tienen esos datos en las fuentes libres. Fuera de juego: estimación sin validar.",
     "Muestra chica en Champions. 378 partidos de prueba dan un margen de error de unos 5 puntos en la tasa de acierto. La diferencia entre modelos en Champions no es significativa.",
 ]
 for txt in limites:
@@ -253,7 +314,7 @@ for txt in limites:
 story += [P("Cómo usarlo cada semana", "h2"),
           P("1. Abre el notebook en Colab. 2. En la celda Configuración agrega los resultados nuevos de Champions a UCL_2026_27, cambia PARTIDOS (equipos, fecha, cuotas) y AJUSTES_BAJAS. 3. Ejecuta todo. Para partidos de liga del fin de semana usa la sección 5: baja el calendario y las cuotas de football-data.co.uk y predice todo con el mismo modelo."),
           P("Fuentes", "h2"),
-          P("Datos históricos: football-data.co.uk (vía github.com/xgabora/Club-Football-Match-Data-2000-2025), ClubElo, openfootball (football.json y champions-league). Resultados, cuotas y bajas de la temporada 2026-27: uefa.com, nbcsports.com, sport-minute.com, covers.com, rotowire.com, squawka.com, rg.org, oddschecker.com, tips.gg, dimers.com, khelnow.com, thisisanfield.com, sportsgambler.com, starting11.com, vavel.com. Todas consultadas el 3 de noviembre de 2026.", "small")]
+          P("Datos históricos: football-data.co.uk (vía github.com/xgabora/Club-Football-Match-Data-2000-2025), ClubElo, openfootball (football.json y champions-league). Resultados, cuotas y bajas de la temporada 2026-27: uefa.com, nbcsports.com, sport-minute.com, covers.com, rotowire.com, squawka.com, rg.org, oddschecker.com, tips.gg, dimers.com, khelnow.com, thisisanfield.com, sportsgambler.com, starting11.com, vavel.com. Promedios de estadísticas: performanceodds.com, footystats.org. Árbitros: uefa.com, law5-theref.blogspot.com, foot-africa.com, playmakerstats.com. Todas consultadas el 3 de noviembre de 2026.", "small")]
 
 
 def footer(c, d):

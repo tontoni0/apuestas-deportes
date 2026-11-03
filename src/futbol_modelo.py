@@ -195,6 +195,16 @@ RESOLVER = NameResolver()
 
 
 # %% [codigo] Carga de datos domésticos (football-data.co.uk con respaldo en GitHub)
+STAT_COLS_FD = {"ht_hg": "HTHG", "ht_ag": "HTAG", "h_shots": "HS", "a_shots": "AS", "h_sot": "HST", "a_sot": "AST",
+                "h_fouls": "HF", "a_fouls": "AF", "h_corners": "HC", "a_corners": "AC", "h_yellow": "HY",
+                "a_yellow": "AY", "h_red": "HR", "a_red": "AR", "h_off": "HO", "a_off": "AO"}
+STAT_COLS_XG = {"ht_hg": "HTHome", "ht_ag": "HTAway", "h_shots": "HomeShots", "a_shots": "AwayShots",
+                "h_sot": "HomeTarget", "a_sot": "AwayTarget", "h_fouls": "HomeFouls", "a_fouls": "AwayFouls",
+                "h_corners": "HomeCorners", "a_corners": "AwayCorners", "h_yellow": "HomeYellow",
+                "a_yellow": "AwayYellow", "h_red": "HomeRed", "a_red": "AwayRed"}
+EXTRA_COLS = list(STAT_COLS_FD) + ["referee"]
+
+
 def _std_cols(df, div, country):
     """Normaliza un CSV de football-data al esquema interno."""
     c = df.columns
@@ -214,6 +224,9 @@ def _std_cols(df, div, country):
                       "o25": ["B365>2.5", "Avg>2.5"], "u25": ["B365<2.5", "Avg<2.5"]}.items():
         col = next((o for o in opts if o in c), None)
         out[tgt] = pd.to_numeric(df[col], errors="coerce") if col else np.nan
+    for tgt, col in STAT_COLS_FD.items():
+        out[tgt] = pd.to_numeric(df[col], errors="coerce") if col in c else np.nan
+    out["referee"] = df["Referee"].astype(str) if "Referee" in c else np.nan
     return out
 
 
@@ -252,6 +265,8 @@ def load_xgabora():
         "date": pd.to_datetime(m.MatchDate), "div": m.Division, "country": m.Division.map(DIV_COUNTRY),
         "home": m.HomeTeam, "away": m.AwayTeam, "hg": m.FTHome, "ag": m.FTAway,
         "oh": m.OddHome, "od": m.OddDraw, "oa": m.OddAway, "o25": m.Over25, "u25": m.Under25})
+    for tgt, col in STAT_COLS_XG.items():
+        out[tgt] = pd.to_numeric(m[col], errors="coerce")
     return out.dropna(subset=["hg", "ag"])
 
 
@@ -277,6 +292,7 @@ def load_openfootball_league(season="2026-27"):
             rows.append({"date": pd.to_datetime(mt["date"]), "div": div, "country": DIV_COUNTRY[div],
                          "home_raw": mt["team1"], "away_raw": mt["team2"],
                          "hg": ft[0] if ft else np.nan, "ag": ft[1] if ft else np.nan,
+                         "ht_hg": sc.get("ht", [np.nan, np.nan])[0], "ht_ag": sc.get("ht", [np.nan, np.nan])[1],
                          "time": mt.get("time")})
     return pd.DataFrame(rows)
 
@@ -305,19 +321,23 @@ def parse_football_txt(text, season, comp):
         if not mm or cur_date is None:
             continue
         rest = mm.group(5)
+        pares = re.findall(r"\((\d+)-(\d+)(?:,\s*(\d+)-(\d+))?\)", rest)
         if "a.e.t" in rest:
             par = re.search(r"\((\d+)-(\d+)", rest)
             if not par:
                 continue
             hg, ag = int(par.group(1)), int(par.group(2))
+            ht = (pares[0][2], pares[0][3]) if pares and pares[0][2] else (np.nan, np.nan)
         else:
             sc = re.match(r"\s*(\d+)-(\d+)", rest)
             if not sc:
                 continue
             hg, ag = int(sc.group(1)), int(sc.group(2))
+            ht = (pares[0][0], pares[0][1]) if pares else (np.nan, np.nan)
         neutral = rnd.lower() == "final"
         rows.append({"date": cur_date, "div": comp, "home_raw": mm.group(1).strip(), "hc": mm.group(2),
                      "away_raw": mm.group(3).strip(), "ac": mm.group(4), "hg": hg, "ag": ag,
+                     "ht_hg": float(ht[0]), "ht_ag": float(ht[1]),
                      "home_factor": 0.0 if neutral else 1.0, "round": rnd})
     return pd.DataFrame(rows)
 
@@ -375,7 +395,7 @@ def build_dataset(ucl_actual_csv, source="auto", verbose=True):
             last = dom.groupby("div").date.max()
             of_played = of.dropna(subset=["hg"])
             of_played = of_played[of_played.apply(lambda r: r.date > last.get(r["div"], pd.Timestamp("1900")), axis=1)]
-            dom = pd.concat([dom, of_played[["date", "div", "country", "home", "away", "hg", "ag"]]], ignore_index=True)
+            dom = pd.concat([dom, of_played[["date", "div", "country", "home", "away", "hg", "ag", "ht_hg", "ht_ag"]]], ignore_index=True)
             if verbose:
                 print(f"  openfootball 2026-27: +{len(of_played)} partidos domésticos (hasta {of_played.date.max().date() if len(of_played) else '-'})")
 
@@ -393,7 +413,7 @@ def build_dataset(ucl_actual_csv, source="auto", verbose=True):
     dom["home_factor"] = 1.0
     dom["is_euro"] = 0
     eur["is_euro"] = 1
-    cols = ["date", "div", "country", "home", "away", "hg", "ag", "home_factor", "is_euro", "oh", "od", "oa", "o25", "u25"]
+    cols = ["date", "div", "country", "home", "away", "hg", "ag", "home_factor", "is_euro", "oh", "od", "oa", "o25", "u25"] + EXTRA_COLS
     for c in cols:
         if c not in eur:
             eur[c] = np.nan
@@ -1279,6 +1299,312 @@ def plot_roi(curvas, fn=None):
     ax.set_ylabel("Beneficio acumulado (unidades)", color=INK2, fontsize=9)
     ax.set_title("Apostar 1 unidad cuando el modelo ve valor contra Bet365", loc="left", fontsize=11, color=INK)
     ax.legend(frameon=False, fontsize=9, loc="lower left")
+    fig.tight_layout()
+    if fn:
+        fig.savefig(fn, dpi=160, facecolor=SURF)
+    return fig
+
+
+# %% [codigo] Estadísticas del partido: córners, tarjetas, faltas, tiros y fueras de juego
+from scipy.stats import nbinom
+
+STATS = {"corners": ("h_corners", "a_corners", "Córners"), "yellow": ("h_yellow", "a_yellow", "Amarillas"),
+         "red": ("h_red", "a_red", "Rojas"), "fouls": ("h_fouls", "a_fouls", "Faltas"),
+         "shots": ("h_shots", "a_shots", "Tiros"), "sot": ("h_sot", "a_sot", "Tiros a puerta"),
+         "offsides": ("h_off", "a_off", "Fueras de juego")}
+LINEAS = {"goles": [0.5, 1.5, 2.5, 3.5, 4.5, 5.5], "corners": [7.5, 8.5, 9.5, 10.5, 11.5, 12.5],
+          "tarjetas": [2.5, 3.5, 4.5, 5.5, 6.5], "fouls": [19.5, 21.5, 23.5, 25.5],
+          "shots": [21.5, 23.5, 25.5, 27.5], "sot": [6.5, 7.5, 8.5, 9.5, 10.5], "offsides": [1.5, 2.5, 3.5, 4.5]}
+
+
+def stat_baselines(df, s, window=300):
+    """Promedio de la liga por lado (local/visita) en los 300 partidos anteriores. Sin fuga de información."""
+    h, a, _ = STATS[s]
+    bh, ba = pd.Series(np.nan, index=df.index), pd.Series(np.nan, index=df.index)
+    if h not in df or df[h].notna().sum() == 0:
+        return bh, ba, {}
+    dom = df[(df.is_euro == 0) & df[h].notna() & df[a].notna()].sort_values("date")
+    last = {}
+    for div, g in dom.groupby("div"):
+        bh[g.index] = g[h].shift(1).rolling(window, min_periods=30).mean().values
+        ba[g.index] = g[a].shift(1).rolling(window, min_periods=30).mean().values
+        last[div] = (g[h].tail(window).mean(), g[a].tail(window).mean())
+    return bh, ba, last
+
+
+def stat_team_ratios(df, s, bh, ba, n=20, k=5.0):
+    """Cuánto produce (fr) y cuánto permite (ar) cada equipo respecto al promedio de su liga.
+    Media de los últimos n partidos, encogida hacia 1 con k partidos ficticios."""
+    h, a, _ = STATS[s]
+    ok = df[h].notna() & df[a].notna() & bh.notna() & ba.notna() & (bh > 0) & (ba > 0)
+    d = df[ok]
+    long = pd.concat([
+        pd.DataFrame({"i": d.index, "date": d.date, "team": d.home, "side": "h", "fr": d[h] / bh[ok], "ar": d[a] / ba[ok]}),
+        pd.DataFrame({"i": d.index, "date": d.date, "team": d.away, "side": "a", "fr": d[a] / ba[ok], "ar": d[h] / bh[ok]})
+    ]).sort_values(["team", "date", "i"])
+    g = long.groupby("team")
+    for c in ["fr", "ar"]:
+        sm = g[c].transform(lambda x: x.shift(1).rolling(n, min_periods=1).sum()).fillna(0)
+        ct = g[c].transform(lambda x: x.shift(1).rolling(n, min_periods=1).count()).fillna(0)
+        long[c + "_r"] = (sm + k) / (ct + k)
+    tail = long.groupby("team").tail(n).groupby("team").agg(fr=("fr", "sum"), ar=("ar", "sum"), n=("fr", "size"),
+                                                         ultimo=("date", "max"))
+    tail["fr"], tail["ar"] = (tail.fr + k) / (tail.n + k), (tail.ar + k) / (tail.n + k)
+    H, A = long[long.side == "h"].set_index("i"), long[long.side == "a"].set_index("i")
+    feats = pd.DataFrame({"fr_h": H.fr_r, "ar_h": H.ar_r, "fr_a": A.fr_r, "ar_a": A.ar_r})
+    return feats, tail
+
+
+def _design(fr_self, ar_opp, elo_self_minus_opp, is_home):
+    return np.c_[np.ones(len(fr_self)), np.log(fr_self), np.log(ar_opp), elo_self_minus_opp / 100.0, is_home]
+
+
+def fit_poisson_offset(F, y, offset, l2=1e-2):
+    def f(b):
+        eta = F @ b + offset
+        mu = np.exp(eta)
+        return np.sum(mu - y * eta) + l2 * b @ b, F.T @ (mu - y) + 2 * l2 * b
+    return minimize(f, np.zeros(F.shape[1]), jac=True, method="L-BFGS-B").x
+
+
+class StatModel:
+    """Para cada estadística: media = promedio de la competición x (producción propia)^b1 x (lo que permite el rival)^b2
+    x exp(b3 * diferencia Elo). Dispersión binomial negativa con un factor común del partido (ritmo, árbitro)."""
+
+    def fit(self, df, eh, ea, s, train_mask, ratios=None):
+        h, a, _ = STATS[s]
+        self.s = s
+        bh, ba, self.last_base = stat_baselines(df, s)
+        if not self.last_base:
+            self.ok = False
+            return self
+        feats, self.tail = stat_team_ratios(df, s, bh, ba)
+        idx = feats.index[train_mask[feats.index]]
+        if len(idx) < 500:
+            self.ok = False
+            return self
+        e_d = (eh - ea)[idx] if isinstance(eh, np.ndarray) else (eh[idx] - ea[idx])
+        fh, fa = feats.loc[idx], df.loc[idx]
+        F = np.r_[_design(fh.fr_h.values, fh.ar_a.values, e_d, np.ones(len(idx))),
+                  _design(fh.fr_a.values, fh.ar_h.values, -e_d, np.zeros(len(idx)))]
+        y = np.r_[fa[h].values, fa[a].values]
+        off = np.log(np.r_[bh[idx].values, ba[idx].values])
+        self.beta = fit_poisson_offset(F, y, off)
+        mu = np.exp(F @ self.beta + off)
+        n = len(idx)
+        mh, ma, yh, ya = mu[:n], mu[n:], y[:n], y[n:]
+        self.phi = max(np.sum((yh - mh) * (ya - ma)) / np.sum(mh * ma), 0.0)
+        alpha_team = max(np.sum((y - mu) ** 2 - mu) / np.sum(mu ** 2), 0.0)
+        self.alpha = max(alpha_team - self.phi, 0.0)
+        self.home_share = float(np.mean(yh) / (np.mean(yh) + np.mean(ya)))
+        self.feats, self.bh, self.ba, self.ok = feats, bh, ba, True
+        return self
+
+    def mu(self, fr_h, ar_h, fr_a, ar_a, elo_d, base_h, base_a):
+        fr_h, ar_h, fr_a, ar_a = (np.atleast_1d(np.asarray(v, float)) for v in (fr_h, ar_h, fr_a, ar_a))
+        elo_d = np.atleast_1d(np.asarray(elo_d, float))
+        mh = np.exp(_design(fr_h, ar_a, elo_d, np.ones(len(fr_h))) @ self.beta) * base_h
+        ma = np.exp(_design(fr_a, ar_h, -elo_d, np.zeros(len(fr_h))) @ self.beta) * base_a
+        return mh, ma
+
+    def total_dist(self, mh, ma):
+        """Aproximación binomial negativa del total (media y varianza exactas del modelo)."""
+        mt = mh + ma
+        var = mt + self.alpha * (1 + self.phi) * (mh ** 2 + ma ** 2) + self.phi * mt ** 2
+        a_t = np.clip((var - mt) / mt ** 2, 1e-6, None)
+        nn = 1 / a_t
+        return nn, nn / (nn + mt)
+
+    def team(self, t):
+        if t in self.tail.index:
+            return float(self.tail.loc[t, "fr"]), float(self.tail.loc[t, "ar"]), int(self.tail.loc[t, "n"])
+        return 1.0, 1.0, 0
+
+
+def sim_counts(mh, ma, alpha, phi, n, rng):
+    G = rng.gamma(1 / phi, phi, n) if phi > 1e-6 else np.ones(n)
+    gh = rng.gamma(1 / alpha, alpha, n) if alpha > 1e-6 else np.ones(n)
+    ga = rng.gamma(1 / alpha, alpha, n) if alpha > 1e-6 else np.ones(n)
+    return rng.poisson(mh * G * gh), rng.poisson(ma * G * ga)
+
+
+def fit_stat_models(df, eh, ea, train_mask):
+    out = {}
+    for s in STATS:
+        m = StatModel().fit(df, eh, ea, s, train_mask)
+        if m.ok:
+            out[s] = m
+    return out
+
+
+def fit_halftime(df, X, train_mask):
+    """Goles al descanso = fracción k de la tasa de gol del partido (Poisson). k se estima con datos."""
+    ok = train_mask & df.ht_hg.notna() & X.dc_lh.notna()
+    return float(df.loc[ok, "ht_hg"].sum() / X.loc[ok, "dc_lh"].sum()), float(df.loc[ok, "ht_ag"].sum() / X.loc[ok, "dc_la"].sum())
+
+
+def stats_backtest(df, eh, ea, X, train_seasons, test_seasons):
+    """Regla 3 + 2 para estadísticas: se entrena con 3 temporadas y se evalúa en las 2 siguientes (ligas con datos)."""
+    train = df.season.isin(train_seasons).values
+    models = fit_stat_models(df, eh, ea, pd.Series(train, index=df.index))
+    filas = []
+    test = df.season.isin(test_seasons)
+    combos = {"Córners": ["corners"], "Tarjetas (amarillas + rojas)": ["yellow", "red"], "Faltas": ["fouls"],
+              "Tiros": ["shots"], "Tiros a puerta": ["sot"]}
+    linea = {"Córners": 9.5, "Tarjetas (amarillas + rojas)": 4.5, "Faltas": 23.5, "Tiros": 24.5, "Tiros a puerta": 8.5}
+    for nombre, parts in combos.items():
+        if not all(p in models for p in parts):
+            continue
+        m0 = models[parts[0]]
+        idx = m0.feats.index[test[m0.feats.index]]
+        y = sum(df.loc[idx, STATS[p][0]].values + df.loc[idx, STATS[p][1]].values for p in parts)
+        mt, var_m, bt, var_b = 0, 0, 0, 0
+        for p in parts:
+            m = models[p]
+            f = m.feats.loc[idx]
+            mh, ma = m.mu(f.fr_h, f.ar_h, f.fr_a, f.ar_a, eh[idx] - ea[idx], m.bh[idx].values, m.ba[idx].values)
+            bh_, ba_ = m.bh[idx].values, m.ba[idx].values
+            for (h_, a_), acc in (((mh, ma), "m"), ((bh_, ba_), "b")):
+                t = h_ + a_
+                v = t + m.alpha * (1 + m.phi) * (h_ ** 2 + a_ ** 2) + m.phi * t ** 2
+                if acc == "m":
+                    mt, var_m = mt + t, var_m + v
+                else:
+                    bt, var_b = bt + t, var_b + v
+        L = linea[nombre]
+        res = {"estadística": nombre, "partidos": len(idx), "promedio real": y.mean(),
+               "error abs. modelo": np.mean(np.abs(y - mt)), "error abs. promedio liga": np.mean(np.abs(y - bt)),
+               "correlación": np.corrcoef(y, mt)[0, 1], "línea": L}
+        for lab, mu_, var_ in (("modelo", mt, var_m), ("liga", bt, var_b)):
+            a_t = np.clip((var_ - mu_) / mu_ ** 2, 1e-6, None)
+            p_over = nbinom.sf(np.floor(L), 1 / a_t, (1 / a_t) / (1 / a_t + mu_))
+            hit = (y > L)
+            res[f"acierto O/U {lab}"] = ((p_over > 0.5) == hit).mean()
+            res[f"log loss O/U {lab}"] = -np.mean(hit * np.log(np.clip(p_over, 1e-9, 1)) + (~hit) * np.log(np.clip(1 - p_over, 1e-9, 1)))
+        filas.append(res)
+    # goles al descanso
+    k = fit_halftime(df, X, pd.Series(train, index=df.index))
+    ok = test & df.ht_hg.notna() & X.dc_lh.notna()
+    ok_tr = pd.Series(train, index=df.index) & df.ht_hg.notna()
+    lht = k[0] * X.loc[ok, "dc_lh"].values + k[1] * X.loc[ok, "dc_la"].values
+    yht = (df.loc[ok, "ht_hg"] + df.loc[ok, "ht_ag"]).values
+    ytr = (df.loc[ok_tr, "ht_hg"] + df.loc[ok_tr, "ht_ag"]).values
+    for L in (0.5, 1.5):
+        p = poisson.sf(np.floor(L), lht)
+        pb = (ytr > L).mean()
+        hit = yht > L
+        filas.append({"estadística": "Goles 1er tiempo", "partidos": int(ok.sum()), "promedio real": yht.mean(),
+                      "error abs. modelo": np.mean(np.abs(yht - lht)), "error abs. promedio liga": np.mean(np.abs(yht - ytr.mean())),
+                      "correlación": np.corrcoef(yht, lht)[0, 1], "línea": L,
+                      "acierto O/U modelo": ((p > .5) == hit).mean(), "acierto O/U liga": ((pb > .5) == hit).mean(),
+                      "log loss O/U modelo": -np.mean(hit * np.log(p) + (~hit) * np.log(1 - p)),
+                      "log loss O/U liga": -np.mean(hit * np.log(pb) + (~hit) * np.log(1 - pb))})
+    t = pd.DataFrame(filas)
+    return t, models, k
+
+
+def predict_stats(fx, pred, sims, X_fx, models, k_ht, promedios, arbitros=None, n_sims=100_000, seed=7):
+    """Monte Carlo de goles extendidos, córners, tarjetas, faltas, tiros, tiros a puerta y fueras de juego."""
+    arbitros = arbitros or {}
+    rng = np.random.default_rng(seed)
+    filas, lineas = [], []
+    for i, r in enumerate(fx.reset_index(drop=True).itertuples(index=False)):
+        key = f"{r.local} vs {r.visita}"
+        comp = getattr(r, "competicion", "UCL")
+        arb = arbitros.get(key, {})
+        f_tar = float(arb.get("factor_tarjetas", 1.0))
+        elo_d = X_fx.elo_h[i] - X_fx.elo_a[i]
+        row = {"partido": key, "arbitro": arb.get("arbitro", "sin dato"), "factor_arbitro": f_tar}
+        cobertura = []
+        sim = {}
+        for s, m in models.items():
+            frh, arh, nh = m.team(r.local)
+            fra, ara, na = m.team(r.visita)
+            if comp in ("UCL", "UEL", "UECL"):
+                tot = promedios[s]
+                bh, ba = tot * m.home_share, tot * (1 - m.home_share)
+            else:
+                bh, ba = m.last_base.get(comp, (np.nan, np.nan))
+            mh, ma = m.mu(frh, arh, fra, ara, elo_d, bh, ba)
+            mh, ma = float(mh[0]), float(ma[0])
+            if s in ("yellow", "red"):
+                mh, ma = mh * f_tar, ma * f_tar
+            if s == "fouls":
+                mh, ma = mh * (1 + (f_tar - 1) / 2), ma * (1 + (f_tar - 1) / 2)
+            sim[s] = sim_counts(mh, ma, m.alpha, m.phi, n_sims, rng)
+            if s == "corners":
+                cobertura = [nh, na]
+        if "offsides" not in models and "shots" in sim:
+            # sin datos de fuera de juego: proxy proporcional a la raíz del volumen de tiros esperado
+            ms = models["shots"]
+            sh = sim["shots"]
+            base = promedios["offsides"] if comp in ("UCL", "UEL", "UECL") else promedios.get("offsides_liga", 3.6)
+            esp_h, esp_a = sh[0].mean(), sh[1].mean()
+            ref = promedios["shots"] if comp in ("UCL", "UEL", "UECL") else sum(ms.last_base.get(comp, (12.5, 10.5)))
+            moh = base * 0.52 * (esp_h / (ref * 0.55)) ** 0.5
+            moa = base * 0.48 * (esp_a / (ref * 0.45)) ** 0.5
+            sim["offsides"] = sim_counts(moh, moa, 0.20, 0.05, n_sims, rng)
+        g = sims[key]
+        gh, ga = g["sims_h"], g["sims_a"]
+        tg = gh + ga
+        row.update({"goles_local": gh.mean(), "goles_visita": ga.mean(), "goles_total": tg.mean(),
+                    "doble_1X": pred.final_1[i] + pred.final_X[i], "doble_X2": pred.final_X[i] + pred.final_2[i],
+                    "doble_12": pred.final_1[i] + pred.final_2[i],
+                    "dnb_local": pred.final_1[i] / (pred.final_1[i] + pred.final_2[i]),
+                    "btts": ((gh > 0) & (ga > 0)).mean(), "cero_local": (ga == 0).mean(), "cero_visita": (gh == 0).mean()})
+        for L in LINEAS["goles"]:
+            row[f"goles_O{L}"] = (tg > L).mean()
+        for L in (0.5, 1.5, 2.5):
+            row[f"local_O{L}"], row[f"visita_O{L}"] = (gh > L).mean(), (ga > L).mean()
+        lh_ht, la_ht = k_ht[0] * pred.lambda_local[i], k_ht[1] * pred.lambda_visita[i]
+        row["ht_O0.5"] = 1 - poisson.pmf(0, lh_ht + la_ht)
+        row["ht_O1.5"] = poisson.sf(1, lh_ht + la_ht)
+        Mht = score_matrix(lh_ht, la_ht, 0.0)
+        row["ht_1"], row["ht_X"], row["ht_2"] = probs_1x2(Mht)[0]
+        for s, (yh, ya) in sim.items():
+            row[f"{s}_local"], row[f"{s}_visita"], row[f"{s}_total"] = yh.mean(), ya.mean(), (yh + ya).mean()
+            row[f"{s}_p10_p90"] = f"{int(np.percentile(yh + ya, 10))}-{int(np.percentile(yh + ya, 90))}"
+        if "yellow" in sim and "red" in sim:
+            th, ta = sim["yellow"][0] + sim["red"][0], sim["yellow"][1] + sim["red"][1]
+            tt = th + ta
+            row.update({"tarjetas_local": th.mean(), "tarjetas_visita": ta.mean(), "tarjetas_total": tt.mean(),
+                        "p_roja": ((sim["red"][0] + sim["red"][1]) > 0).mean(),
+                        "puntos_tarjeta": (10 * (sim["yellow"][0] + sim["yellow"][1]) + 25 * (sim["red"][0] + sim["red"][1])).mean(),
+                        "mas_tarjetas_local": (th > ta).mean()})
+            for L in LINEAS["tarjetas"]:
+                row[f"tarjetas_O{L}"] = (tt > L).mean()
+        for s in ("corners", "fouls", "shots", "sot", "offsides"):
+            if s in sim:
+                tt = sim[s][0] + sim[s][1]
+                for L in LINEAS[s]:
+                    row[f"{s}_O{L}"] = (tt > L).mean()
+        if "corners" in sim:
+            row["mas_corners_local"] = (sim["corners"][0] > sim["corners"][1]).mean()
+            row["corners_local_O4.5"] = (sim["corners"][0] > 4.5).mean()
+            row["corners_visita_O4.5"] = (sim["corners"][1] > 4.5).mean()
+        row["partidos_con_estadisticas"] = f"{cobertura[0]}/{cobertura[1]}" if cobertura else "-"
+        row["offsides_fuente"] = "modelo" if "offsides" in models else "proxy (promedio UCL x volumen de tiros)"
+        filas.append(row)
+    return pd.DataFrame(filas)
+
+
+def plot_stats(est, fn=None):
+    n = len(est)
+    fig, axes = plt.subplots(1, 2, figsize=(10, 0.36 * n + 1.4), facecolor=SURF, sharey=True)
+    y = np.arange(n)[::-1]
+    labels = est.partido.str.replace(" vs ", " - ")
+    for ax, (pref, titulo) in zip(axes, [("corners", "Córners esperados"), ("tarjetas", "Tarjetas esperadas")]):
+        _style(ax)
+        l, v = est[f"{pref}_local"].values, est[f"{pref}_visita"].values
+        ax.barh(y, l - 0.03, color=C_LOCAL, height=0.62, label="Local")
+        ax.barh(y, v - 0.03, left=l + 0.03, color=C_VISITA, height=0.62, label="Visita")
+        for yy, a, b in zip(y, l, v):
+            ax.text(a + b + 0.15, yy, f"{a + b:.1f}", va="center", fontsize=8, color=INK2)
+        ax.set_title(titulo, loc="left", fontsize=11, color=INK)
+        ax.set_xlim(0, max(l + v) * 1.15)
+    axes[0].set_yticks(y)
+    axes[0].set_yticklabels(labels, fontsize=8.5, color=INK)
+    axes[0].legend(frameon=False, fontsize=8.5, loc="lower right")
     fig.tight_layout()
     if fn:
         fig.savefig(fn, dpi=160, facecolor=SURF)

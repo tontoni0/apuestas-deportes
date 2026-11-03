@@ -106,7 +106,36 @@ AJUSTES_BAJAS = {
     "Dortmund": -5,       # Emre Can fuera
 }
 
-# 4) Parámetros generales
+# 4) Promedios por partido de la Champions (los dos equipos juntos). Se usan como nivel base de cada estadística.
+#    Fuentes: PerformanceOdds 2025-26 (tiros 25.74, córners 9.43, faltas 23.24, fueras de juego 3.12, tarjetas 3.99),
+#    FootyStats 2026-27 (córners 9.75). Tiros a puerta = 35% de los tiros (proporción de las ligas). Rojas: supuesto.
+PROMEDIOS_UCL = {"corners": 9.6, "yellow": 3.87, "red": 0.12, "fouls": 23.2, "shots": 25.7, "sot": 9.0,
+                 "offsides": 3.1, "offsides_liga": 3.5}
+
+# 5) Árbitros de la jornada (UEFA y prensa, 2-3 nov 2026). factor_tarjetas multiplica amarillas y rojas
+#    (y la mitad del efecto en faltas). Solo se movió de 1.0 cuando hubo un promedio publicado; se encoge 50% hacia 1.
+ARBITROS = {
+    "Shakhtar Donetsk vs Sp Lisbon": {"arbitro": "Ivan Kružliak (SVK)", "factor_tarjetas": 1.0},
+    "Galatasaray vs Stuttgart": {"arbitro": "Chris Kavanagh (ENG)", "factor_tarjetas": 1.04},  # 4.07 amarillas/partido en Premier vs 3.79
+    "Ath Madrid vs Bayern Munich": {"arbitro": "François Letexier (FRA)", "factor_tarjetas": 1.0},
+    "Barcelona vs Aston Villa": {"arbitro": "Davide Massa (ITA)", "factor_tarjetas": 1.0},
+    "Feyenoord vs Inter": {"arbitro": "Glenn Nyberg (SWE)", "factor_tarjetas": 1.0},
+    "Bodo/Glimt vs Lille": {"arbitro": "João Pinheiro (POR)", "factor_tarjetas": 1.0},
+    "LASK vs Slovan Bratislava": {"arbitro": "Donatas Rumšas (LTU)", "factor_tarjetas": 1.0},
+    "Man United vs Roma": {"arbitro": "sin confirmar", "factor_tarjetas": 1.0},
+    "Villarreal vs Paris SG": {"arbitro": "Felix Zwayer (GER)", "factor_tarjetas": 1.0},
+    "Fenerbahce vs Liverpool": {"arbitro": "Clément Turpin (FRA)", "factor_tarjetas": 1.0},
+    "AEK vs Real Madrid": {"arbitro": "Maurizio Mariani (ITA)", "factor_tarjetas": 1.0},
+    "Dortmund vs Betis": {"arbitro": "Serdar Gözübüyük (NED)", "factor_tarjetas": 1.0},
+    "Porto vs Napoli": {"arbitro": "Michael Oliver (ENG)", "factor_tarjetas": 0.90},  # 3.0-3.1 amarillas/partido en Premier vs 3.79
+    "PSV Eindhoven vs Club Brugge": {"arbitro": "Irfan Peljto (BIH)", "factor_tarjetas": 1.0},
+    "RB Leipzig vs Man City": {"arbitro": "Marco Guida (ITA)", "factor_tarjetas": 1.0},
+    "Lens vs Como": {"arbitro": "Rohit Saggi (NOR)", "factor_tarjetas": 1.0},
+    "Slavia Praha vs Arsenal": {"arbitro": "Tobias Stieler (GER)", "factor_tarjetas": 1.0},
+    "Viking vs Sabah": {"arbitro": "Sander van der Eijk (NED)", "factor_tarjetas": 1.0},
+}
+
+# 6) Parámetros generales
 MODO_DATOS = "auto"          # "auto" intenta football-data.co.uk (fresco) y si falla usa el espejo de GitHub
 TEMPORADAS_ENTRENAR = (2021, 2022, 2023)   # 2021-22, 2022-23, 2023-24
 TEMPORADAS_PROBAR = (2024, 2025)           # 2024-25, 2025-26

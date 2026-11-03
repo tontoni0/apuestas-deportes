@@ -4,6 +4,8 @@
 
 Modelo para predecir partidos de la Champions League y de 15 ligas europeas. Combina Elo, Dixon-Coles, regresión logística, regresión lineal, regresión de Poisson y XGBoost, lo mezcla con las cuotas del mercado y simula cada partido 100,000 veces con Monte Carlo.
 
+Además del 1X2 predice goles totales por línea, goles por equipo, goles al descanso, ambos anotan, doble oportunidad, córners, tarjetas (amarillas, rojas y puntos), faltas, tiros, tiros a puerta y fueras de juego.
+
 ## Archivos
 
 | Archivo | Qué es |
@@ -12,6 +14,8 @@ Modelo para predecir partidos de la Champions League y de 15 ligas europeas. Com
 | `reportes/informe_jornada4_champions.pdf` | Informe de la jornada 4 (3 y 4 de noviembre de 2026) |
 | `resultados/jornada4_predicciones.csv` | Probabilidades de cada modelo, mercado y final para los 18 partidos |
 | `resultados/backtest_2024_2026.csv` | Métricas del backtest por modelo |
+| `resultados/jornada4_estadisticas.csv` | Goles, córners, tarjetas, faltas, tiros y fueras de juego esperados con probabilidades por línea |
+| `resultados/backtest_estadisticas_2024_2026.csv` | Backtest de las estadísticas contra el promedio de la liga |
 | `src/futbol_modelo.py` | Código del modelo (cada bloque `# %%` es una celda del notebook) |
 | `src/config_jornada.py` | Resultados, partidos, cuotas y bajas de la jornada |
 | `tools/build_notebook.py` | Regenera el notebook a partir de `src/` |
@@ -20,7 +24,7 @@ Modelo para predecir partidos de la Champions League y de 15 ligas europeas. Com
 ## Uso semanal
 
 1. Abre el notebook con el botón de Colab.
-2. Edita la celda **Configuración**: agrega los resultados nuevos a `UCL_2026_27`, cambia `PARTIDOS` (fecha, equipos, cuotas) y `AJUSTES_BAJAS`.
+2. Edita la celda **Configuración**: agrega los resultados nuevos a `UCL_2026_27`, cambia `PARTIDOS` (fecha, equipos, cuotas), `AJUSTES_BAJAS` y `ARBITROS`.
 3. `Entorno de ejecución` > `Ejecutar todo` (2 a 4 minutos).
 4. Para la liga del fin de semana usa la sección 5: baja calendario y cuotas de football-data.co.uk.
 
@@ -36,3 +40,15 @@ Entrenado con 2021-22, 2022-23 y 2023-24; evaluado en 2024-25 y 2025-26 sin ver 
 | Bet365 (partidos de liga con cuotas) | | 53.4% |
 
 El modelo está bien calibrado pero no le gana al mercado. Apostar cada vez que veía valor contra Bet365 dio un ROI de -12.4% en 3,701 apuestas.
+
+Estadísticas (misma regla, 6,789 partidos de liga), acierto en over/under contra usar el promedio de la liga:
+
+| Estadística | Línea | Modelo | Promedio de la liga |
+|---|---|---|---|
+| Córners | 9.5 | 55.4% | 54.1% |
+| Tarjetas | 4.5 | 60.4% | 60.3% |
+| Faltas | 23.5 | 66.0% | 64.0% |
+| Tiros | 24.5 | 59.5% | 55.1% |
+| Tiros a puerta | 8.5 | 57.0% | 53.7% |
+
+Córners y tarjetas casi no se predicen mejor que con el promedio. Los fueras de juego son una estimación sin validar porque no hay datos libres por partido.

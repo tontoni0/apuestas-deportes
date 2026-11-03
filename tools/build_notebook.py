@@ -30,7 +30,7 @@ cells.append(md(f"""# Modelo de predicción para la Champions League (y cualquie
 1. Descarga resultados y cuotas de 15 ligas europeas y de la Champions/Europa League (2018 a hoy).
 2. Calcula cinco modelos: Dixon-Coles, regresión logística con Elo, regresión lineal, regresión de Poisson y XGBoost.
 3. Los combina en un ensamble y lo mezcla con las cuotas del mercado.
-4. Simula cada partido 100,000 veces (Monte Carlo) para sacar marcadores, over/under y ambos anotan.
+4. Simula cada partido 100,000 veces (Monte Carlo) para sacar marcadores, over/under, ambos anotan, goles al descanso, córners, tarjetas, faltas, tiros, tiros a puerta y fueras de juego.
 5. Hace el backtest que sugirió tu amigo: entrena con 3 temporadas, predice las 2 siguientes sin verlas y mide la tasa de acierto.
 
 **Cómo usarlo desde el teléfono**
@@ -184,7 +184,44 @@ cells.append(code("""for r in pred.itertuples():
           f"goles {mc['goles_esp']:.1f} (90%: {mc['goles_p5_p95'][0]}-{mc['goles_p5_p95'][1]}) | "
           f"O1.5 {mc['over15']:.0%} O2.5 {mc['over25']:.0%} O3.5 {mc['over35']:.0%} | BTTS {mc['btts']:.0%}\\n   marcadores: {top}")"""))
 
-cells.append(md("## 4. Tendencias de la Champions 2026-27 (jornadas 1 a 3)"))
+cells.append(md("""## 4. Estadísticas del partido: goles, córners, tarjetas, faltas, tiros y fueras de juego
+
+**Cómo se calcula cada estadística (córners, amarillas, rojas, faltas, tiros, tiros a puerta)**
+
+1. **Nivel base de la competición.** Promedio por partido de esa estadística. En Champions se usa `PROMEDIOS_UCL`; en ligas, el promedio de los últimos 300 partidos de esa liga.
+2. **Perfil del equipo.** Cuánto produce y cuánto le permite al rival en sus últimos 20 partidos de liga, dividido entre el promedio de su liga. Así un 1.30 en córners del PSG significa 30% más que un equipo promedio de la Ligue 1. Con pocos partidos el perfil se acerca a 1.
+3. **Diferencia de Elo.** El favorito saca más córners y tira más; el débil comete más faltas y ve más tarjetas.
+4. **Regresión de Poisson** con esas tres piezas, entrenada en 11 ligas.
+5. **Monte Carlo con binomial negativa.** Cada partido se simula 100,000 veces con un factor común del partido (ritmo, árbitro), porque los córners y las tarjetas de los dos equipos suben y bajan juntos.
+6. **Árbitro.** `ARBITROS` multiplica tarjetas (y la mitad del efecto en faltas).
+
+**Fueras de juego.** Ninguna fuente libre publica fueras de juego por partido. Se usa el promedio de la Champions (3.1 por partido) repartido según el volumen de tiros esperado de cada equipo. No se pudo validar con datos.
+
+**Backtest con la misma regla 3 + 2.** Entrenado en 2021-22 a 2023-24 y evaluado en 2024-25 y 2025-26 (ligas con estadísticas). Se compara contra usar solo el promedio de la liga."""))
+cells.append(code("""tab_est, _, _ = stats_backtest(df, X.elo_h.values, X.elo_a.values, X, TEMPORADAS_ENTRENAR, TEMPORADAS_PROBAR)
+tab_est.to_csv("salidas/backtest_estadisticas.csv", index=False)
+tab_est.round(3)"""))
+cells.append(code("""todo = pd.Series(True, index=df.index)
+modelos_est = fit_stat_models(df, X.elo_h.values, X.elo_a.values, todo)
+k_ht = fit_halftime(df, X, todo)
+est = predict_stats(fx, pred, sims, X_fx, modelos_est, k_ht, PROMEDIOS_UCL, ARBITROS, n_sims=N_SIMULACIONES)
+est.to_csv("salidas/estadisticas.csv", index=False)
+print("Valores esperados por partido (Monte Carlo)")
+cols = ["partido", "goles_total", "corners_local", "corners_visita", "corners_total", "tarjetas_local", "tarjetas_visita",
+        "tarjetas_total", "p_roja", "fouls_total", "shots_total", "sot_total", "offsides_total", "arbitro"]
+display(est[cols].round(2))
+plot_stats(est, fn="salidas/estadisticas.png"); plt.show()"""))
+cells.append(code("""print("Goles: líneas, por equipo, primer tiempo y mercados derivados")
+display(est[["partido"] + [f"goles_O{l}" for l in LINEAS["goles"]] + ["local_O0.5", "local_O1.5", "visita_O0.5", "visita_O1.5",
+             "btts", "cero_local", "cero_visita", "ht_O0.5", "ht_O1.5", "ht_1", "ht_X", "ht_2", "doble_1X", "doble_X2", "dnb_local"]].round(2))
+print("Córners")
+display(est[["partido"] + [f"corners_O{l}" for l in LINEAS["corners"]] + ["corners_local_O4.5", "corners_visita_O4.5", "mas_corners_local", "corners_p10_p90"]].round(2))
+print("Tarjetas (amarillas + rojas; puntos = 10 por amarilla y 25 por roja)")
+display(est[["partido"] + [f"tarjetas_O{l}" for l in LINEAS["tarjetas"]] + ["p_roja", "puntos_tarjeta", "mas_tarjetas_local", "arbitro"]].round(2))
+print("Faltas, tiros, tiros a puerta y fueras de juego")
+display(est[["partido"] + [f"fouls_O{l}" for l in LINEAS["fouls"]] + [f"sot_O{l}" for l in LINEAS["sot"]] + [f"offsides_O{l}" for l in LINEAS["offsides"]]].round(2))"""))
+
+cells.append(md("## 5. Tendencias de la Champions 2026-27 (jornadas 1 a 3)"))
 cells.append(code("""cur = df[(df["div"] == "UCL") & (df.season == 2026)]
 tabla_ucl = standings(cur); tabla_ucl.to_csv("salidas/tabla_ucl.csv")
 print(f"Partidos: {len(cur)} | goles por partido: {(cur.hg + cur.ag).mean():.2f} | over 2.5: {((cur.hg + cur.ag) > 2.5).mean():.0%} | "
@@ -194,7 +231,7 @@ print(f"Referencia 2024-25 y 2025-26: goles {(hist.hg + hist.ag).mean():.2f} | o
       f"gana local {(hist.res == 0).mean():.0%} | empate {(hist.res == 1).mean():.0%}")
 tabla_ucl"""))
 
-cells.append(md("""## 5. Modo fin de semana (ligas)
+cells.append(md("""## 6. Modo fin de semana (ligas)
 
 El mismo modelo sirve para cualquier partido de las 15 ligas cargadas. En Colab baja el calendario y las cuotas de football-data.co.uk. Para usarlo:
 
@@ -204,20 +241,26 @@ El mismo modelo sirve para cualquier partido de las 15 ligas cargadas. En Colab 
 Para otra jornada de Champions edita `PARTIDOS`, `AJUSTES_BAJAS` y agrega los resultados nuevos a `UCL_2026_27`."""))
 cells.append(code("""fin_semana = proximos_partidos_ligas(dias=5, desde=pd.Timestamp(PARTIDOS[-1][0]) + pd.Timedelta(days=1))
 if len(fin_semana):
-    pred_fs, _, _ = predict_fixtures(fin_semana, estado, prod, w_prod, PESO_MODELO, ajustes={}, n_sims=20_000)
+    pred_fs, sims_fs, X_fs = predict_fixtures(fin_semana, estado, prod, w_prod, PESO_MODELO, ajustes={}, n_sims=20_000)
     pred_fs["liga"] = fin_semana.competicion.values
-    display(pred_fs[["fecha", "liga", "local", "visita", "final_1", "final_X", "final_2", "marcador_probable", "over25"]].round(2))
+    est_fs = predict_stats(fin_semana, pred_fs, sims_fs, X_fs, modelos_est, k_ht, PROMEDIOS_UCL, {}, n_sims=20_000)
+    pred_fs = pd.concat([pred_fs, est_fs[["corners_total", "tarjetas_total", "fouls_total", "sot_total"]]], axis=1)
+    display(pred_fs[["fecha", "liga", "local", "visita", "final_1", "final_X", "final_2", "marcador_probable", "over25",
+                     "corners_total", "tarjetas_total", "fouls_total", "sot_total"]].round(2))
 else:
     print("No hay partidos en la ventana elegida.")"""))
 
-cells.append(md("""## 6. Límites del modelo (léelos antes de apostar)
+cells.append(md("""## 7. Límites del modelo (léelos antes de apostar)
 
 * **No le gana al mercado.** En 7,069 partidos de liga de prueba, el log loss del mercado fue 0.967 y el del ensamble 0.984. Apostar a sus "valores" perdió entre 11% y 16% del dinero apostado.
 * **El empate casi nunca es la opción más probable**, aunque ocurre en 1 de cada 4 partidos. Ningún modelo de este tipo lo predice bien.
 * **Datos con huecos fuera de Colab.** El espejo de GitHub llega al 20 de septiembre de 2026 en ligas. Sin football-data.co.uk el modelo no ve la forma doméstica de octubre.
 * **Equipos con poca historia** (Sabah, Slavia, Slovan, Kairat): su fuerza sale de un Elo por país más 3 a 10 partidos europeos. Ahí el error es mayor.
 * **Las bajas son un ajuste manual**, con fuentes secundarias. Si un titular sí juega, el ajuste sobra.
-* **Las cuotas cargadas son fotos de distintas casas y fechas.** Algunas se completaron con el modelo (columna `cuotas`). Revisa la cuota real antes de decidir."""))
+* **Las cuotas cargadas son fotos de distintas casas y fechas.** Algunas se completaron con el modelo (columna `cuotas`). Revisa la cuota real antes de decidir.
+* **Córners y tarjetas casi no se pueden predecir mejor que con el promedio de la liga.** En el backtest el modelo acertó el over/under 9.5 de córners 55% de las veces (54% con el promedio) y el 4.5 de tarjetas 60% (igual que el promedio). Las casas ponen la línea cerca de la media, así que ahí la ventaja es todavía menor.
+* **Las estadísticas de Champions salen de perfiles de liga.** No hay datos libres de córners o tarjetas por partido de Champions; el perfil de cada equipo viene de su liga y se escala al promedio de la Champions.
+* **Fueras de juego sin datos.** Es una estimación a partir del promedio de la Champions; tómala solo como referencia."""))
 
 nb = nbf.v4.new_notebook(cells=cells, metadata={
     "kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
