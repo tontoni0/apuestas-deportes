@@ -312,7 +312,7 @@ for txt in limites:
     story.append(P(f"• {txt}"))
 
 story += [P("Cómo usarlo cada semana", "h2"),
-          P("1. Abre el notebook en Colab. 2. En la celda Configuración agrega los resultados nuevos de Champions a UCL_2026_27, cambia PARTIDOS (equipos, fecha, cuotas) y AJUSTES_BAJAS. 3. Ejecuta todo. Para partidos de liga del fin de semana usa la sección 5: baja el calendario y las cuotas de football-data.co.uk y predice todo con el mismo modelo."),
+          P("1. Abre el notebook en Colab. 2. En la celda Configuración agrega los resultados nuevos de Champions a UCL_2026_27, cambia PARTIDOS (equipos, fecha, cuotas), AJUSTES_BAJAS y ARBITROS. 3. Ejecuta todo. Para partidos de liga del fin de semana usa la sección 6: baja el calendario y las cuotas de football-data.co.uk y predice todo con el mismo modelo."),
           P("Fuentes", "h2"),
           P("Datos históricos: football-data.co.uk (vía github.com/xgabora/Club-Football-Match-Data-2000-2025), ClubElo, openfootball (football.json y champions-league). Resultados, cuotas y bajas de la temporada 2026-27: uefa.com, nbcsports.com, sport-minute.com, covers.com, rotowire.com, squawka.com, rg.org, oddschecker.com, tips.gg, dimers.com, khelnow.com, thisisanfield.com, sportsgambler.com, starting11.com, vavel.com. Promedios de estadísticas: performanceodds.com, footystats.org. Árbitros: uefa.com, law5-theref.blogspot.com, foot-africa.com, playmakerstats.com. Todas consultadas el 3 de noviembre de 2026.", "small")]
 

@@ -26,7 +26,7 @@ Además del 1X2 predice goles totales por línea, goles por equipo, goles al des
 1. Abre el notebook con el botón de Colab.
 2. Edita la celda **Configuración**: agrega los resultados nuevos a `UCL_2026_27`, cambia `PARTIDOS` (fecha, equipos, cuotas), `AJUSTES_BAJAS` y `ARBITROS`.
 3. `Entorno de ejecución` > `Ejecutar todo` (2 a 4 minutos).
-4. Para la liga del fin de semana usa la sección 5: baja calendario y cuotas de football-data.co.uk.
+4. Para la liga del fin de semana usa la sección 6: baja calendario y cuotas de football-data.co.uk.
 
 ## Backtest (regla 3 + 2)
 
