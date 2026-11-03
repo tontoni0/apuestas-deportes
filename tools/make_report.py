@@ -57,6 +57,7 @@ tabla = pd.read_csv(SAL / "tabla_ucl.csv")
 marc = json.load(open(SAL / "marcadores.json"))
 est = pd.read_csv(SAL / "estadisticas.csv")
 bte = pd.read_csv(SAL / "backtest_estadisticas.csv")
+par = pd.read_csv(SAL / "parlays.csv")
 
 
 def tbl(data, widths, header_rows=1, zebra=True, align_right_from=None):
@@ -222,6 +223,21 @@ story += [P("Error = diferencia absoluta media entre el total esperado y el real
           P("<b>Lectura.</b> Faltas y tiros sí tienen señal: el estilo de cada equipo pesa y el modelo le saca entre 2 y 4 puntos de acierto al promedio. Córners y tarjetas casi no: la correlación con lo real es de 0.17 y 0.25, y el acierto en la línea más común queda a 1 punto o menos del promedio. En un partido concreto un córner o una tarjeta depende de jugadas sueltas y del árbitro. Las casas ponen la línea cerca de la media y cobran margen, así que apostar córners o tarjetas con este modelo no tiene ventaja demostrada."),
           P("<b>Goles al descanso.</b> Se estiman como 46% de la tasa de gol del local y 45% de la del visitante (proporción medida en los datos). El acierto en over 0.5 y 1.5 al descanso es igual al de usar el promedio."),
           P("<b>Cómo se calcula.</b> Para cada estadística: promedio de la competición por perfil del equipo (lo que produce en su liga respecto al promedio de esa liga) por lo que permite el rival, ajustado por la diferencia de Elo. Los coeficientes salen de una regresión de Poisson en 11 ligas. La dispersión es binomial negativa con un factor común del partido, porque los córners y las tarjetas de ambos equipos suben y bajan juntos. El árbitro multiplica las tarjetas cuando hubo un promedio publicado: Michael Oliver 0.90 (Porto vs Napoli) y Chris Kavanagh 1.04 (Galatasaray vs Stuttgart).")]
+
+# ------------------------------------------------------------------ parlays
+story += [PageBreak(), P("Parlays sugeridos", "h2"),
+          P("Cada parlay usa una pata por partido, así la probabilidad es el producto de las patas. La cuota justa es 1 entre la probabilidad: si la casa paga menos, el modelo espera perder dinero con esa apuesta. Pide 5% a 10% más que la cuota justa, porque el modelo también falla."),
+          P("<b>Advertencias.</b> El margen de la casa se acumula con cada pata (cerca de 20% en un parlay de 4). En los moneylines el modelo usa sobre todo la probabilidad del mercado, así que a las cuotas actuales esos parlays tienen valor esperado negativo. En tiros y córners no hay cuotas históricas para comprobar si el modelo le gana a la casa. Varios parlays comparten partidos (Barcelona, Arsenal, PSG): si uno falla, fallan varios. Apuesta poco en cada uno, por ejemplo 0.5% a 1% de tu banca, y no juegues todos."),
+          P("Viking vs Sabah queda fuera por falta de datos de Sabah, y PSV vs Club Brujas queda fuera de los parlays de goles.", "small")]
+for nombre, g in par.groupby("parlay", sort=False):
+    pr, cj, cmk = g.prob_parlay.iloc[0], g.cuota_justa_parlay.iloc[0], g.cuota_mercado_parlay.iloc[0]
+    extra = f"; cuota de mercado ~{cmk:.2f}, valor esperado {pr * cmk - 1:+.0%}" if pd.notna(cmk) else ""
+    rows = [["Partido", "Selección", "Prob.", "Cuota justa"]]
+    for r in g.itertuples():
+        rows.append([Paragraph(" vs ".join(N(t) for t in r.partido.split(" vs ")), st["cell"]),
+                     Paragraph(r.seleccion, st["cell"]), pct(r.prob_pata), f"{r.cuota_justa_pata:.2f}"])
+    story.append(KeepTogether([P(f"{nombre}: probabilidad {pr:.0%}, cuota justa {cj:.2f}{extra}", "h3"),
+                               tbl(rows, [5.2 * cm, 7.6 * cm, 1.6 * cm, 2.0 * cm], align_right_from=2)]))
 
 # ------------------------------------------------------------------ tendencias
 story += [PageBreak(), P("Tendencias de la Champions 2026-27", "h2"),

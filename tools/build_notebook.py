@@ -250,7 +250,36 @@ if len(fin_semana):
 else:
     print("No hay partidos en la ventana elegida.")"""))
 
-cells.append(md("""## 7. Límites del modelo (léelos antes de apostar)
+cells.append(md("""## 7. Parlays
+
+Cada pata sale del Monte Carlo del partido (100,000 simulaciones). Reglas:
+
+* **Una pata por partido.** Así las patas son independientes y la probabilidad del parlay es el producto. Dos patas del mismo partido (por ejemplo gana Arsenal y Arsenal más de 12.5 tiros) están correlacionadas y la casa las cobra distinto.
+* **Cuota justa = 1 / probabilidad.** Si la casa paga menos que la cuota justa, el modelo dice que esa apuesta pierde dinero a la larga. Pide un margen extra de 5% a 10% porque el modelo también se equivoca.
+* **Para tiros y córners** se toma la línea más alta del favorito que todavía tiene 70% (o 75%) de probabilidad.
+* `EXCLUIR_PARLAYS`, `EXCLUIR_GOLES` y `PARLAY_PERSONAL` están en la celda Configuración.
+
+**Antes de jugar:** el margen de la casa se multiplica con cada pata. Con 5% por pata, un parlay de 4 patas trae cerca de 20% de margen. En el backtest el modelo no le ganó al mercado en 1X2, y en córners y tiros no hay cuotas históricas para comprobarlo."""))
+cells.append(code("""sims_est = {}
+_ = predict_stats(fx, pred, sims, X_fx, modelos_est, k_ht, PROMEDIOS_UCL, ARBITROS, n_sims=N_SIMULACIONES, sims_out=sims_est)
+patas = mercados_parlay(fx, pred, sims, sims_est)
+patas.to_csv("salidas/patas_parlay.csv", index=False)
+parlays = parlays_sugeridos(patas, pred, EXCLUIR_PARLAYS, EXCLUIR_GOLES)
+parlays.append(evaluar_parlay(patas, PARLAY_PERSONAL, "Mixto personal"))
+parlays.append(evaluar_parlay(patas, PARLAY_PERSONAL[:3], "Mixto personal, núcleo de 3 patas"))
+for pz in parlays:
+    mostrar_parlay(pz)
+filas = []
+for pz in parlays:
+    for r in pz["patas"].itertuples():
+        filas.append({"parlay": pz["parlay"], "prob_parlay": pz["prob"], "cuota_justa_parlay": pz["cuota_justa"],
+                      "cuota_mercado_parlay": pz["cuota_mercado"], "partido": r.partido, "seleccion": r.seleccion,
+                      "prob_pata": r.prob, "cuota_justa_pata": r.cuota_justa})
+pd.DataFrame(filas).to_csv("salidas/parlays.csv", index=False)"""))
+cells.append(md("Para buscar otra pata, filtra la tabla. Ejemplo: tiros del Bayern con su probabilidad y cuota justa."))
+cells.append(code("""patas[patas.seleccion.str.contains("Bayern Munich más de") & (patas.tipo == "tiros por equipo")].round(3)"""))
+
+cells.append(md("""## 8. Límites del modelo (léelos antes de apostar)
 
 * **No le gana al mercado.** En 7,069 partidos de liga de prueba, el log loss del mercado fue 0.967 y el del ensamble 0.984. Apostar a sus "valores" perdió entre 11% y 16% del dinero apostado.
 * **El empate casi nunca es la opción más probable**, aunque ocurre en 1 de cada 4 partidos. Ningún modelo de este tipo lo predice bien.

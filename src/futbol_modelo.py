@@ -1503,7 +1503,7 @@ def stats_backtest(df, eh, ea, X, train_seasons, test_seasons):
     return t, models, k
 
 
-def predict_stats(fx, pred, sims, X_fx, models, k_ht, promedios, arbitros=None, n_sims=100_000, seed=7):
+def predict_stats(fx, pred, sims, X_fx, models, k_ht, promedios, arbitros=None, n_sims=100_000, seed=7, sims_out=None):
     """Monte Carlo de goles extendidos, córners, tarjetas, faltas, tiros, tiros a puerta y fueras de juego."""
     arbitros = arbitros or {}
     rng = np.random.default_rng(seed)
@@ -1583,6 +1583,8 @@ def predict_stats(fx, pred, sims, X_fx, models, k_ht, promedios, arbitros=None, 
             row["corners_local_O4.5"] = (sim["corners"][0] > 4.5).mean()
             row["corners_visita_O4.5"] = (sim["corners"][1] > 4.5).mean()
         row["partidos_con_estadisticas"] = f"{cobertura[0]}/{cobertura[1]}" if cobertura else "-"
+        if sims_out is not None:
+            sims_out[key] = sim
         row["offsides_fuente"] = "modelo" if "offsides" in models else "proxy (promedio UCL x volumen de tiros)"
         filas.append(row)
     return pd.DataFrame(filas)
@@ -1609,3 +1611,138 @@ def plot_stats(est, fn=None):
     if fn:
         fig.savefig(fn, dpi=160, facecolor=SURF)
     return fig
+
+
+# %% [codigo] Armador de parlays
+def mercados_parlay(fx, pred, sims_goles, sims_est):
+    """Todas las patas posibles de cada partido con su probabilidad (Monte Carlo) y su cuota justa (1/p)."""
+    filas = []
+    fx = fx.reset_index(drop=True)
+    for i, r in enumerate(fx.itertuples(index=False)):
+        key = f"{r.local} vs {r.visita}"
+        L, V = r.local, r.visita
+        add = lambda tipo, sel, p, equipo=None, cuota=np.nan: filas.append(
+            {"partido": key, "tipo": tipo, "seleccion": sel, "prob": float(p), "equipo": equipo, "cuota_mercado": cuota})
+        pr = pred.iloc[i]
+        add("moneyline", f"Gana {L}", pr.final_1, L, getattr(r, "cuota_local", np.nan))
+        add("moneyline", f"Gana {V}", pr.final_2, V, getattr(r, "cuota_visita", np.nan))
+        add("doble oportunidad", f"{L} o empate", pr.final_1 + pr.final_X, L)
+        add("doble oportunidad", f"{V} o empate", pr.final_2 + pr.final_X, V)
+        add("empate no válido", f"{L} (DNB)", pr.final_1 / (pr.final_1 + pr.final_2), L)
+        add("empate no válido", f"{V} (DNB)", pr.final_2 / (pr.final_1 + pr.final_2), V)
+        gh, ga = sims_goles[key]["sims_h"], sims_goles[key]["sims_a"]
+        tg = gh + ga
+        for l in (0.5, 1.5, 2.5):
+            add("goles por equipo", f"{L} más de {l} goles", (gh > l).mean(), L)
+            add("goles por equipo", f"{V} más de {l} goles", (ga > l).mean(), V)
+        for l in (1.5, 2.5, 3.5):
+            add("goles totales", f"Más de {l} goles", (tg > l).mean())
+        for l in (2.5, 3.5, 4.5):
+            add("goles totales", f"Menos de {l} goles", (tg < l).mean())
+        add("ambos anotan", "Ambos anotan: sí", ((gh > 0) & (ga > 0)).mean())
+        add("ambos anotan", "Ambos anotan: no", 1 - ((gh > 0) & (ga > 0)).mean())
+        se = sims_est.get(key, {})
+        if "corners" in se:
+            ch, ca = se["corners"]
+            for l in (6.5, 7.5, 8.5, 9.5, 10.5):
+                add("córners totales", f"Más de {l} córners", ((ch + ca) > l).mean())
+            for l in (2.5, 3.5, 4.5, 5.5, 6.5):
+                add("córners por equipo", f"{L} más de {l} córners", (ch > l).mean(), L)
+                add("córners por equipo", f"{V} más de {l} córners", (ca > l).mean(), V)
+        for s, nom in (("shots", "tiros"), ("sot", "tiros a puerta")):
+            if s in se:
+                sh, sa = se[s]
+                rng = range(6, 21) if s == "shots" else range(1, 9)
+                for l in rng:
+                    add(f"{nom} por equipo", f"{L} más de {l + 0.5} {nom}", (sh > l + 0.5).mean(), L)
+                    add(f"{nom} por equipo", f"{V} más de {l + 0.5} {nom}", (sa > l + 0.5).mean(), V)
+        if "yellow" in se and "red" in se:
+            tt = se["yellow"][0] + se["yellow"][1] + se["red"][0] + se["red"][1]
+            for l in (2.5, 3.5):
+                add("tarjetas", f"Más de {l} tarjetas", (tt > l).mean())
+    t = pd.DataFrame(filas)
+    t["cuota_justa"] = 1 / t.prob.clip(1e-6, 1)
+    return t
+
+
+def mejor_linea(patas, tipo, p_min, solo_equipos=None, excluir=()):
+    """Por partido, la línea más exigente (cuota justa más alta) que todavía tiene probabilidad >= p_min."""
+    t = patas[(patas.tipo == tipo) & (patas.prob >= p_min) & ~patas.partido.isin(excluir)]
+    if solo_equipos is not None:
+        t = t[t.equipo.isin(solo_equipos)]
+    return t.sort_values("cuota_justa", ascending=False).groupby("partido").head(1)
+
+
+def armar_parlay(candidatas, n, nombre, prefer="prob"):
+    """Una pata por partido. Toma las n patas con más probabilidad, o respeta el orden recibido si prefer='orden'."""
+    c = candidatas if prefer == "orden" else candidatas.sort_values("prob" if prefer == "prob" else "cuota_justa", ascending=False)
+    c = c.groupby("partido").head(1).head(n)
+    p = float(np.prod(c.prob))
+    cm = c.cuota_mercado.astype(float)
+    cuota_m = float(np.prod(cm)) if cm.notna().all() else np.nan
+    return {"parlay": nombre, "patas": c[["partido", "seleccion", "prob", "cuota_justa", "cuota_mercado"]].reset_index(drop=True),
+            "prob": p, "cuota_justa": 1 / p, "cuota_mercado": cuota_m,
+            "ev_mercado": p * cuota_m - 1 if np.isfinite(cuota_m) else np.nan}
+
+
+def mostrar_parlay(pz):
+    print(f"\n{pz['parlay']}: probabilidad {pz['prob']:.1%} | cuota justa {pz['cuota_justa']:.2f}"
+          + (f" | cuota de mercado ~{pz['cuota_mercado']:.2f} (valor esperado {pz['ev_mercado']:+.0%})" if np.isfinite(pz['cuota_mercado']) else
+             " | tómalo solo si la casa paga más que la cuota justa"))
+    for r in pz["patas"].itertuples():
+        print(f"   {r.partido:32s} {r.seleccion:40s} {r.prob:6.1%}  justa {r.cuota_justa:5.2f}")
+
+
+def parlays_sugeridos(patas, pred, excluir=(), excluir_goles=(), p_min=0.70):
+    """Arma parlays por reglas fijas (una pata por partido) para que funcione en cualquier jornada."""
+    fav = {}
+    for r in pred.itertuples():
+        fav[f"{r.local} vs {r.visita}"] = r.local if r.final_1 >= r.final_2 else r.visita
+    P = patas[~patas.partido.isin(excluir)].copy()
+    P["es_favorito"] = [e == fav.get(p) for p, e in zip(P.partido, P.equipo)]
+    goles_ok = ~P.partido.isin(excluir_goles)
+    sel = lambda m: P[m]
+    out = []
+    ml = sel(P.tipo == "moneyline")
+    out.append(armar_parlay(ml, 3, "Moneyline: los 3 favoritos más probables"))
+    out.append(armar_parlay(ml, 5, "Moneyline: 5 favoritos"))
+    out.append(armar_parlay(sel(P.tipo == "empate no válido"), 4, "Empate no válido (moneyline con red): 4 favoritos"))
+    tg = sel((P.tipo == "goles por equipo") & P.seleccion.str.contains("más de 1.5") & P.es_favorito & goles_ok)
+    out.append(armar_parlay(tg, 3, "Goles por equipo: favorito anota 2 o más (3 patas)"))
+    o15 = sel((P.tipo == "goles totales") & P.seleccion.str.startswith("Más de 1.5") & goles_ok)
+    out.append(armar_parlay(o15, 4, "Goles totales: más de 1.5 (4 patas)"))
+    o25 = sel((P.tipo == "goles totales") & P.seleccion.str.startswith("Más de 2.5") & goles_ok)
+    out.append(armar_parlay(o25, 3, "Goles totales: más de 2.5 (3 patas)"))
+    btts = sel((P.tipo == "ambos anotan") & P.seleccion.str.endswith("sí") & goles_ok)
+    out.append(armar_parlay(btts, 3, "Ambos anotan (3 patas)"))
+    def linea_alta(tipo, pm, solo_fav=True):
+        """Por partido, la línea más alta del favorito que aún tiene pm o más. Se ordena por línea (más volumen) y luego por probabilidad."""
+        t = P[(P.tipo == tipo) & (P.prob >= pm)].copy()
+        if solo_fav:
+            t = t[t.es_favorito]
+        t["linea"] = t.seleccion.str.extract(r"más de (\d+\.\d)")[0].astype(float)
+        t = t.sort_values(["linea", "prob"], ascending=False).groupby("partido").head(1)
+        t["prob_orden"] = t.prob
+        return t
+    out.append(armar_parlay(linea_alta("córners por equipo", p_min), 4, f"Córners del favorito: línea más alta con {p_min:.0%} o más (4 patas)", prefer="orden"))
+    ct = sel((P.tipo == "córners totales") & P.seleccion.str.startswith("Más de 7.5"))
+    out.append(armar_parlay(ct, 3, "Córners totales: más de 7.5 (3 patas)"))
+    out.append(armar_parlay(linea_alta("tiros por equipo", p_min), 4, f"Tiros del favorito: línea más alta con {p_min:.0%} o más (4 patas)", prefer="orden"))
+    out.append(armar_parlay(linea_alta("tiros por equipo", 0.75), 3, "Tiros del favorito, versión conservadora: 75% o más (3 patas)", prefer="orden"))
+    out.append(armar_parlay(linea_alta("tiros a puerta por equipo", p_min), 3, f"Tiros a puerta del favorito: {p_min:.0%} o más (3 patas)", prefer="orden"))
+    return out
+
+
+def evaluar_parlay(patas, selecciones, nombre):
+    """Probabilidad de un parlay armado a mano. selecciones = lista de (partido, texto exacto de la selección)."""
+    filas = []
+    for partido, texto in selecciones:
+        m = patas[(patas.partido == partido) & (patas.seleccion == texto)]
+        if m.empty:
+            print(f"   aviso: no encontré '{texto}' en {partido}")
+            continue
+        filas.append(m.iloc[0])
+    c = pd.DataFrame(filas)
+    if c.partido.duplicated().any():
+        print("   aviso: hay dos patas del mismo partido; el cálculo las trata como independientes y no lo son")
+    return armar_parlay(c, len(c), nombre, prefer="orden")

@@ -1,0 +1,51 @@
+parlay,prob_parlay,cuota_justa_parlay,cuota_mercado_parlay,partido,seleccion,prob_pata,cuota_justa_pata
+Moneyline: los 3 favoritos más probables,0.3784782768556565,2.6421595667467557,2.16281,Slavia Praha vs Arsenal,Gana Arsenal,0.7483920146867253,1.33619811592805
+Moneyline: los 3 favoritos más probables,0.3784782768556565,2.6421595667467557,2.16281,AEK vs Real Madrid,Gana Real Madrid,0.7291750855356339,1.371412737265186
+Moneyline: los 3 favoritos más probables,0.3784782768556565,2.6421595667467557,2.16281,Barcelona vs Aston Villa,Gana Barcelona,0.6935535380816424,1.4418497564960644
+Moneyline: 5 favoritos,0.1476055933194998,6.774811018410727,4.793868365,Slavia Praha vs Arsenal,Gana Arsenal,0.7483920146867253,1.33619811592805
+Moneyline: 5 favoritos,0.1476055933194998,6.774811018410727,4.793868365,AEK vs Real Madrid,Gana Real Madrid,0.7291750855356339,1.371412737265186
+Moneyline: 5 favoritos,0.1476055933194998,6.774811018410727,4.793868365,Barcelona vs Aston Villa,Gana Barcelona,0.6935535380816424,1.4418497564960644
+Moneyline: 5 favoritos,0.1476055933194998,6.774811018410727,4.793868365,LASK vs Slovan Bratislava,Gana LASK,0.6508398365515418,1.5364763246492017
+Moneyline: 5 favoritos,0.1476055933194998,6.774811018410727,4.793868365,RB Leipzig vs Man City,Gana Man City,0.5992219722763734,1.6688306608669876
+Empate no válido (moneyline con red): 4 favoritos,0.5417757218365877,1.8457822299789644,,Slavia Praha vs Arsenal,Arsenal (DNB),0.897573547897797,1.1141148291881993
+Empate no válido (moneyline con red): 4 favoritos,0.5417757218365877,1.8457822299789644,,AEK vs Real Madrid,Real Madrid (DNB),0.8680341149027175,1.152028454678964
+Empate no válido (moneyline con red): 4 favoritos,0.5417757218365877,1.8457822299789644,,Barcelona vs Aston Villa,Barcelona (DNB),0.8593226743336966,1.1637072194974747
+Empate no válido (moneyline con red): 4 favoritos,0.5417757218365877,1.8457822299789644,,LASK vs Slovan Bratislava,LASK (DNB),0.8092010340429047,1.2357868538598271
+Goles por equipo: favorito anota 2 o más (3 patas),0.347975634701735,2.8737644256533748,,Barcelona vs Aston Villa,Barcelona más de 1.5 goles,0.72551,1.3783407534010559
+Goles por equipo: favorito anota 2 o más (3 patas),0.347975634701735,2.8737644256533748,,Slavia Praha vs Arsenal,Arsenal más de 1.5 goles,0.69749,1.433712311287617
+Goles por equipo: favorito anota 2 o más (3 patas),0.347975634701735,2.8737644256533748,,AEK vs Real Madrid,Real Madrid más de 1.5 goles,0.68765,1.4542281683996219
+Goles totales: más de 1.5 (4 patas),0.5905511864987544,1.6933333178598384,,Villarreal vs Paris SG,Más de 1.5 goles,0.8791,1.1375270162666364
+Goles totales: más de 1.5 (4 patas),0.5905511864987544,1.6933333178598384,,Fenerbahce vs Liverpool,Más de 1.5 goles,0.87837,1.1384723977367168
+Goles totales: más de 1.5 (4 patas),0.5905511864987544,1.6933333178598384,,Barcelona vs Aston Villa,Más de 1.5 goles,0.8767,1.1406410402646288
+Goles totales: más de 1.5 (4 patas),0.5905511864987544,1.6933333178598384,,Ath Madrid vs Bayern Munich,Más de 1.5 goles,0.87235,1.1463288817561759
+Goles totales: más de 2.5 (3 patas),0.343392957054952,2.912115637362864,,Villarreal vs Paris SG,Más de 2.5 goles,0.70469,1.4190637017695724
+Goles totales: más de 2.5 (3 patas),0.343392957054952,2.912115637362864,,Fenerbahce vs Liverpool,Más de 2.5 goles,0.70036,1.427837112342224
+Goles totales: más de 2.5 (3 patas),0.343392957054952,2.912115637362864,,Barcelona vs Aston Villa,Más de 2.5 goles,0.69578,1.437235907901923
+Ambos anotan (3 patas),0.30346830419141596,3.2952370517391465,,Ath Madrid vs Bayern Munich,Ambos anotan: sí,0.68168,1.4669639713648635
+Ambos anotan (3 patas),0.30346830419141596,3.2952370517391465,,Villarreal vs Paris SG,Ambos anotan: sí,0.67291,1.4860828342571815
+Ambos anotan (3 patas),0.30346830419141596,3.2952370517391465,,Galatasaray vs Stuttgart,Ambos anotan: sí,0.66157,1.5115558444306725
+Córners del favorito: línea más alta con 70% o más (4 patas),0.3334993367857053,2.998506712601243,,Slavia Praha vs Arsenal,Arsenal más de 4.5 córners,0.71352,1.401502410584146
+Córners del favorito: línea más alta con 70% o más (4 patas),0.3334993367857053,2.998506712601243,,Barcelona vs Aston Villa,Barcelona más de 3.5 córners,0.79295,1.261113563276373
+Córners del favorito: línea más alta con 70% o más (4 patas),0.3334993367857053,2.998506712601243,,Villarreal vs Paris SG,Paris SG más de 3.5 córners,0.77359,1.292674414095322
+Córners del favorito: línea más alta con 70% o más (4 patas),0.3334993367857053,2.998506712601243,,PSV Eindhoven vs Club Brugge,PSV Eindhoven más de 3.5 córners,0.76196,1.3124048506483281
+Córners totales: más de 7.5 (3 patas),0.3970039545304,2.518866597142237,,Fenerbahce vs Liverpool,Más de 7.5 córners,0.73966,1.3519725279182326
+Córners totales: más de 7.5 (3 patas),0.3970039545304,2.518866597142237,,PSV Eindhoven vs Club Brugge,Más de 7.5 córners,0.7336,1.3631406761177753
+Córners totales: más de 7.5 (3 patas),0.3970039545304,2.518866597142237,,Barcelona vs Aston Villa,Más de 7.5 córners,0.73165,1.3667737306088976
+Tiros del favorito: línea más alta con 70% o más (4 patas),0.27195540742747126,3.6770734197175083,,Barcelona vs Aston Villa,Barcelona más de 13.5 tiros,0.724,1.3812154696132597
+Tiros del favorito: línea más alta con 70% o más (4 patas),0.27195540742747126,3.6770734197175083,,PSV Eindhoven vs Club Brugge,PSV Eindhoven más de 12.5 tiros,0.75431,1.325714891755379
+Tiros del favorito: línea más alta con 70% o más (4 patas),0.27195540742747126,3.6770734197175083,,Slavia Praha vs Arsenal,Arsenal más de 12.5 tiros,0.70615,1.4161297174821212
+Tiros del favorito: línea más alta con 70% o más (4 patas),0.27195540742747126,3.6770734197175083,,Villarreal vs Paris SG,Paris SG más de 12.5 tiros,0.7052,1.4180374361883152
+"Tiros del favorito, versión conservadora: 75% o más (3 patas)",0.46224506981933705,2.163354604064978,,Barcelona vs Aston Villa,Barcelona más de 12.5 tiros,0.78861,1.2680539176525785
+"Tiros del favorito, versión conservadora: 75% o más (3 patas)",0.46224506981933705,2.163354604064978,,PSV Eindhoven vs Club Brugge,PSV Eindhoven más de 12.5 tiros,0.75431,1.325714891755379
+"Tiros del favorito, versión conservadora: 75% o más (3 patas)",0.46224506981933705,2.163354604064978,,Slavia Praha vs Arsenal,Arsenal más de 11.5 tiros,0.77707,1.286885351384045
+Tiros a puerta del favorito: 70% o más (3 patas),0.41738668537039103,2.3958598466374053,,Ath Madrid vs Bayern Munich,Bayern Munich más de 4.5 tiros a puerta,0.71423,1.4001092085182643
+Tiros a puerta del favorito: 70% o más (3 patas),0.41738668537039103,2.3958598466374053,,Barcelona vs Aston Villa,Barcelona más de 4.5 tiros a puerta,0.70913,1.410178669637443
+Tiros a puerta del favorito: 70% o más (3 patas),0.41738668537039103,2.3958598466374053,,Slavia Praha vs Arsenal,Arsenal más de 3.5 tiros a puerta,0.82409,1.2134596949362326
+Mixto personal,0.18541821608459882,5.39321335905713,,Slavia Praha vs Arsenal,Gana Arsenal,0.7483920146867253,1.33619811592805
+Mixto personal,0.18541821608459882,5.39321335905713,,AEK vs Real Madrid,Real Madrid más de 1.5 goles,0.68765,1.4542281683996219
+Mixto personal,0.18541821608459882,5.39321335905713,,Ath Madrid vs Bayern Munich,Bayern Munich más de 11.5 tiros,0.7645,1.3080444735120995
+Mixto personal,0.18541821608459882,5.39321335905713,,Villarreal vs Paris SG,Ambos anotan: sí,0.67291,1.4860828342571815
+Mixto personal,0.18541821608459882,5.39321335905713,,Fenerbahce vs Liverpool,Más de 2.5 goles,0.70036,1.427837112342224
+"Mixto personal, núcleo de 3 patas",0.39343598732353524,2.5417095340027127,,Slavia Praha vs Arsenal,Gana Arsenal,0.7483920146867253,1.33619811592805
+"Mixto personal, núcleo de 3 patas",0.39343598732353524,2.5417095340027127,,AEK vs Real Madrid,Real Madrid más de 1.5 goles,0.68765,1.4542281683996219
+"Mixto personal, núcleo de 3 patas",0.39343598732353524,2.5417095340027127,,Ath Madrid vs Bayern Munich,Bayern Munich más de 11.5 tiros,0.7645,1.3080444735120995

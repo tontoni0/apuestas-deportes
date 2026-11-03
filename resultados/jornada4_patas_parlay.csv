@@ -1,0 +1,1495 @@
+partido,tipo,seleccion,prob,equipo,cuota_mercado,cuota_justa
+Shakhtar Donetsk vs Sp Lisbon,moneyline,Gana Shakhtar Donetsk,0.27068093528713766,Shakhtar Donetsk,3.6,3.6943865253724
+Shakhtar Donetsk vs Sp Lisbon,moneyline,Gana Sp Lisbon,0.47495107604145137,Sp Lisbon,2.05,2.1054800177202355
+Shakhtar Donetsk vs Sp Lisbon,doble oportunidad,Shakhtar Donetsk o empate,0.5250489206116113,Shakhtar Donetsk,,1.9045844315518914
+Shakhtar Donetsk vs Sp Lisbon,doble oportunidad,Sp Lisbon o empate,0.7293190613659251,Sp Lisbon,,1.3711420048820921
+Shakhtar Donetsk vs Sp Lisbon,empate no válido,Shakhtar Donetsk (DNB),0.363022149229927,Shakhtar Donetsk,,2.75465285553866
+Shakhtar Donetsk vs Sp Lisbon,empate no válido,Sp Lisbon (DNB),0.636977850770073,Sp Lisbon,,1.5699133004248926
+Shakhtar Donetsk vs Sp Lisbon,goles por equipo,Shakhtar Donetsk más de 0.5 goles,0.66865,Shakhtar Donetsk,,1.495550736558738
+Shakhtar Donetsk vs Sp Lisbon,goles por equipo,Sp Lisbon más de 0.5 goles,0.78391,Sp Lisbon,,1.2756566442576316
+Shakhtar Donetsk vs Sp Lisbon,goles por equipo,Shakhtar Donetsk más de 1.5 goles,0.30451,Shakhtar Donetsk,,3.2839644018258842
+Shakhtar Donetsk vs Sp Lisbon,goles por equipo,Sp Lisbon más de 1.5 goles,0.45665,Sp Lisbon,,2.189860943830067
+Shakhtar Donetsk vs Sp Lisbon,goles por equipo,Shakhtar Donetsk más de 2.5 goles,0.10319,Shakhtar Donetsk,,9.690861517588914
+Shakhtar Donetsk vs Sp Lisbon,goles por equipo,Sp Lisbon más de 2.5 goles,0.20609,Sp Lisbon,,4.852249017419574
+Shakhtar Donetsk vs Sp Lisbon,goles totales,Más de 1.5 goles,0.74577,,,1.3408959866983117
+Shakhtar Donetsk vs Sp Lisbon,goles totales,Más de 2.5 goles,0.49534,,,2.0188153591472524
+Shakhtar Donetsk vs Sp Lisbon,goles totales,Más de 3.5 goles,0.27834,,,3.592728317884602
+Shakhtar Donetsk vs Sp Lisbon,goles totales,Menos de 2.5 goles,0.50466,,,1.9815321206356755
+Shakhtar Donetsk vs Sp Lisbon,goles totales,Menos de 3.5 goles,0.72166,,,1.3856940941717708
+Shakhtar Donetsk vs Sp Lisbon,goles totales,Menos de 4.5 goles,0.8665,,,1.154068090017311
+Shakhtar Donetsk vs Sp Lisbon,ambos anotan,Ambos anotan: sí,0.52838,,,1.8925773117831866
+Shakhtar Donetsk vs Sp Lisbon,ambos anotan,Ambos anotan: no,0.47162000000000004,,,2.120351130147152
+Shakhtar Donetsk vs Sp Lisbon,córners totales,Más de 6.5 córners,0.77774,,,1.285776737727261
+Shakhtar Donetsk vs Sp Lisbon,córners totales,Más de 7.5 córners,0.67402,,,1.4836355004302544
+Shakhtar Donetsk vs Sp Lisbon,córners totales,Más de 8.5 córners,0.56321,,,1.7755366559542622
+Shakhtar Donetsk vs Sp Lisbon,córners totales,Más de 9.5 córners,0.45194,,,2.212683099526486
+Shakhtar Donetsk vs Sp Lisbon,córners totales,Más de 10.5 córners,0.34792,,,2.8742239595309265
+Shakhtar Donetsk vs Sp Lisbon,córners por equipo,Shakhtar Donetsk más de 2.5 córners,0.7243,Shakhtar Donetsk,,1.3806433798149937
+Shakhtar Donetsk vs Sp Lisbon,córners por equipo,Sp Lisbon más de 2.5 córners,0.85315,Sp Lisbon,,1.1721268241223701
+Shakhtar Donetsk vs Sp Lisbon,córners por equipo,Shakhtar Donetsk más de 3.5 córners,0.54421,Shakhtar Donetsk,,1.8375259550541152
+Shakhtar Donetsk vs Sp Lisbon,córners por equipo,Sp Lisbon más de 3.5 córners,0.72482,Sp Lisbon,,1.3796528793355591
+Shakhtar Donetsk vs Sp Lisbon,córners por equipo,Shakhtar Donetsk más de 4.5 córners,0.37435,Shakhtar Donetsk,,2.6712969146520633
+Shakhtar Donetsk vs Sp Lisbon,córners por equipo,Sp Lisbon más de 4.5 córners,0.57686,Sp Lisbon,,1.7335228651665915
+Shakhtar Donetsk vs Sp Lisbon,córners por equipo,Shakhtar Donetsk más de 5.5 córners,0.23959,Shakhtar Donetsk,,4.173796903042698
+Shakhtar Donetsk vs Sp Lisbon,córners por equipo,Sp Lisbon más de 5.5 córners,0.42971,Sp Lisbon,,2.3271508691908496
+Shakhtar Donetsk vs Sp Lisbon,córners por equipo,Shakhtar Donetsk más de 6.5 córners,0.14334,Shakhtar Donetsk,,6.976419701409237
+Shakhtar Donetsk vs Sp Lisbon,córners por equipo,Sp Lisbon más de 6.5 córners,0.30254,Sp Lisbon,,3.305348053149997
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 6.5 tiros,0.88212,Shakhtar Donetsk,,1.1336326123429918
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 6.5 tiros,0.96133,Sp Lisbon,,1.0402255208929296
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 7.5 tiros,0.81367,Shakhtar Donetsk,,1.2289994715302273
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 7.5 tiros,0.93253,Sp Lisbon,,1.0723515597353437
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 8.5 tiros,0.73059,Shakhtar Donetsk,,1.368756758236494
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 8.5 tiros,0.89056,Sp Lisbon,,1.122888968738771
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 9.5 tiros,0.63822,Shakhtar Donetsk,,1.566857823321112
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 9.5 tiros,0.83508,Sp Lisbon,,1.197490060832495
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 10.5 tiros,0.53852,Shakhtar Donetsk,,1.8569412463789645
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 10.5 tiros,0.76767,Sp Lisbon,,1.3026430627743693
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 11.5 tiros,0.44018,Shakhtar Donetsk,,2.2717979008587394
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 11.5 tiros,0.68984,Sp Lisbon,,1.4496115041168967
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 12.5 tiros,0.35007,Shakhtar Donetsk,,2.85657154283429
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 12.5 tiros,0.60642,Sp Lisbon,,1.6490221298769832
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 13.5 tiros,0.27037,Shakhtar Donetsk,,3.698635203609868
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 13.5 tiros,0.52256,Sp Lisbon,,1.9136558481322719
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 14.5 tiros,0.20296,Shakhtar Donetsk,,4.927079227433977
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 14.5 tiros,0.43995,Sp Lisbon,,2.2729855665416525
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 15.5 tiros,0.14851,Shakhtar Donetsk,,6.733553296074338
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 15.5 tiros,0.36192,Sp Lisbon,,2.763041556145004
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 16.5 tiros,0.10636,Shakhtar Donetsk,,9.402030838661151
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 16.5 tiros,0.29128,Sp Lisbon,,3.433122768470201
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 17.5 tiros,0.07382,Shakhtar Donetsk,,13.5464643727987
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 17.5 tiros,0.22916,Sp Lisbon,,4.363763309478093
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 18.5 tiros,0.05103,Shakhtar Donetsk,,19.59631589261219
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 18.5 tiros,0.17726,Sp Lisbon,,5.641430666817104
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 19.5 tiros,0.03422,Shakhtar Donetsk,,29.222676797194623
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 19.5 tiros,0.13345,Sp Lisbon,,7.493443237167478
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Shakhtar Donetsk más de 20.5 tiros,0.02208,Shakhtar Donetsk,,45.28985507246377
+Shakhtar Donetsk vs Sp Lisbon,tiros por equipo,Sp Lisbon más de 20.5 tiros,0.09909,Sp Lisbon,,10.091835704914724
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Shakhtar Donetsk más de 1.5 tiros a puerta,0.88122,Shakhtar Donetsk,,1.134790404212342
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Sp Lisbon más de 1.5 tiros a puerta,0.96061,Sp Lisbon,,1.0410051946159211
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Shakhtar Donetsk más de 2.5 tiros a puerta,0.71981,Shakhtar Donetsk,,1.3892554979786333
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Sp Lisbon más de 2.5 tiros a puerta,0.88543,Sp Lisbon,,1.1293947573495364
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Shakhtar Donetsk más de 3.5 tiros a puerta,0.52136,Shakhtar Donetsk,,1.9180604572656128
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Sp Lisbon más de 3.5 tiros a puerta,0.76133,Sp Lisbon,,1.3134908646710364
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Shakhtar Donetsk más de 4.5 tiros a puerta,0.33934,Shakhtar Donetsk,,2.9468969175458244
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Sp Lisbon más de 4.5 tiros a puerta,0.60637,Sp Lisbon,,1.6491581047875061
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Shakhtar Donetsk más de 5.5 tiros a puerta,0.20009,Shakhtar Donetsk,,4.9977510120445805
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Sp Lisbon más de 5.5 tiros a puerta,0.44703,Sp Lisbon,,2.2369863320135113
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Shakhtar Donetsk más de 6.5 tiros a puerta,0.10627,Shakhtar Donetsk,,9.40999341300461
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Sp Lisbon más de 6.5 tiros a puerta,0.30492,Sp Lisbon,,3.2795487340941882
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Shakhtar Donetsk más de 7.5 tiros a puerta,0.05134,Shakhtar Donetsk,,19.477989871445267
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Sp Lisbon más de 7.5 tiros a puerta,0.19388,Sp Lisbon,,5.157829585310502
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Shakhtar Donetsk más de 8.5 tiros a puerta,0.02278,Shakhtar Donetsk,,43.89815627743634
+Shakhtar Donetsk vs Sp Lisbon,tiros a puerta por equipo,Sp Lisbon más de 8.5 tiros a puerta,0.11434,Sp Lisbon,,8.745845723281441
+Shakhtar Donetsk vs Sp Lisbon,tarjetas,Más de 2.5 tarjetas,0.70135,,,1.4258216297141226
+Shakhtar Donetsk vs Sp Lisbon,tarjetas,Más de 3.5 tarjetas,0.51508,,,1.9414459889725868
+Galatasaray vs Stuttgart,moneyline,Gana Galatasaray,0.4279108076345951,Galatasaray,2.2,2.3369356000326302
+Galatasaray vs Stuttgart,moneyline,Gana Stuttgart,0.33298728627036644,Stuttgart,3.0,3.003117660138104
+Galatasaray vs Stuttgart,doble oportunidad,Galatasaray o empate,0.6670127181922167,Galatasaray,,1.4992217880196768
+Galatasaray vs Stuttgart,doble oportunidad,Stuttgart o empate,0.5720891968279881,Stuttgart,,1.7479791709834949
+Galatasaray vs Stuttgart,empate no válido,Galatasaray (DNB),0.5623759752617312,Galatasaray,,1.778169843643476
+Galatasaray vs Stuttgart,empate no válido,Stuttgart (DNB),0.4376240247382688,Stuttgart,,2.2850665033714117
+Galatasaray vs Stuttgart,goles por equipo,Galatasaray más de 0.5 goles,0.83202,Galatasaray,,1.201894185235932
+Galatasaray vs Stuttgart,goles por equipo,Stuttgart más de 0.5 goles,0.79107,Stuttgart,,1.2641106349627718
+Galatasaray vs Stuttgart,goles por equipo,Galatasaray más de 1.5 goles,0.53668,Galatasaray,,1.8633077439069836
+Galatasaray vs Stuttgart,goles por equipo,Stuttgart más de 1.5 goles,0.46886,Stuttgart,,2.1328328285628975
+Galatasaray vs Stuttgart,goles por equipo,Galatasaray más de 2.5 goles,0.27465,Galatasaray,,3.6409976333515384
+Galatasaray vs Stuttgart,goles por equipo,Stuttgart más de 2.5 goles,0.21548,Stuttgart,,4.640801930573603
+Galatasaray vs Stuttgart,goles totales,Más de 1.5 goles,0.85352,,,1.171618708407536
+Galatasaray vs Stuttgart,goles totales,Más de 2.5 goles,0.65484,,,1.5270905870136218
+Galatasaray vs Stuttgart,goles totales,Más de 3.5 goles,0.44139,,,2.2655701307233964
+Galatasaray vs Stuttgart,goles totales,Menos de 2.5 goles,0.34516,,,2.897207092362962
+Galatasaray vs Stuttgart,goles totales,Menos de 3.5 goles,0.55861,,,1.7901577128945059
+Galatasaray vs Stuttgart,goles totales,Menos de 4.5 goles,0.74131,,,1.3489633216872832
+Galatasaray vs Stuttgart,ambos anotan,Ambos anotan: sí,0.66157,,,1.5115558444306725
+Galatasaray vs Stuttgart,ambos anotan,Ambos anotan: no,0.33843,,,2.9548207901190793
+Galatasaray vs Stuttgart,córners totales,Más de 6.5 córners,0.7543,,,1.3257324671881214
+Galatasaray vs Stuttgart,córners totales,Más de 7.5 córners,0.64469,,,1.5511331027315454
+Galatasaray vs Stuttgart,córners totales,Más de 8.5 córners,0.52794,,,1.8941546387847106
+Galatasaray vs Stuttgart,córners totales,Más de 9.5 córners,0.41492,,,2.4101031524149232
+Galatasaray vs Stuttgart,córners totales,Más de 10.5 córners,0.31245,,,3.2005120819331094
+Galatasaray vs Stuttgart,córners por equipo,Galatasaray más de 2.5 córners,0.83979,Galatasaray,,1.1907738839471773
+Galatasaray vs Stuttgart,córners por equipo,Stuttgart más de 2.5 córners,0.70716,Stuttgart,,1.4141071327563777
+Galatasaray vs Stuttgart,córners por equipo,Galatasaray más de 3.5 córners,0.70402,Galatasaray,,1.4204141927786142
+Galatasaray vs Stuttgart,córners por equipo,Stuttgart más de 3.5 córners,0.52252,Stuttgart,,1.9138023424940673
+Galatasaray vs Stuttgart,córners por equipo,Galatasaray más de 4.5 córners,0.54963,Galatasaray,,1.8194057820715757
+Galatasaray vs Stuttgart,córners por equipo,Stuttgart más de 4.5 córners,0.35322,Stuttgart,,2.8310967668874922
+Galatasaray vs Stuttgart,córners por equipo,Galatasaray más de 5.5 córners,0.39993,Galatasaray,,2.5004375765759006
+Galatasaray vs Stuttgart,córners por equipo,Stuttgart más de 5.5 córners,0.21993,Stuttgart,,4.546901286773064
+Galatasaray vs Stuttgart,córners por equipo,Galatasaray más de 6.5 córners,0.27559,Galatasaray,,3.6285786857288
+Galatasaray vs Stuttgart,córners por equipo,Stuttgart más de 6.5 córners,0.12789,Stuttgart,,7.81921964187974
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 6.5 tiros,0.97661,Galatasaray,,1.0239501950625123
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 6.5 tiros,0.88172,Stuttgart,,1.1341468947058024
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 7.5 tiros,0.95713,Galatasaray,,1.0447901538975897
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 7.5 tiros,0.8124,Stuttgart,,1.2309207287050714
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 8.5 tiros,0.92756,Galatasaray,,1.0780973737547974
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 8.5 tiros,0.72807,Stuttgart,,1.373494306866098
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 9.5 tiros,0.88692,Galatasaray,,1.1274974067559644
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 9.5 tiros,0.6332,Stuttgart,,1.5792798483891346
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 10.5 tiros,0.83403,Galatasaray,,1.1989976379746532
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 10.5 tiros,0.53388,Stuttgart,,1.8730800929047726
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 11.5 tiros,0.77139,Galatasaray,,1.296361114352014
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 11.5 tiros,0.43667,Stuttgart,,2.290058854512561
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 12.5 tiros,0.69998,Galatasaray,,1.4286122460641733
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 12.5 tiros,0.34698,Stuttgart,,2.8820104905181854
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 13.5 tiros,0.62308,Galatasaray,,1.6049303460229827
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 13.5 tiros,0.26718,Stuttgart,,3.7427951193951645
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 14.5 tiros,0.54443,Galatasaray,,1.8367834248663741
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 14.5 tiros,0.19996,Stuttgart,,5.001000200040008
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 15.5 tiros,0.46683,Galatasaray,,2.1421074052652997
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 15.5 tiros,0.14574,Stuttgart,,6.861534239055852
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 16.5 tiros,0.39148,Galatasaray,,2.554408909778277
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 16.5 tiros,0.10321,Stuttgart,,9.688983625617674
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 17.5 tiros,0.32246,Galatasaray,,3.1011598337778326
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 17.5 tiros,0.07158,Stuttgart,,13.970382788488404
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 18.5 tiros,0.26017,Galatasaray,,3.843640696467694
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 18.5 tiros,0.04815,Stuttgart,,20.768431983385256
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 19.5 tiros,0.20593,Galatasaray,,4.85601903559462
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 19.5 tiros,0.03208,Stuttgart,,31.172069825436413
+Galatasaray vs Stuttgart,tiros por equipo,Galatasaray más de 20.5 tiros,0.16001,Galatasaray,,6.249609399412536
+Galatasaray vs Stuttgart,tiros por equipo,Stuttgart más de 20.5 tiros,0.0209,Stuttgart,,47.84688995215311
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Galatasaray más de 1.5 tiros a puerta,0.95966,Galatasaray,,1.0420357209845155
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Stuttgart más de 1.5 tiros a puerta,0.93017,Stuttgart,,1.0750722986120815
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Galatasaray más de 2.5 tiros a puerta,0.88219,Galatasaray,,1.1335426608780421
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Stuttgart más de 2.5 tiros a puerta,0.81485,Stuttgart,,1.227219733693318
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Galatasaray más de 3.5 tiros a puerta,0.75694,Galatasaray,,1.3211086743995561
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Stuttgart más de 3.5 tiros a puerta,0.6519,Stuttgart,,1.5339776039269826
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Galatasaray más de 4.5 tiros a puerta,0.59983,Galatasaray,,1.6671390227231049
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Stuttgart más de 4.5 tiros a puerta,0.47116,Stuttgart,,2.1224212581713218
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Galatasaray más de 5.5 tiros a puerta,0.44044,Galatasaray,,2.2704568159113614
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Stuttgart más de 5.5 tiros a puerta,0.31014,Stuttgart,,3.2243502934158763
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Galatasaray más de 6.5 tiros a puerta,0.29731,Galatasaray,,3.363492650768558
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Stuttgart más de 6.5 tiros a puerta,0.18841,Stuttgart,,5.307573907966669
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Galatasaray más de 7.5 tiros a puerta,0.18388,Galatasaray,,5.4383293452251475
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Stuttgart más de 7.5 tiros a puerta,0.10605,Stuttgart,,9.42951438000943
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Galatasaray más de 8.5 tiros a puerta,0.1081,Galatasaray,,9.250693802035153
+Galatasaray vs Stuttgart,tiros a puerta por equipo,Stuttgart más de 8.5 tiros a puerta,0.05508,Stuttgart,,18.15541031227306
+Galatasaray vs Stuttgart,tarjetas,Más de 2.5 tarjetas,0.69721,,,1.4342880911059797
+Galatasaray vs Stuttgart,tarjetas,Más de 3.5 tarjetas,0.51169,,,1.9543082725869179
+Ath Madrid vs Bayern Munich,moneyline,Gana Ath Madrid,0.2911880951588116,Ath Madrid,3.33,3.4342063313220557
+Ath Madrid vs Bayern Munich,moneyline,Gana Bayern Munich,0.4862853376090783,Bayern Munich,2.0,2.0564058232080473
+Ath Madrid vs Bayern Munich,doble oportunidad,Ath Madrid o empate,0.5137146579283387,Ath Madrid,,1.9466059310682475
+Ath Madrid vs Bayern Munich,doble oportunidad,Bayern Munich o empate,0.7088119003786053,Bayern Munich,,1.4108115276646163
+Ath Madrid vs Bayern Munich,empate no válido,Ath Madrid (DNB),0.37453124812529004,Ath Madrid,,2.67000418524618
+Ath Madrid vs Bayern Munich,empate no válido,Bayern Munich (DNB),0.62546875187471,Bayern Munich,,1.598800894533439
+Ath Madrid vs Bayern Munich,goles por equipo,Ath Madrid más de 0.5 goles,0.78486,Ath Madrid,,1.2741125805876208
+Ath Madrid vs Bayern Munich,goles por equipo,Bayern Munich más de 0.5 goles,0.86539,Bayern Munich,,1.155548365476837
+Ath Madrid vs Bayern Munich,goles por equipo,Ath Madrid más de 1.5 goles,0.45504,Ath Madrid,,2.19760900140647
+Ath Madrid vs Bayern Munich,goles por equipo,Bayern Munich más de 1.5 goles,0.59981,Bayern Munich,,1.6671946116270153
+Ath Madrid vs Bayern Munich,goles por equipo,Ath Madrid más de 2.5 goles,0.20352,Ath Madrid,,4.913522012578616
+Ath Madrid vs Bayern Munich,goles por equipo,Bayern Munich más de 2.5 goles,0.33449,Bayern Munich,,2.9896259977876767
+Ath Madrid vs Bayern Munich,goles totales,Más de 1.5 goles,0.87235,,,1.1463288817561759
+Ath Madrid vs Bayern Munich,goles totales,Más de 2.5 goles,0.69065,,,1.4479113878230652
+Ath Madrid vs Bayern Munich,goles totales,Más de 3.5 goles,0.4793,,,2.0863759649488838
+Ath Madrid vs Bayern Munich,goles totales,Menos de 2.5 goles,0.30935,,,3.232584451268789
+Ath Madrid vs Bayern Munich,goles totales,Menos de 3.5 goles,0.5207,,,1.9204916458613404
+Ath Madrid vs Bayern Munich,goles totales,Menos de 4.5 goles,0.70872,,,1.4109944689016818
+Ath Madrid vs Bayern Munich,ambos anotan,Ambos anotan: sí,0.68168,,,1.4669639713648635
+Ath Madrid vs Bayern Munich,ambos anotan,Ambos anotan: no,0.31832000000000005,,,3.1414928373963305
+Ath Madrid vs Bayern Munich,córners totales,Más de 6.5 córners,0.79514,,,1.2576401639962775
+Ath Madrid vs Bayern Munich,córners totales,Más de 7.5 córners,0.69641,,,1.4359357275168363
+Ath Madrid vs Bayern Munich,córners totales,Más de 8.5 córners,0.58734,,,1.702591344025607
+Ath Madrid vs Bayern Munich,córners totales,Más de 9.5 córners,0.47586,,,2.1014584121380238
+Ath Madrid vs Bayern Munich,córners totales,Más de 10.5 córners,0.36921,,,2.7084856856531516
+Ath Madrid vs Bayern Munich,córners por equipo,Ath Madrid más de 2.5 córners,0.75391,Ath Madrid,,1.3264182727381253
+Ath Madrid vs Bayern Munich,córners por equipo,Bayern Munich más de 2.5 córners,0.85149,Bayern Munich,,1.174411913234448
+Ath Madrid vs Bayern Munich,córners por equipo,Ath Madrid más de 3.5 córners,0.58248,Ath Madrid,,1.7167971432495537
+Ath Madrid vs Bayern Munich,córners por equipo,Bayern Munich más de 3.5 córners,0.72262,Bayern Munich,,1.3838532008524536
+Ath Madrid vs Bayern Munich,córners por equipo,Ath Madrid más de 4.5 córners,0.4163,Ath Madrid,,2.402113860196973
+Ath Madrid vs Bayern Munich,córners por equipo,Bayern Munich más de 4.5 córners,0.57194,Bayern Munich,,1.7484351505402664
+Ath Madrid vs Bayern Munich,córners por equipo,Ath Madrid más de 5.5 córners,0.27332,Ath Madrid,,3.658715059271184
+Ath Madrid vs Bayern Munich,córners por equipo,Bayern Munich más de 5.5 córners,0.42733,Bayern Munich,,2.3401118573467814
+Ath Madrid vs Bayern Munich,córners por equipo,Ath Madrid más de 6.5 córners,0.16793,Ath Madrid,,5.954862144941345
+Ath Madrid vs Bayern Munich,córners por equipo,Bayern Munich más de 6.5 córners,0.29882,Bayern Munich,,3.3464962184592735
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 6.5 tiros,0.92217,Ath Madrid,,1.084398755110229
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 6.5 tiros,0.97542,Bayern Munich,,1.0251994012835497
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 7.5 tiros,0.87076,Ath Madrid,,1.1484220680784603
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 7.5 tiros,0.95494,Bayern Munich,,1.047186210651978
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 8.5 tiros,0.80367,Ath Madrid,,1.2442918113155896
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 8.5 tiros,0.92483,Bayern Munich,,1.081279802774564
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 9.5 tiros,0.72386,Ath Madrid,,1.3814826071339763
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 9.5 tiros,0.88276,Bayern Munich,,1.1328107299832344
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 10.5 tiros,0.63515,Ath Madrid,,1.5744312367157365
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 10.5 tiros,0.82904,Bayern Munich,,1.2062144166747082
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 11.5 tiros,0.54339,Ath Madrid,,1.8402988645356004
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 11.5 tiros,0.7645,Bayern Munich,,1.3080444735120995
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 12.5 tiros,0.45032,Ath Madrid,,2.2206430982412506
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 12.5 tiros,0.69181,Bayern Munich,,1.4454835865338749
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 13.5 tiros,0.36416,Ath Madrid,,2.7460456942003515
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 13.5 tiros,0.61513,Bayern Munich,,1.6256726220473723
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 14.5 tiros,0.28645,Ath Madrid,,3.4910106475824754
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 14.5 tiros,0.53595,Bayern Munich,,1.8658456945610598
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 15.5 tiros,0.22081,Ath Madrid,,4.528780399438431
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 15.5 tiros,0.45584,Bayern Munich,,2.1937521937521938
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 16.5 tiros,0.16602,Ath Madrid,,6.023370678231538
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 16.5 tiros,0.38049,Bayern Munich,,2.6281899655707113
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 17.5 tiros,0.12264,Ath Madrid,,8.153946510110893
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 17.5 tiros,0.3123,Bayern Munich,,3.202049311559398
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 18.5 tiros,0.08843,Ath Madrid,,11.30837950921633
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 18.5 tiros,0.25247,Bayern Munich,,3.960866637620311
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 19.5 tiros,0.06219,Ath Madrid,,16.079755587715066
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 19.5 tiros,0.19908,Bayern Munich,,5.023106288929074
+Ath Madrid vs Bayern Munich,tiros por equipo,Ath Madrid más de 20.5 tiros,0.04355,Ath Madrid,,22.962112514351322
+Ath Madrid vs Bayern Munich,tiros por equipo,Bayern Munich más de 20.5 tiros,0.15401,Bayern Munich,,6.49308486461918
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Ath Madrid más de 1.5 tiros a puerta,0.90693,Ath Madrid,,1.1026209299504923
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Bayern Munich más de 1.5 tiros a puerta,0.97895,Bayern Munich,,1.0215026303692731
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Ath Madrid más de 2.5 tiros a puerta,0.76815,Ath Madrid,,1.3018290698431296
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Bayern Munich más de 2.5 tiros a puerta,0.92974,Bayern Munich,,1.0755695140576935
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Ath Madrid más de 3.5 tiros a puerta,0.58487,Ath Madrid,,1.7097816608819054
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Bayern Munich más de 3.5 tiros a puerta,0.84088,Bayern Munich,,1.1892303301303397
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Ath Madrid más de 4.5 tiros a puerta,0.40295,Ath Madrid,,2.481697481077057
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Bayern Munich más de 4.5 tiros a puerta,0.71423,Bayern Munich,,1.4001092085182643
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Ath Madrid más de 5.5 tiros a puerta,0.25064,Ath Madrid,,3.9897861474624965
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Bayern Munich más de 5.5 tiros a puerta,0.56468,Bayern Munich,,1.770914500247928
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Ath Madrid más de 6.5 tiros a puerta,0.14217,Ath Madrid,,7.033832735457551
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Bayern Munich más de 6.5 tiros a puerta,0.4199,Bayern Munich,,2.3815194093831864
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Ath Madrid más de 7.5 tiros a puerta,0.07353,Ath Madrid,,13.599891200870394
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Bayern Munich más de 7.5 tiros a puerta,0.29158,Bayern Munich,,3.4295905068934767
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Ath Madrid más de 8.5 tiros a puerta,0.03527,Ath Madrid,,28.35270768358378
+Ath Madrid vs Bayern Munich,tiros a puerta por equipo,Bayern Munich más de 8.5 tiros a puerta,0.18822,Bayern Munich,,5.312931675698651
+Ath Madrid vs Bayern Munich,tarjetas,Más de 2.5 tarjetas,0.67764,,,1.4757098164216989
+Ath Madrid vs Bayern Munich,tarjetas,Más de 3.5 tarjetas,0.48954,,,2.0427339951791477
+Barcelona vs Aston Villa,moneyline,Gana Barcelona,0.6935535380816424,Barcelona,1.27,1.4418497564960644
+Barcelona vs Aston Villa,moneyline,Gana Aston Villa,0.11353972129198164,Aston Villa,10.5,8.807490353339643
+Barcelona vs Aston Villa,doble oportunidad,Barcelona o empate,0.8864602764767268,Barcelona,,1.1280821335554274
+Barcelona vs Aston Villa,doble oportunidad,Aston Villa o empate,0.30644645968706596,Aston Villa,,3.2632127681330383
+Barcelona vs Aston Villa,empate no válido,Barcelona (DNB),0.8593226743336966,Barcelona,,1.1637072194974747
+Barcelona vs Aston Villa,empate no válido,Aston Villa (DNB),0.14067732566630345,Aston Villa,,7.108466096178645
+Barcelona vs Aston Villa,goles por equipo,Barcelona más de 0.5 goles,0.92178,Barcelona,,1.0848575582026079
+Barcelona vs Aston Villa,goles por equipo,Aston Villa más de 0.5 goles,0.64241,Aston Villa,,1.5566382839619557
+Barcelona vs Aston Villa,goles por equipo,Barcelona más de 1.5 goles,0.72551,Barcelona,,1.3783407534010559
+Barcelona vs Aston Villa,goles por equipo,Aston Villa más de 1.5 goles,0.27741,Aston Villa,,3.6047727190800622
+Barcelona vs Aston Villa,goles por equipo,Barcelona más de 2.5 goles,0.47358,Barcelona,,2.1115756577558176
+Barcelona vs Aston Villa,goles por equipo,Aston Villa más de 2.5 goles,0.08996,Aston Villa,,11.116051578479324
+Barcelona vs Aston Villa,goles totales,Más de 1.5 goles,0.8767,,,1.1406410402646288
+Barcelona vs Aston Villa,goles totales,Más de 2.5 goles,0.69578,,,1.437235907901923
+Barcelona vs Aston Villa,goles totales,Más de 3.5 goles,0.48633,,,2.0562169720148873
+Barcelona vs Aston Villa,goles totales,Menos de 2.5 goles,0.30422,,,3.2870948655578203
+Barcelona vs Aston Villa,goles totales,Menos de 3.5 goles,0.51367,,,1.9467751669359707
+Barcelona vs Aston Villa,goles totales,Menos de 4.5 goles,0.70077,,,1.4270017266720894
+Barcelona vs Aston Villa,ambos anotan,Ambos anotan: sí,0.59393,,,1.683700099338306
+Barcelona vs Aston Villa,ambos anotan,Ambos anotan: no,0.40607000000000004,,,2.462629595882483
+Barcelona vs Aston Villa,córners totales,Más de 6.5 córners,0.82286,,,1.2152735580779233
+Barcelona vs Aston Villa,córners totales,Más de 7.5 córners,0.73165,,,1.3667737306088976
+Barcelona vs Aston Villa,córners totales,Más de 8.5 córners,0.62853,,,1.5910139531923695
+Barcelona vs Aston Villa,córners totales,Más de 9.5 córners,0.52085,,,1.919938561966017
+Barcelona vs Aston Villa,córners totales,Más de 10.5 córners,0.41608,,,2.403383964622188
+Barcelona vs Aston Villa,córners por equipo,Barcelona más de 2.5 córners,0.89773,Barcelona,,1.113920666570127
+Barcelona vs Aston Villa,córners por equipo,Aston Villa más de 2.5 córners,0.71644,Aston Villa,,1.395790296465859
+Barcelona vs Aston Villa,córners por equipo,Barcelona más de 3.5 córners,0.79295,Barcelona,,1.261113563276373
+Barcelona vs Aston Villa,córners por equipo,Aston Villa más de 3.5 córners,0.53474,Aston Villa,,1.8700676964506115
+Barcelona vs Aston Villa,córners por equipo,Barcelona más de 4.5 córners,0.66438,Barcelona,,1.5051627080887444
+Barcelona vs Aston Villa,córners por equipo,Aston Villa más de 4.5 córners,0.36545,Aston Villa,,2.736352442194555
+Barcelona vs Aston Villa,córners por equipo,Barcelona más de 5.5 córners,0.52717,Barcelona,,1.8969212967353983
+Barcelona vs Aston Villa,córners por equipo,Aston Villa más de 5.5 córners,0.23072,Aston Villa,,4.3342579750346735
+Barcelona vs Aston Villa,córners por equipo,Barcelona más de 6.5 córners,0.39641,Barcelona,,2.5226407002850584
+Barcelona vs Aston Villa,córners por equipo,Aston Villa más de 6.5 córners,0.13566,Aston Villa,,7.371369600471768
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 6.5 tiros,0.98715,Barcelona,,1.0130172719444868
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 6.5 tiros,0.77895,Aston Villa,,1.2837794466910584
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 7.5 tiros,0.97496,Barcelona,,1.0256831049478952
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 7.5 tiros,0.67941,Aston Villa,,1.4718652948882118
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 8.5 tiros,0.95575,Barcelona,,1.0462987182840702
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 8.5 tiros,0.56734,Aston Villa,,1.7626114851764376
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 9.5 tiros,0.92771,Barcelona,,1.0779230578521304
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 9.5 tiros,0.45695,Aston Villa,,2.18842324105482
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 10.5 tiros,0.89023,Barcelona,,1.1233052132594947
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 10.5 tiros,0.3568,Aston Villa,,2.802690582959641
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 11.5 tiros,0.84396,Barcelona,,1.1848902791601497
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 11.5 tiros,0.26672,Aston Villa,,3.7492501499700057
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 12.5 tiros,0.78861,Barcelona,,1.2680539176525785
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 12.5 tiros,0.1933,Aston Villa,,5.173305742369374
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 13.5 tiros,0.724,Barcelona,,1.3812154696132597
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 13.5 tiros,0.13562,Aston Villa,,7.37354372511429
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 14.5 tiros,0.65445,Barcelona,,1.5280006112002444
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 14.5 tiros,0.09237,Aston Villa,,10.826025765941324
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 15.5 tiros,0.57926,Barcelona,,1.7263405034008907
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 15.5 tiros,0.06085,Aston Villa,,16.433853738701725
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 16.5 tiros,0.50571,Barcelona,,1.9774178877222124
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 16.5 tiros,0.03943,Aston Villa,,25.3613999492772
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 17.5 tiros,0.43365,Barcelona,,2.306007148622161
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 17.5 tiros,0.02528,Aston Villa,,39.55696202531645
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 18.5 tiros,0.36488,Barcelona,,2.740627055470292
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 18.5 tiros,0.01553,Aston Villa,,64.3915003219575
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 19.5 tiros,0.30378,Barcelona,,3.2918559483836987
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 19.5 tiros,0.00943,Aston Villa,,106.04453870625663
+Barcelona vs Aston Villa,tiros por equipo,Barcelona más de 20.5 tiros,0.24744,Barcelona,,4.04138376980278
+Barcelona vs Aston Villa,tiros por equipo,Aston Villa más de 20.5 tiros,0.00511,Aston Villa,,195.69471624266146
+Barcelona vs Aston Villa,tiros a puerta por equipo,Barcelona más de 1.5 tiros a puerta,0.97804,Barcelona,,1.0224530694041143
+Barcelona vs Aston Villa,tiros a puerta por equipo,Aston Villa más de 1.5 tiros a puerta,0.82997,Aston Villa,,1.204862826367218
+Barcelona vs Aston Villa,tiros a puerta por equipo,Barcelona más de 2.5 tiros a puerta,0.92805,Barcelona,,1.0775281504229297
+Barcelona vs Aston Villa,tiros a puerta por equipo,Aston Villa más de 2.5 tiros a puerta,0.63379,Aston Villa,,1.577809684595844
+Barcelona vs Aston Villa,tiros a puerta por equipo,Barcelona más de 3.5 tiros a puerta,0.83701,Barcelona,,1.1947288562860658
+Barcelona vs Aston Villa,tiros a puerta por equipo,Aston Villa más de 3.5 tiros a puerta,0.42249,Aston Villa,,2.3669199270988663
+Barcelona vs Aston Villa,tiros a puerta por equipo,Barcelona más de 4.5 tiros a puerta,0.70913,Barcelona,,1.410178669637443
+Barcelona vs Aston Villa,tiros a puerta por equipo,Aston Villa más de 4.5 tiros a puerta,0.24988,Aston Villa,,4.00192092204258
+Barcelona vs Aston Villa,tiros a puerta por equipo,Barcelona más de 5.5 tiros a puerta,0.56149,Barcelona,,1.7809756184437833
+Barcelona vs Aston Villa,tiros a puerta por equipo,Aston Villa más de 5.5 tiros a puerta,0.13127,Aston Villa,,7.6178867982021785
+Barcelona vs Aston Villa,tiros a puerta por equipo,Barcelona más de 6.5 tiros a puerta,0.41425,Barcelona,,2.4140012070006036
+Barcelona vs Aston Villa,tiros a puerta por equipo,Aston Villa más de 6.5 tiros a puerta,0.06227,Aston Villa,,16.059097478721696
+Barcelona vs Aston Villa,tiros a puerta por equipo,Barcelona más de 7.5 tiros a puerta,0.28618,Barcelona,,3.494304284017052
+Barcelona vs Aston Villa,tiros a puerta por equipo,Aston Villa más de 7.5 tiros a puerta,0.02709,Aston Villa,,36.913990402362494
+Barcelona vs Aston Villa,tiros a puerta por equipo,Barcelona más de 8.5 tiros a puerta,0.18573,Barcelona,,5.3841598018629195
+Barcelona vs Aston Villa,tiros a puerta por equipo,Aston Villa más de 8.5 tiros a puerta,0.01086,Aston Villa,,92.08103130755065
+Barcelona vs Aston Villa,tarjetas,Más de 2.5 tarjetas,0.68042,,,1.4696804914611563
+Barcelona vs Aston Villa,tarjetas,Más de 3.5 tarjetas,0.49197,,,2.032644266926845
+Feyenoord vs Inter,moneyline,Gana Feyenoord,0.23172983563137892,Feyenoord,4.51,4.315370082904371
+Feyenoord vs Inter,moneyline,Gana Inter,0.5433566340995666,Inter,1.75,1.8404118717666313
+Feyenoord vs Inter,doble oportunidad,Feyenoord o empate,0.45664336590043353,Feyenoord,,2.1898927580567107
+Feyenoord vs Inter,doble oportunidad,Inter o empate,0.7682701643686212,Inter,,1.3016254520593271
+Feyenoord vs Inter,empate no válido,Feyenoord (DNB),0.2989728819699548,Feyenoord,,3.344784963140887
+Feyenoord vs Inter,empate no válido,Inter (DNB),0.7010271180300451,Inter,,1.42647834053852
+Feyenoord vs Inter,goles por equipo,Feyenoord más de 0.5 goles,0.72382,Feyenoord,,1.3815589511204442
+Feyenoord vs Inter,goles por equipo,Inter más de 0.5 goles,0.86771,Inter,,1.1524587707874752
+Feyenoord vs Inter,goles por equipo,Feyenoord más de 1.5 goles,0.37269,Feyenoord,,2.6831951487831707
+Feyenoord vs Inter,goles por equipo,Inter más de 1.5 goles,0.60584,Inter,,1.650600818698006
+Feyenoord vs Inter,goles por equipo,Feyenoord más de 2.5 goles,0.14466,Feyenoord,,6.912760956726116
+Feyenoord vs Inter,goles por equipo,Inter más de 2.5 goles,0.34183,Inter,,2.9254307696808355
+Feyenoord vs Inter,goles totales,Más de 1.5 goles,0.84794,,,1.17932872608911
+Feyenoord vs Inter,goles totales,Más de 2.5 goles,0.64972,,,1.539124545958259
+Feyenoord vs Inter,goles totales,Más de 3.5 goles,0.43462,,,2.3008605218351663
+Feyenoord vs Inter,goles totales,Menos de 2.5 goles,0.35028,,,2.854858969966884
+Feyenoord vs Inter,goles totales,Menos de 3.5 goles,0.56538,,,1.7687219215394956
+Feyenoord vs Inter,goles totales,Menos de 4.5 goles,0.74969,,,1.3338846723312303
+Feyenoord vs Inter,ambos anotan,Ambos anotan: sí,0.63231,,,1.5815027439072606
+Feyenoord vs Inter,ambos anotan,Ambos anotan: no,0.36768999999999996,,,2.7196823411025597
+Feyenoord vs Inter,córners totales,Más de 6.5 córners,0.74913,,,1.334881796216945
+Feyenoord vs Inter,córners totales,Más de 7.5 córners,0.63924,,,1.5643576747387522
+Feyenoord vs Inter,córners totales,Más de 8.5 córners,0.52416,,,1.907814407814408
+Feyenoord vs Inter,córners totales,Más de 9.5 córners,0.41157,,,2.4297203391889592
+Feyenoord vs Inter,córners totales,Más de 10.5 córners,0.3092,,,3.234152652005175
+Feyenoord vs Inter,córners por equipo,Feyenoord más de 2.5 córners,0.78429,Feyenoord,,1.27503856991674
+Feyenoord vs Inter,córners por equipo,Inter más de 2.5 córners,0.77712,Inter,,1.2868025530162652
+Feyenoord vs Inter,córners por equipo,Feyenoord más de 3.5 córners,0.62216,Feyenoord,,1.6073035875016073
+Feyenoord vs Inter,córners por equipo,Inter más de 3.5 córners,0.6137,Inter,,1.629460648525338
+Feyenoord vs Inter,córners por equipo,Feyenoord más de 4.5 córners,0.45831,Feyenoord,,2.181929261853331
+Feyenoord vs Inter,córners por equipo,Inter más de 4.5 córners,0.44764,Inter,,2.233937985881512
+Feyenoord vs Inter,córners por equipo,Feyenoord más de 5.5 córners,0.3123,Feyenoord,,3.202049311559398
+Feyenoord vs Inter,córners por equipo,Inter más de 5.5 córners,0.30133,Inter,,3.318620781203332
+Feyenoord vs Inter,córners por equipo,Feyenoord más de 6.5 córners,0.19993,Feyenoord,,5.00175061271445
+Feyenoord vs Inter,córners por equipo,Inter más de 6.5 córners,0.19132,Inter,,5.226845076311938
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 6.5 tiros,0.92655,Feyenoord,,1.0792725702876262
+Feyenoord vs Inter,tiros por equipo,Inter más de 6.5 tiros,0.93553,Inter,,1.0689128087821878
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 7.5 tiros,0.87709,Feyenoord,,1.1401338517141912
+Feyenoord vs Inter,tiros por equipo,Inter más de 7.5 tiros,0.89063,Inter,,1.1228007141012541
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 8.5 tiros,0.81192,Feyenoord,,1.2316484382697803
+Feyenoord vs Inter,tiros por equipo,Inter más de 8.5 tiros,0.83083,Inter,,1.2036156614469868
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 9.5 tiros,0.73315,Feyenoord,,1.3639773579758576
+Feyenoord vs Inter,tiros por equipo,Inter más de 9.5 tiros,0.75755,Inter,,1.320044881525972
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 10.5 tiros,0.64649,Feyenoord,,1.5468143358752648
+Feyenoord vs Inter,tiros por equipo,Inter más de 10.5 tiros,0.67455,Inter,,1.4824697946779335
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 11.5 tiros,0.5549,Feyenoord,,1.8021265092809517
+Feyenoord vs Inter,tiros por equipo,Inter más de 11.5 tiros,0.58482,Inter,,1.709927841045108
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 12.5 tiros,0.46091,Feyenoord,,2.1696209672170275
+Feyenoord vs Inter,tiros por equipo,Inter más de 12.5 tiros,0.49445,Inter,,2.0224491859642026
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 13.5 tiros,0.37609,Feyenoord,,2.6589380201547503
+Feyenoord vs Inter,tiros por equipo,Inter más de 13.5 tiros,0.40722,Inter,,2.455675065075389
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 14.5 tiros,0.29916,Feyenoord,,3.342692873378794
+Feyenoord vs Inter,tiros por equipo,Inter más de 14.5 tiros,0.32799,Inter,,3.0488734412634533
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 15.5 tiros,0.23037,Feyenoord,,4.34084299170899
+Feyenoord vs Inter,tiros por equipo,Inter más de 15.5 tiros,0.25667,Inter,,3.8960532980091167
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 16.5 tiros,0.17295,Feyenoord,,5.782017924255565
+Feyenoord vs Inter,tiros por equipo,Inter más de 16.5 tiros,0.19685,Inter,,5.08001016002032
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 17.5 tiros,0.12753,Feyenoord,,7.841292244961969
+Feyenoord vs Inter,tiros por equipo,Inter más de 17.5 tiros,0.14729,Inter,,6.789327177676692
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 18.5 tiros,0.09165,Feyenoord,,10.911074740861975
+Feyenoord vs Inter,tiros por equipo,Inter más de 18.5 tiros,0.10778,Inter,,9.2781592132121
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 19.5 tiros,0.06498,Feyenoord,,15.389350569405972
+Feyenoord vs Inter,tiros por equipo,Inter más de 19.5 tiros,0.07707,Inter,,12.97521733489036
+Feyenoord vs Inter,tiros por equipo,Feyenoord más de 20.5 tiros,0.04555,Feyenoord,,21.95389681668496
+Feyenoord vs Inter,tiros por equipo,Inter más de 20.5 tiros,0.05459,Inter,,18.318373328448434
+Feyenoord vs Inter,tiros a puerta por equipo,Feyenoord más de 1.5 tiros a puerta,0.9123,Feyenoord,,1.0961306587745259
+Feyenoord vs Inter,tiros a puerta por equipo,Inter más de 1.5 tiros a puerta,0.94557,Inter,,1.0575631629599078
+Feyenoord vs Inter,tiros a puerta por equipo,Feyenoord más de 2.5 tiros a puerta,0.77878,Feyenoord,,1.2840596830940703
+Feyenoord vs Inter,tiros a puerta por equipo,Inter más de 2.5 tiros a puerta,0.84989,Inter,,1.1766228570756214
+Feyenoord vs Inter,tiros a puerta por equipo,Feyenoord más de 3.5 tiros a puerta,0.60071,Feyenoord,,1.664696775482346
+Feyenoord vs Inter,tiros a puerta por equipo,Inter más de 3.5 tiros a puerta,0.7066,Inter,,1.4152278516841212
+Feyenoord vs Inter,tiros a puerta por equipo,Feyenoord más de 4.5 tiros a puerta,0.41884,Feyenoord,,2.3875465571578647
+Feyenoord vs Inter,tiros a puerta por equipo,Inter más de 4.5 tiros a puerta,0.53737,Inter,,1.8609151980944227
+Feyenoord vs Inter,tiros a puerta por equipo,Feyenoord más de 5.5 tiros a puerta,0.26492,Feyenoord,,3.7747244451155066
+Feyenoord vs Inter,tiros a puerta por equipo,Inter más de 5.5 tiros a puerta,0.37318,Inter,,2.679672008146203
+Feyenoord vs Inter,tiros a puerta por equipo,Feyenoord más de 6.5 tiros a puerta,0.15169,Feyenoord,,6.59239237919441
+Feyenoord vs Inter,tiros a puerta por equipo,Inter más de 6.5 tiros a puerta,0.23904,Inter,,4.183400267737617
+Feyenoord vs Inter,tiros a puerta por equipo,Feyenoord más de 7.5 tiros a puerta,0.08099,Feyenoord,,12.347203358439312
+Feyenoord vs Inter,tiros a puerta por equipo,Inter más de 7.5 tiros a puerta,0.14082,Inter,,7.101264024996449
+Feyenoord vs Inter,tiros a puerta por equipo,Feyenoord más de 8.5 tiros a puerta,0.04009,Feyenoord,,24.943876278373658
+Feyenoord vs Inter,tiros a puerta por equipo,Inter más de 8.5 tiros a puerta,0.07828,Inter,,12.774655084312723
+Feyenoord vs Inter,tarjetas,Más de 2.5 tarjetas,0.70337,,,1.4217268294069976
+Feyenoord vs Inter,tarjetas,Más de 3.5 tarjetas,0.5161,,,1.937608990505716
+Bodo/Glimt vs Lille,moneyline,Gana Bodo/Glimt,0.5043916788668057,Bodo/Glimt,1.92,1.982586235852771
+Bodo/Glimt vs Lille,moneyline,Gana Lille,0.2557112347827828,Lille,4.0,3.9106611833049216
+Bodo/Glimt vs Lille,doble oportunidad,Bodo/Glimt o empate,0.7442887652172174,Bodo/Glimt,,1.3435645501220945
+Bodo/Glimt vs Lille,doble oportunidad,Lille o empate,0.49560832113319453,Lille,,2.01772237744824
+Bodo/Glimt vs Lille,empate no válido,Bodo/Glimt (DNB),0.6635834040485378,Bodo/Glimt,,1.5069695744332616
+Bodo/Glimt vs Lille,empate no válido,Lille (DNB),0.3364165959514622,Lille,,2.9725049597264186
+Bodo/Glimt vs Lille,goles por equipo,Bodo/Glimt más de 0.5 goles,0.82577,Bodo/Glimt,,1.2109909538975743
+Bodo/Glimt vs Lille,goles por equipo,Lille más de 0.5 goles,0.69167,Lille,,1.445776164934145
+Bodo/Glimt vs Lille,goles por equipo,Bodo/Glimt más de 1.5 goles,0.52403,Bodo/Glimt,,1.908287693452665
+Bodo/Glimt vs Lille,goles por equipo,Lille más de 1.5 goles,0.33355,Lille,,2.99805126667666
+Bodo/Glimt vs Lille,goles por equipo,Bodo/Glimt más de 2.5 goles,0.26174,Bodo/Glimt,,3.8205853136700547
+Bodo/Glimt vs Lille,goles por equipo,Lille más de 2.5 goles,0.1191,Lille,,8.39630562552477
+Bodo/Glimt vs Lille,goles totales,Más de 1.5 goles,0.79424,,,1.259065269943594
+Bodo/Glimt vs Lille,goles totales,Más de 2.5 goles,0.56489,,,1.7702561560657828
+Bodo/Glimt vs Lille,goles totales,Más de 3.5 goles,0.34308,,,2.9147720648245308
+Bodo/Glimt vs Lille,goles totales,Menos de 2.5 goles,0.43511,,,2.298269403139436
+Bodo/Glimt vs Lille,goles totales,Menos de 3.5 goles,0.65692,,,1.5222553735614688
+Bodo/Glimt vs Lille,goles totales,Menos de 4.5 goles,0.8209,,,1.2181751735899622
+Bodo/Glimt vs Lille,ambos anotan,Ambos anotan: sí,0.57488,,,1.7394934595045923
+Bodo/Glimt vs Lille,ambos anotan,Ambos anotan: no,0.42512000000000005,,,2.3522770041400074
+Bodo/Glimt vs Lille,córners totales,Más de 6.5 córners,0.75528,,,1.3240122868340218
+Bodo/Glimt vs Lille,córners totales,Más de 7.5 córners,0.64595,,,1.5481074386562428
+Bodo/Glimt vs Lille,córners totales,Más de 8.5 córners,0.53012,,,1.8863653512412282
+Bodo/Glimt vs Lille,córners totales,Más de 9.5 córners,0.41714,,,2.397276693675984
+Bodo/Glimt vs Lille,córners totales,Más de 10.5 córners,0.31458,,,3.1788416301099875
+Bodo/Glimt vs Lille,córners por equipo,Bodo/Glimt más de 2.5 córners,0.81354,Bodo/Glimt,,1.2291958600683432
+Bodo/Glimt vs Lille,córners por equipo,Lille más de 2.5 córners,0.7489,Lille,,1.3352917612498332
+Bodo/Glimt vs Lille,córners por equipo,Bodo/Glimt más de 3.5 córners,0.66597,Bodo/Glimt,,1.50156913975104
+Bodo/Glimt vs Lille,córners por equipo,Lille más de 3.5 córners,0.57502,Lille,,1.7390699453932037
+Bodo/Glimt vs Lille,córners por equipo,Bodo/Glimt más de 4.5 córners,0.5053,Bodo/Glimt,,1.9790223629527015
+Bodo/Glimt vs Lille,córners por equipo,Lille más de 4.5 córners,0.40688,Lille,,2.457727093983484
+Bodo/Glimt vs Lille,córners por equipo,Bodo/Glimt más de 5.5 córners,0.35908,Bodo/Glimt,,2.7848947309791687
+Bodo/Glimt vs Lille,córners por equipo,Lille más de 5.5 córners,0.26626,Lille,,3.755727484413731
+Bodo/Glimt vs Lille,córners por equipo,Bodo/Glimt más de 6.5 córners,0.23899,Bodo/Glimt,,4.184275492698439
+Bodo/Glimt vs Lille,córners por equipo,Lille más de 6.5 córners,0.16122,Lille,,6.202704379109291
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 6.5 tiros,0.93008,Bodo/Glimt,,1.0751763289179426
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 6.5 tiros,0.89043,Lille,,1.1230529070224498
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 7.5 tiros,0.88134,Bodo/Glimt,,1.134635895341185
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 7.5 tiros,0.8247,Lille,,1.2125621438098704
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 8.5 tiros,0.81805,Bodo/Glimt,,1.2224191675325469
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 8.5 tiros,0.74147,Lille,,1.3486722321874116
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 9.5 tiros,0.74234,Bodo/Glimt,,1.3470916291726163
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 9.5 tiros,0.65149,Lille,,1.5349429768684093
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 10.5 tiros,0.65728,Bodo/Glimt,,1.5214216163583252
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 10.5 tiros,0.55347,Lille,,1.8067826621135743
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 11.5 tiros,0.5664,Bodo/Glimt,,1.7655367231638417
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 11.5 tiros,0.45604,Lille,,2.1927901061310413
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 12.5 tiros,0.47494,Bodo/Glimt,,2.105529119467722
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 12.5 tiros,0.36572,Lille,,2.7343322760581867
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 13.5 tiros,0.3881,Bodo/Glimt,,2.576655501159495
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 13.5 tiros,0.28524,Lille,,3.5058196606366567
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 14.5 tiros,0.30962,Bodo/Glimt,,3.229765519023319
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 14.5 tiros,0.21644,Lille,,4.620218074293107
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 15.5 tiros,0.24088,Bodo/Glimt,,4.151444702756559
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 15.5 tiros,0.15957,Lille,,6.266842138246538
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 16.5 tiros,0.18349,Bodo/Glimt,,5.449888277290316
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 16.5 tiros,0.11503,Lille,,8.69338433452143
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 17.5 tiros,0.13599,Bodo/Glimt,,7.353481873667182
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 17.5 tiros,0.08092,Lille,,12.357884330202669
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 18.5 tiros,0.09924,Bodo/Glimt,,10.076582023377672
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 18.5 tiros,0.0554,Lille,,18.050541516245488
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 19.5 tiros,0.07141,Bodo/Glimt,,14.003640946646128
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 19.5 tiros,0.03764,Lille,,26.56748140276302
+Bodo/Glimt vs Lille,tiros por equipo,Bodo/Glimt más de 20.5 tiros,0.05044,Bodo/Glimt,,19.825535289452816
+Bodo/Glimt vs Lille,tiros por equipo,Lille más de 20.5 tiros,0.025,Lille,,40.0
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Bodo/Glimt más de 1.5 tiros a puerta,0.92806,Bodo/Glimt,,1.077516539878887
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Lille más de 1.5 tiros a puerta,0.89695,Lille,,1.1148893472322872
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Bodo/Glimt más de 2.5 tiros a puerta,0.81029,Bodo/Glimt,,1.2341260536351184
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Lille más de 2.5 tiros a puerta,0.75143,Lille,,1.330795949057131
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Bodo/Glimt más de 3.5 tiros a puerta,0.6451,Bodo/Glimt,,1.550147263990079
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Lille más de 3.5 tiros a puerta,0.56642,Lille,,1.765474382966703
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Bodo/Glimt más de 4.5 tiros a puerta,0.46573,Bodo/Glimt,,2.1471668133897324
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Lille más de 4.5 tiros a puerta,0.38474,Lille,,2.599157872849197
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Bodo/Glimt más de 5.5 tiros a puerta,0.30666,Bodo/Glimt,,3.2609404552272876
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Lille más de 5.5 tiros a puerta,0.23569,Lille,,4.242861385718529
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Bodo/Glimt más de 6.5 tiros a puerta,0.18519,Bodo/Glimt,,5.399859603650305
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Lille más de 6.5 tiros a puerta,0.12999,Lille,,7.692899453804139
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Bodo/Glimt más de 7.5 tiros a puerta,0.10319,Bodo/Glimt,,9.690861517588914
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Lille más de 7.5 tiros a puerta,0.06623,Lille,,15.098897780462027
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Bodo/Glimt más de 8.5 tiros a puerta,0.05246,Bodo/Glimt,,19.062142584826535
+Bodo/Glimt vs Lille,tiros a puerta por equipo,Lille más de 8.5 tiros a puerta,0.03091,Lille,,32.35198964736331
+Bodo/Glimt vs Lille,tarjetas,Más de 2.5 tarjetas,0.72623,,,1.3769742368120292
+Bodo/Glimt vs Lille,tarjetas,Más de 3.5 tarjetas,0.54578,,,1.832240096742277
+LASK vs Slovan Bratislava,moneyline,Gana LASK,0.6508398365515418,LASK,1.43,1.5364763246492017
+LASK vs Slovan Bratislava,moneyline,Gana Slovan Bratislava,0.15345947742713217,Slovan Bratislava,6.67,6.51637824372779
+LASK vs Slovan Bratislava,doble oportunidad,LASK o empate,0.8465405214572223,LASK,,1.1812783613460285
+LASK vs Slovan Bratislava,doble oportunidad,Slovan Bratislava o empate,0.34916016233281266,Slovan Bratislava,,2.8640151651860544
+LASK vs Slovan Bratislava,empate no válido,LASK (DNB),0.8092010340429047,LASK,,1.2357868538598271
+LASK vs Slovan Bratislava,empate no válido,Slovan Bratislava (DNB),0.1907989659570954,Slovan Bratislava,,5.241118551055817
+LASK vs Slovan Bratislava,goles por equipo,LASK más de 0.5 goles,0.89615,LASK,,1.1158846175305472
+LASK vs Slovan Bratislava,goles por equipo,Slovan Bratislava más de 0.5 goles,0.65079,Slovan Bratislava,,1.5365939857711397
+LASK vs Slovan Bratislava,goles por equipo,LASK más de 1.5 goles,0.66514,LASK,,1.503442884204829
+LASK vs Slovan Bratislava,goles por equipo,Slovan Bratislava más de 1.5 goles,0.28609,Slovan Bratislava,,3.4954035443391938
+LASK vs Slovan Bratislava,goles por equipo,LASK más de 2.5 goles,0.40366,LASK,,2.4773324084625674
+LASK vs Slovan Bratislava,goles por equipo,Slovan Bratislava más de 2.5 goles,0.09302,Slovan Bratislava,,10.75037626316921
+LASK vs Slovan Bratislava,goles totales,Más de 1.5 goles,0.8485,,,1.1785503830288744
+LASK vs Slovan Bratislava,goles totales,Más de 2.5 goles,0.64882,,,1.5412595172775192
+LASK vs Slovan Bratislava,goles totales,Más de 3.5 goles,0.43405,,,2.3038820412394885
+LASK vs Slovan Bratislava,goles totales,Menos de 2.5 goles,0.35118,,,2.847542570761433
+LASK vs Slovan Bratislava,goles totales,Menos de 3.5 goles,0.56595,,,1.7669405424507467
+LASK vs Slovan Bratislava,goles totales,Menos de 4.5 goles,0.74881,,,1.335452250904769
+LASK vs Slovan Bratislava,ambos anotan,Ambos anotan: sí,0.58629,,,1.7056405533097956
+LASK vs Slovan Bratislava,ambos anotan,Ambos anotan: no,0.41371,,,2.4171521113823693
+LASK vs Slovan Bratislava,córners totales,Más de 6.5 córners,0.7921,,,1.2624668602449185
+LASK vs Slovan Bratislava,córners totales,Más de 7.5 córners,0.69207,,,1.4449405406967504
+LASK vs Slovan Bratislava,córners totales,Más de 8.5 córners,0.58274,,,1.7160311631259222
+LASK vs Slovan Bratislava,córners totales,Más de 9.5 córners,0.47169,,,2.1200364646271916
+LASK vs Slovan Bratislava,córners totales,Más de 10.5 córners,0.36674,,,2.7267273817963678
+LASK vs Slovan Bratislava,córners por equipo,LASK más de 2.5 córners,0.85957,LASK,,1.163372383866352
+LASK vs Slovan Bratislava,córners por equipo,Slovan Bratislava más de 2.5 córners,0.73544,Slovan Bratislava,,1.3597302295224627
+LASK vs Slovan Bratislava,córners por equipo,LASK más de 3.5 córners,0.73478,LASK,,1.3609515773428782
+LASK vs Slovan Bratislava,córners por equipo,Slovan Bratislava más de 3.5 córners,0.56058,Slovan Bratislava,,1.7838667094794678
+LASK vs Slovan Bratislava,córners por equipo,LASK más de 4.5 córners,0.58959,LASK,,1.6960938957580693
+LASK vs Slovan Bratislava,córners por equipo,Slovan Bratislava más de 4.5 córners,0.39117,Slovan Bratislava,,2.5564332643096352
+LASK vs Slovan Bratislava,córners por equipo,LASK más de 5.5 córners,0.44278,LASK,,2.2584579249288583
+LASK vs Slovan Bratislava,córners por equipo,Slovan Bratislava más de 5.5 córners,0.24986,Slovan Bratislava,,4.002241255102858
+LASK vs Slovan Bratislava,córners por equipo,LASK más de 6.5 córners,0.31446,LASK,,3.180054696940787
+LASK vs Slovan Bratislava,córners por equipo,Slovan Bratislava más de 6.5 córners,0.15171,Slovan Bratislava,,6.591523301034869
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 6.5 tiros,0.96552,LASK,,1.035711326539067
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 6.5 tiros,0.88329,Slovan Bratislava,,1.1321310102005004
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 7.5 tiros,0.93533,LASK,,1.069141372563694
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 7.5 tiros,0.8138,Slovan Bratislava,,1.228803145736053
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 8.5 tiros,0.89568,LASK,,1.1164701679171132
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 8.5 tiros,0.72977,Slovan Bratislava,,1.3702947504008112
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 9.5 tiros,0.84183,LASK,,1.1878882909851158
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 9.5 tiros,0.63603,Slovan Bratislava,,1.5722528811534047
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 10.5 tiros,0.77527,LASK,,1.2898732054639028
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 10.5 tiros,0.53696,Slovan Bratislava,,1.8623361144219308
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 11.5 tiros,0.70032,LASK,,1.4279186657527987
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 11.5 tiros,0.43952,Slovan Bratislava,,2.2752093192573715
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 12.5 tiros,0.61888,LASK,,1.6158221302998965
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 12.5 tiros,0.34984,Slovan Bratislava,,2.8584495769494627
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 13.5 tiros,0.53375,LASK,,1.873536299765808
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 13.5 tiros,0.27107,Slovan Bratislava,,3.6890840004426906
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 14.5 tiros,0.45262,LASK,,2.209358844063453
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 14.5 tiros,0.20459,Slovan Bratislava,,4.887824429346498
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 15.5 tiros,0.37572,LASK,,2.661556478228468
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 15.5 tiros,0.15047,Slovan Bratislava,,6.645843025187745
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 16.5 tiros,0.30548,LASK,,3.2735367290821005
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 16.5 tiros,0.10761,Slovan Bratislava,,9.292816652727442
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 17.5 tiros,0.24256,LASK,,4.12269129287599
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 17.5 tiros,0.07477,Slovan Bratislava,,13.374348000534974
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 18.5 tiros,0.18897,LASK,,5.291845266444409
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 18.5 tiros,0.05073,Slovan Bratislava,,19.712201852946976
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 19.5 tiros,0.14465,LASK,,6.91323885240235
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 19.5 tiros,0.03334,Slovan Bratislava,,29.994001199760046
+LASK vs Slovan Bratislava,tiros por equipo,LASK más de 20.5 tiros,0.10907,LASK,,9.168423947923351
+LASK vs Slovan Bratislava,tiros por equipo,Slovan Bratislava más de 20.5 tiros,0.02178,Slovan Bratislava,,45.91368227731864
+LASK vs Slovan Bratislava,tiros a puerta por equipo,LASK más de 1.5 tiros a puerta,0.95217,LASK,,1.0502326265267756
+LASK vs Slovan Bratislava,tiros a puerta por equipo,Slovan Bratislava más de 1.5 tiros a puerta,0.88395,Slovan Bratislava,,1.131285706205102
+LASK vs Slovan Bratislava,tiros a puerta por equipo,LASK más de 2.5 tiros a puerta,0.86292,LASK,,1.1588559773791314
+LASK vs Slovan Bratislava,tiros a puerta por equipo,Slovan Bratislava más de 2.5 tiros a puerta,0.72536,Slovan Bratislava,,1.378625785816698
+LASK vs Slovan Bratislava,tiros a puerta por equipo,LASK más de 3.5 tiros a puerta,0.72244,LASK,,1.3841979956813024
+LASK vs Slovan Bratislava,tiros a puerta por equipo,Slovan Bratislava más de 3.5 tiros a puerta,0.53036,Slovan Bratislava,,1.8855117278829472
+LASK vs Slovan Bratislava,tiros a puerta por equipo,LASK más de 4.5 tiros a puerta,0.55598,LASK,,1.798625849850714
+LASK vs Slovan Bratislava,tiros a puerta por equipo,Slovan Bratislava más de 4.5 tiros a puerta,0.34418,Slovan Bratislava,,2.9054564472078566
+LASK vs Slovan Bratislava,tiros a puerta por equipo,LASK más de 5.5 tiros a puerta,0.39427,LASK,,2.5363329697922743
+LASK vs Slovan Bratislava,tiros a puerta por equipo,Slovan Bratislava más de 5.5 tiros a puerta,0.20302,Slovan Bratislava,,4.925623091321052
+LASK vs Slovan Bratislava,tiros a puerta por equipo,LASK más de 6.5 tiros a puerta,0.2567,LASK,,3.8955979742890534
+LASK vs Slovan Bratislava,tiros a puerta por equipo,Slovan Bratislava más de 6.5 tiros a puerta,0.10909,Slovan Bratislava,,9.166743056192134
+LASK vs Slovan Bratislava,tiros a puerta por equipo,LASK más de 7.5 tiros a puerta,0.15514,LASK,,6.445790898543251
+LASK vs Slovan Bratislava,tiros a puerta por equipo,Slovan Bratislava más de 7.5 tiros a puerta,0.05359,Slovan Bratislava,,18.66019779809666
+LASK vs Slovan Bratislava,tiros a puerta por equipo,LASK más de 8.5 tiros a puerta,0.08679,LASK,,11.522064754003917
+LASK vs Slovan Bratislava,tiros a puerta por equipo,Slovan Bratislava más de 8.5 tiros a puerta,0.02444,Slovan Bratislava,,40.91653027823241
+LASK vs Slovan Bratislava,tarjetas,Más de 2.5 tarjetas,0.71699,,,1.3947195916261035
+LASK vs Slovan Bratislava,tarjetas,Más de 3.5 tarjetas,0.53656,,,1.8637244669748023
+Man United vs Roma,moneyline,Gana Man United,0.4245448425087562,Man United,2.375,2.355463781141977
+Man United vs Roma,moneyline,Gana Roma,0.3251635038906416,Roma,,3.075375889467344
+Man United vs Roma,doble oportunidad,Man United o empate,0.6748364983406501,Man United,,1.4818404198037478
+Man United vs Roma,doble oportunidad,Roma o empate,0.5754551597225355,Roma,,1.73775485909652
+Man United vs Roma,empate no válido,Man United (DNB),0.5662800001463305,Man United,,1.7659108563636245
+Man United vs Roma,empate no válido,Roma (DNB),0.4337199998536695,Roma,,2.3056349726491394
+Man United vs Roma,goles por equipo,Man United más de 0.5 goles,0.78175,Man United,,1.2791813239526704
+Man United vs Roma,goles por equipo,Roma más de 0.5 goles,0.72869,Roma,,1.3723256803304562
+Man United vs Roma,goles por equipo,Man United más de 1.5 goles,0.45465,Man United,,2.1994941163532387
+Man United vs Roma,goles por equipo,Roma más de 1.5 goles,0.37944,Roma,,2.635462787265444
+Man United vs Roma,goles por equipo,Man United más de 2.5 goles,0.20477,Man United,,4.883527860526444
+Man United vs Roma,goles por equipo,Roma más de 2.5 goles,0.15033,Roma,,6.652032195835829
+Man United vs Roma,goles totales,Más de 1.5 goles,0.77969,,,1.2825610178404239
+Man United vs Roma,goles totales,Más de 2.5 goles,0.54393,,,1.838471862188149
+Man United vs Roma,goles totales,Más de 3.5 goles,0.32351,,,3.091094556582486
+Man United vs Roma,goles totales,Menos de 2.5 goles,0.45607,,,2.1926458657662202
+Man United vs Roma,goles totales,Menos de 3.5 goles,0.67649,,,1.4782184511227068
+Man United vs Roma,goles totales,Menos de 4.5 goles,0.83526,,,1.1972319996168859
+Man United vs Roma,ambos anotan,Ambos anotan: sí,0.5741,,,1.7418568193694477
+Man United vs Roma,ambos anotan,Ambos anotan: no,0.42589999999999995,,,2.3479690068091106
+Man United vs Roma,córners totales,Más de 6.5 córners,0.76153,,,1.3131459036413535
+Man United vs Roma,córners totales,Más de 7.5 córners,0.65577,,,1.5249248974488008
+Man United vs Roma,córners totales,Más de 8.5 córners,0.53955,,,1.853396348809193
+Man United vs Roma,córners totales,Más de 9.5 córners,0.4305,,,2.3228803716608595
+Man United vs Roma,córners totales,Más de 10.5 córners,0.32591,,,3.068331748028597
+Man United vs Roma,córners por equipo,Man United más de 2.5 córners,0.80275,Man United,,1.2457178449081283
+Man United vs Roma,córners por equipo,Roma más de 2.5 córners,0.77253,Roma,,1.2944481120474285
+Man United vs Roma,córners por equipo,Man United más de 3.5 córners,0.65223,Man United,,1.5332014780062249
+Man United vs Roma,córners por equipo,Roma más de 3.5 córners,0.60783,Roma,,1.6451968478028396
+Man United vs Roma,córners por equipo,Man United más de 4.5 córners,0.48862,Man United,,2.046580164545045
+Man United vs Roma,córners por equipo,Roma más de 4.5 córners,0.44138,Roma,,2.265621459966469
+Man United vs Roma,córners por equipo,Man United más de 5.5 córners,0.34158,Man United,,2.927571871889455
+Man United vs Roma,córners por equipo,Roma más de 5.5 córners,0.29728,Roma,,3.3638320775026913
+Man United vs Roma,córners por equipo,Man United más de 6.5 córners,0.22252,Man United,,4.493978069387022
+Man United vs Roma,córners por equipo,Roma más de 6.5 córners,0.18843,Roma,,5.307010560951016
+Man United vs Roma,tiros por equipo,Man United más de 6.5 tiros,0.94576,Man United,,1.0573507020808661
+Man United vs Roma,tiros por equipo,Roma más de 6.5 tiros,0.89892,Roma,,1.1124460463667512
+Man United vs Roma,tiros por equipo,Man United más de 7.5 tiros,0.9062,Man United,,1.1035091591260207
+Man United vs Roma,tiros por equipo,Roma más de 7.5 tiros,0.83814,Roma,,1.193118094829026
+Man United vs Roma,tiros por equipo,Man United más de 8.5 tiros,0.85127,Man United,,1.1747154251882481
+Man United vs Roma,tiros por equipo,Roma más de 8.5 tiros,0.76018,Roma,,1.3154779131258387
+Man United vs Roma,tiros por equipo,Man United más de 9.5 tiros,0.78477,Man United,,1.2742587000012744
+Man United vs Roma,tiros por equipo,Roma más de 9.5 tiros,0.67115,Roma,,1.4899798852715487
+Man United vs Roma,tiros por equipo,Man United más de 10.5 tiros,0.70637,Man United,,1.415688661749508
+Man United vs Roma,tiros por equipo,Roma más de 10.5 tiros,0.57404,Roma,,1.7420388823078532
+Man United vs Roma,tiros por equipo,Man United más de 11.5 tiros,0.6202,Man United,,1.6123831022250887
+Man United vs Roma,tiros por equipo,Roma más de 11.5 tiros,0.47741,Roma,,2.094635638130747
+Man United vs Roma,tiros por equipo,Man United más de 12.5 tiros,0.53216,Man United,,1.87913409500902
+Man United vs Roma,tiros por equipo,Roma más de 12.5 tiros,0.38679,Roma,,2.58538224876548
+Man United vs Roma,tiros por equipo,Man United más de 13.5 tiros,0.44616,Man United,,2.241348395194549
+Man United vs Roma,tiros por equipo,Roma más de 13.5 tiros,0.30373,Roma,,3.2923978533565994
+Man United vs Roma,tiros por equipo,Man United más de 14.5 tiros,0.36516,Man United,,2.738525577828897
+Man United vs Roma,tiros por equipo,Roma más de 14.5 tiros,0.23275,Roma,,4.296455424274973
+Man United vs Roma,tiros por equipo,Man United más de 15.5 tiros,0.29129,Man United,,3.4330049091970203
+Man United vs Roma,tiros por equipo,Roma más de 15.5 tiros,0.17254,Roma,,5.79575750550597
+Man United vs Roma,tiros por equipo,Man United más de 16.5 tiros,0.22619,Man United,,4.421061939077767
+Man United vs Roma,tiros por equipo,Roma más de 16.5 tiros,0.12512,Roma,,7.9923273657289
+Man United vs Roma,tiros por equipo,Man United más de 17.5 tiros,0.17285,Man United,,5.7853630315302285
+Man United vs Roma,tiros por equipo,Roma más de 17.5 tiros,0.08844,Roma,,11.307100859339664
+Man United vs Roma,tiros por equipo,Man United más de 18.5 tiros,0.1295,Man United,,7.722007722007722
+Man United vs Roma,tiros por equipo,Roma más de 18.5 tiros,0.06153,Roma,,16.25223468226881
+Man United vs Roma,tiros por equipo,Man United más de 19.5 tiros,0.09529,Man United,,10.4942806170637
+Man United vs Roma,tiros por equipo,Roma más de 19.5 tiros,0.04146,Roma,,24.1196333815726
+Man United vs Roma,tiros por equipo,Man United más de 20.5 tiros,0.06873,Man United,,14.549687181725593
+Man United vs Roma,tiros por equipo,Roma más de 20.5 tiros,0.02703,Roma,,36.995930447650764
+Man United vs Roma,tiros a puerta por equipo,Man United más de 1.5 tiros a puerta,0.95776,Man United,,1.0441029067824925
+Man United vs Roma,tiros a puerta por equipo,Roma más de 1.5 tiros a puerta,0.91035,Roma,,1.0984786071291261
+Man United vs Roma,tiros a puerta por equipo,Man United más de 2.5 tiros a puerta,0.87532,Man United,,1.1424393364712333
+Man United vs Roma,tiros a puerta por equipo,Roma más de 2.5 tiros a puerta,0.77401,Roma,,1.2919729719254274
+Man United vs Roma,tiros a puerta por equipo,Man United más de 3.5 tiros a puerta,0.74713,Man United,,1.3384551550600299
+Man United vs Roma,tiros a puerta por equipo,Roma más de 3.5 tiros a puerta,0.59345,Roma,,1.6850619260257813
+Man United vs Roma,tiros a puerta por equipo,Man United más de 4.5 tiros a puerta,0.58727,Man United,,1.7027942854223783
+Man United vs Roma,tiros a puerta por equipo,Roma más de 4.5 tiros a puerta,0.4108,Roma,,2.4342745861733204
+Man United vs Roma,tiros a puerta por equipo,Man United más de 5.5 tiros a puerta,0.42417,Man United,,2.3575453238088504
+Man United vs Roma,tiros a puerta por equipo,Roma más de 5.5 tiros a puerta,0.25867,Roma,,3.865929562763366
+Man United vs Roma,tiros a puerta por equipo,Man United más de 6.5 tiros a puerta,0.2821,Man United,,3.544842254519674
+Man United vs Roma,tiros a puerta por equipo,Roma más de 6.5 tiros a puerta,0.14898,Roma,,6.7123103772318435
+Man United vs Roma,tiros a puerta por equipo,Man United más de 7.5 tiros a puerta,0.1766,Man United,,5.662514156285391
+Man United vs Roma,tiros a puerta por equipo,Roma más de 7.5 tiros a puerta,0.078,Roma,,12.820512820512821
+Man United vs Roma,tiros a puerta por equipo,Man United más de 8.5 tiros a puerta,0.10164,Man United,,9.838646202282566
+Man United vs Roma,tiros a puerta por equipo,Roma más de 8.5 tiros a puerta,0.03805,Roma,,26.281208935611037
+Man United vs Roma,tarjetas,Más de 2.5 tarjetas,0.70694,,,1.4145472034401787
+Man United vs Roma,tarjetas,Más de 3.5 tarjetas,0.52426,,,1.907450501659482
+Villarreal vs Paris SG,moneyline,Gana Villarreal,0.23789699994423225,Villarreal,,4.20349983494714
+Villarreal vs Paris SG,moneyline,Gana Paris SG,0.5694869291308684,Paris SG,1.6,1.7559665531325996
+Villarreal vs Paris SG,doble oportunidad,Villarreal o empate,0.43051307198477756,Villarreal,,2.32280984033711
+Villarreal vs Paris SG,doble oportunidad,Paris SG o empate,0.7621030011714137,Paris SG,,1.312158590719259
+Villarreal vs Paris SG,empate no válido,Villarreal (DNB),0.29465164140281486,Villarreal,,3.3938382126061586
+Villarreal vs Paris SG,empate no válido,Paris SG (DNB),0.7053483585971853,Paris SG,,1.4177391749926596
+Villarreal vs Paris SG,goles por equipo,Villarreal más de 0.5 goles,0.75157,Villarreal,,1.330548052742925
+Villarreal vs Paris SG,goles por equipo,Paris SG más de 0.5 goles,0.89134,Paris SG,,1.1219063432584648
+Villarreal vs Paris SG,goles por equipo,Villarreal más de 1.5 goles,0.40844,Villarreal,,2.4483400254627363
+Villarreal vs Paris SG,goles por equipo,Paris SG más de 1.5 goles,0.65493,Paris SG,,1.526880735345762
+Villarreal vs Paris SG,goles por equipo,Villarreal más de 2.5 goles,0.16844,Villarreal,,5.936832106388031
+Villarreal vs Paris SG,goles por equipo,Paris SG más de 2.5 goles,0.39254,Paris SG,,2.547511081673205
+Villarreal vs Paris SG,goles totales,Más de 1.5 goles,0.8791,,,1.1375270162666364
+Villarreal vs Paris SG,goles totales,Más de 2.5 goles,0.70469,,,1.4190637017695724
+Villarreal vs Paris SG,goles totales,Más de 3.5 goles,0.49692,,,2.0123963615873786
+Villarreal vs Paris SG,goles totales,Menos de 2.5 goles,0.29531,,,3.3862720530967456
+Villarreal vs Paris SG,goles totales,Menos de 3.5 goles,0.50308,,,1.9877554265723147
+Villarreal vs Paris SG,goles totales,Menos de 4.5 goles,0.69252,,,1.4440016172818113
+Villarreal vs Paris SG,ambos anotan,Ambos anotan: sí,0.67291,,,1.4860828342571815
+Villarreal vs Paris SG,ambos anotan,Ambos anotan: no,0.32709,,,3.057262527133205
+Villarreal vs Paris SG,córners totales,Más de 6.5 córners,0.78984,,,1.266079205915122
+Villarreal vs Paris SG,córners totales,Más de 7.5 córners,0.68934,,,1.4506629529695072
+Villarreal vs Paris SG,córners totales,Más de 8.5 córners,0.57875,,,1.7278617710583153
+Villarreal vs Paris SG,córners totales,Más de 9.5 córners,0.46963,,,2.1293358601452206
+Villarreal vs Paris SG,córners totales,Más de 10.5 córners,0.36489,,,2.7405519471621584
+Villarreal vs Paris SG,córners por equipo,Villarreal más de 2.5 córners,0.68039,Villarreal,,1.4697452931406987
+Villarreal vs Paris SG,córners por equipo,Paris SG más de 2.5 córners,0.88444,Paris SG,,1.1306589480349147
+Villarreal vs Paris SG,córners por equipo,Villarreal más de 3.5 córners,0.49286,Villarreal,,2.0289737450797385
+Villarreal vs Paris SG,córners por equipo,Paris SG más de 3.5 córners,0.77359,Paris SG,,1.292674414095322
+Villarreal vs Paris SG,córners por equipo,Villarreal más de 4.5 córners,0.32489,Villarreal,,3.077964849641417
+Villarreal vs Paris SG,córners por equipo,Paris SG más de 4.5 córners,0.63691,Paris SG,,1.5700805451319653
+Villarreal vs Paris SG,córners por equipo,Villarreal más de 5.5 córners,0.19635,Villarreal,,5.092946269416858
+Villarreal vs Paris SG,córners por equipo,Paris SG más de 5.5 córners,0.49463,Paris SG,,2.021713199765481
+Villarreal vs Paris SG,córners por equipo,Villarreal más de 6.5 córners,0.10976,Villarreal,,9.110787172011662
+Villarreal vs Paris SG,córners por equipo,Paris SG más de 6.5 córners,0.36204,Paris SG,,2.762125731963319
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 6.5 tiros,0.84144,Villarreal,,1.1884388667046968
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 6.5 tiros,0.9776,Paris SG,,1.0229132569558101
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 7.5 tiros,0.75793,Villarreal,,1.3193830564827886
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 7.5 tiros,0.9576,Paris SG,,1.0442773600668338
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 8.5 tiros,0.65925,Villarreal,,1.5168752370117558
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 8.5 tiros,0.92784,Paris SG,,1.0777720296602862
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 9.5 tiros,0.55478,Villarreal,,1.8025163127726305
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 9.5 tiros,0.88774,Paris SG,,1.1264559443080182
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 10.5 tiros,0.45075,Villarreal,,2.2185246810870773
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 10.5 tiros,0.83673,Paris SG,,1.1951286555997753
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 11.5 tiros,0.35603,Villarreal,,2.8087520714546526
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 11.5 tiros,0.77471,Paris SG,,1.2908055917698236
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 12.5 tiros,0.27063,Villarreal,,3.6950818460628905
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 12.5 tiros,0.7052,Paris SG,,1.4180374361883152
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 13.5 tiros,0.20122,Villarreal,,4.969684921975946
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 13.5 tiros,0.62954,Paris SG,,1.5884614162721988
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 14.5 tiros,0.14478,Villarreal,,6.9070313579223654
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 14.5 tiros,0.55088,Paris SG,,1.8152773743828057
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 15.5 tiros,0.10042,Villarreal,,9.958175662218682
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 15.5 tiros,0.47137,Paris SG,,2.121475698495874
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 16.5 tiros,0.06873,Villarreal,,14.549687181725593
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 16.5 tiros,0.39475,Paris SG,,2.53324889170361
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 17.5 tiros,0.04525,Villarreal,,22.099447513812155
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 17.5 tiros,0.32409,Paris SG,,3.085562652349656
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 18.5 tiros,0.02967,Villarreal,,33.70407819346141
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 18.5 tiros,0.26144,Paris SG,,3.824969400244798
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 19.5 tiros,0.01835,Villarreal,,54.49591280653951
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 19.5 tiros,0.20742,Paris SG,,4.821135859608524
+Villarreal vs Paris SG,tiros por equipo,Villarreal más de 20.5 tiros,0.01145,Villarreal,,87.33624454148472
+Villarreal vs Paris SG,tiros por equipo,Paris SG más de 20.5 tiros,0.16269,Paris SG,,6.146659290675518
+Villarreal vs Paris SG,tiros a puerta por equipo,Villarreal más de 1.5 tiros a puerta,0.89048,Villarreal,,1.1229898481717724
+Villarreal vs Paris SG,tiros a puerta por equipo,Paris SG más de 1.5 tiros a puerta,0.96249,Paris SG,,1.0389718334735947
+Villarreal vs Paris SG,tiros a puerta por equipo,Villarreal más de 2.5 tiros a puerta,0.7379,Villarreal,,1.355197181189863
+Villarreal vs Paris SG,tiros a puerta por equipo,Paris SG más de 2.5 tiros a puerta,0.88937,Paris SG,,1.1243914231422243
+Villarreal vs Paris SG,tiros a puerta por equipo,Villarreal más de 3.5 tiros a puerta,0.54609,Villarreal,,1.8311999853504002
+Villarreal vs Paris SG,tiros a puerta por equipo,Paris SG más de 3.5 tiros a puerta,0.76939,Paris SG,,1.2997309556921717
+Villarreal vs Paris SG,tiros a puerta por equipo,Villarreal más de 4.5 tiros a puerta,0.36192,Villarreal,,2.763041556145004
+Villarreal vs Paris SG,tiros a puerta por equipo,Paris SG más de 4.5 tiros a puerta,0.61655,Paris SG,,1.6219284729543426
+Villarreal vs Paris SG,tiros a puerta por equipo,Villarreal más de 5.5 tiros a puerta,0.21441,Villarreal,,4.6639615689566725
+Villarreal vs Paris SG,tiros a puerta por equipo,Paris SG más de 5.5 tiros a puerta,0.45529,Paris SG,,2.196402293043994
+Villarreal vs Paris SG,tiros a puerta por equipo,Villarreal más de 6.5 tiros a puerta,0.11648,Villarreal,,8.585164835164836
+Villarreal vs Paris SG,tiros a puerta por equipo,Paris SG más de 6.5 tiros a puerta,0.31147,Paris SG,,3.2105820785308374
+Villarreal vs Paris SG,tiros a puerta por equipo,Villarreal más de 7.5 tiros a puerta,0.05839,Villarreal,,17.12622024319233
+Villarreal vs Paris SG,tiros a puerta por equipo,Paris SG más de 7.5 tiros a puerta,0.19723,Paris SG,,5.070222582771384
+Villarreal vs Paris SG,tiros a puerta por equipo,Villarreal más de 8.5 tiros a puerta,0.02643,Villarreal,,37.835792659856224
+Villarreal vs Paris SG,tiros a puerta por equipo,Paris SG más de 8.5 tiros a puerta,0.11713,Paris SG,,8.53752241099633
+Villarreal vs Paris SG,tarjetas,Más de 2.5 tarjetas,0.62849,,,1.5911152126525483
+Villarreal vs Paris SG,tarjetas,Más de 3.5 tarjetas,0.4322,,,2.3137436372049978
+Fenerbahce vs Liverpool,moneyline,Gana Fenerbahce,0.19824798214991923,Fenerbahce,5.0,5.04418753298472
+Fenerbahce vs Liverpool,moneyline,Gana Liverpool,0.5939113637965461,Liverpool,1.62,1.6837529317633433
+Fenerbahce vs Liverpool,doble oportunidad,Fenerbahce o empate,0.40608863508780835,Fenerbahce,,2.4625165877488064
+Fenerbahce vs Liverpool,doble oportunidad,Liverpool o empate,0.8017520167344352,Liverpool,,1.2472684559909633
+Fenerbahce vs Liverpool,empate no válido,Fenerbahce (DNB),0.2502627573156436,Fenerbahce,,3.9958002969604904
+Fenerbahce vs Liverpool,empate no válido,Liverpool (DNB),0.7497372426843564,Liverpool,,1.3338006211610935
+Fenerbahce vs Liverpool,goles por equipo,Fenerbahce más de 0.5 goles,0.72933,Fenerbahce,,1.3711214402259608
+Fenerbahce vs Liverpool,goles por equipo,Liverpool más de 0.5 goles,0.9007,Liverpool,,1.1102475852115021
+Fenerbahce vs Liverpool,goles por equipo,Fenerbahce más de 1.5 goles,0.38153,Fenerbahce,,2.6210258695253326
+Fenerbahce vs Liverpool,goles por equipo,Liverpool más de 1.5 goles,0.67152,Liverpool,,1.4891589230402669
+Fenerbahce vs Liverpool,goles por equipo,Fenerbahce más de 2.5 goles,0.14982,Fenerbahce,,6.674676278200507
+Fenerbahce vs Liverpool,goles por equipo,Liverpool más de 2.5 goles,0.40979,Liverpool,,2.44027428682984
+Fenerbahce vs Liverpool,goles totales,Más de 1.5 goles,0.87837,,,1.1384723977367168
+Fenerbahce vs Liverpool,goles totales,Más de 2.5 goles,0.70036,,,1.427837112342224
+Fenerbahce vs Liverpool,goles totales,Más de 3.5 goles,0.4952,,,2.0193861066235868
+Fenerbahce vs Liverpool,goles totales,Menos de 2.5 goles,0.29964,,,3.3373381391002535
+Fenerbahce vs Liverpool,goles totales,Menos de 3.5 goles,0.5048,,,1.9809825673534072
+Fenerbahce vs Liverpool,goles totales,Menos de 4.5 goles,0.69458,,,1.4397189668576695
+Fenerbahce vs Liverpool,ambos anotan,Ambos anotan: sí,0.66065,,,1.513660788617271
+Fenerbahce vs Liverpool,ambos anotan,Ambos anotan: no,0.33935000000000004,,,2.9468100780904667
+Fenerbahce vs Liverpool,córners totales,Más de 6.5 córners,0.82801,,,1.207714882670499
+Fenerbahce vs Liverpool,córners totales,Más de 7.5 córners,0.73966,,,1.3519725279182326
+Fenerbahce vs Liverpool,córners totales,Más de 8.5 córners,0.63777,,,1.5679633723756214
+Fenerbahce vs Liverpool,córners totales,Más de 9.5 córners,0.53063,,,1.8845523245952922
+Fenerbahce vs Liverpool,córners totales,Más de 10.5 córners,0.42549,,,2.350231497802534
+Fenerbahce vs Liverpool,córners por equipo,Fenerbahce más de 2.5 córners,0.81438,Fenerbahce,,1.2279279943024142
+Fenerbahce vs Liverpool,córners por equipo,Liverpool más de 2.5 córners,0.84777,Liverpool,,1.17956521226276
+Fenerbahce vs Liverpool,córners por equipo,Fenerbahce más de 3.5 córners,0.6651,Fenerbahce,,1.5035333032626672
+Fenerbahce vs Liverpool,córners por equipo,Liverpool más de 3.5 córners,0.71477,Liverpool,,1.3990514431215635
+Fenerbahce vs Liverpool,córners por equipo,Fenerbahce más de 4.5 córners,0.50755,Fenerbahce,,1.970249236528421
+Fenerbahce vs Liverpool,córners por equipo,Liverpool más de 4.5 córners,0.56503,Liverpool,,1.76981753181247
+Fenerbahce vs Liverpool,córners por equipo,Fenerbahce más de 5.5 córners,0.36097,Fenerbahce,,2.7703133224367673
+Fenerbahce vs Liverpool,córners por equipo,Liverpool más de 5.5 córners,0.41813,Liverpool,,2.391600698347404
+Fenerbahce vs Liverpool,córners por equipo,Fenerbahce más de 6.5 córners,0.24027,Fenerbahce,,4.161984434178216
+Fenerbahce vs Liverpool,córners por equipo,Liverpool más de 6.5 córners,0.29067,Liverpool,,3.440327519179826
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 6.5 tiros,0.95995,Fenerbahce,,1.0417209229647377
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 6.5 tiros,0.9568,Liverpool,,1.0451505016722409
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 7.5 tiros,0.92878,Fenerbahce,,1.0766812377527508
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 7.5 tiros,0.92392,Liverpool,,1.082344791756862
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 8.5 tiros,0.88449,Fenerbahce,,1.1305950321654286
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 8.5 tiros,0.87704,Liverpool,,1.1401988506795584
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 9.5 tiros,0.82835,Fenerbahce,,1.2072191706404298
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 9.5 tiros,0.81779,Liverpool,,1.2228078112962986
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 10.5 tiros,0.75999,Fenerbahce,,1.315806786931407
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 10.5 tiros,0.74719,Liverpool,,1.3383476759592607
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 11.5 tiros,0.68252,Fenerbahce,,1.4651585301529626
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 11.5 tiros,0.66909,Liverpool,,1.4945672480533263
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 12.5 tiros,0.59955,Fenerbahce,,1.6679176048703193
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 12.5 tiros,0.58474,Liverpool,,1.7101617813045114
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 13.5 tiros,0.51449,Fenerbahce,,1.9436723745845401
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 13.5 tiros,0.50073,Liverpool,,1.9970842569848022
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 14.5 tiros,0.43291,Fenerbahce,,2.3099489501282022
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 14.5 tiros,0.41718,Liverpool,,2.3970468382952204
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 15.5 tiros,0.35525,Fenerbahce,,2.8149190710767065
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 15.5 tiros,0.34123,Liverpool,,2.930574685695865
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 16.5 tiros,0.2853,Fenerbahce,,3.505082369435682
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 16.5 tiros,0.27167,Liverpool,,3.6809364302278498
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 17.5 tiros,0.22355,Fenerbahce,,4.4732721986132855
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 17.5 tiros,0.21246,Liverpool,,4.706768332862656
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 18.5 tiros,0.17278,Fenerbahce,,5.7877069105220516
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 18.5 tiros,0.16286,Liverpool,,6.140243153628884
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 19.5 tiros,0.13071,Fenerbahce,,7.650524060898172
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 19.5 tiros,0.12297,Liverpool,,8.13206473123526
+Fenerbahce vs Liverpool,tiros por equipo,Fenerbahce más de 20.5 tiros,0.09744,Fenerbahce,,10.262725779967159
+Fenerbahce vs Liverpool,tiros por equipo,Liverpool más de 20.5 tiros,0.09073,Liverpool,,11.021712774165104
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Fenerbahce más de 1.5 tiros a puerta,0.94519,Fenerbahce,,1.0579883409684825
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Liverpool más de 1.5 tiros a puerta,0.94243,Liverpool,,1.0610867650647793
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Fenerbahce más de 2.5 tiros a puerta,0.84754,Fenerbahce,,1.1798853151473678
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Liverpool más de 2.5 tiros a puerta,0.8426,Liverpool,,1.1868027533823877
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Fenerbahce más de 3.5 tiros a puerta,0.70193,Fenerbahce,,1.424643482968387
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Liverpool más de 3.5 tiros a puerta,0.69284,Liverpool,,1.4433346804457017
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Fenerbahce más de 4.5 tiros a puerta,0.53313,Fenerbahce,,1.875715116388123
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Liverpool más de 4.5 tiros a puerta,0.52189,Liverpool,,1.916112590775834
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Fenerbahce más de 5.5 tiros a puerta,0.36947,Fenerbahce,,2.7065796952391263
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Liverpool más de 5.5 tiros a puerta,0.35769,Liverpool,,2.795716961614806
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Fenerbahce más de 6.5 tiros a puerta,0.23552,Fenerbahce,,4.2459239130434785
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Liverpool más de 6.5 tiros a puerta,0.226,Liverpool,,4.424778761061947
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Fenerbahce más de 7.5 tiros a puerta,0.13924,Fenerbahce,,7.181844297615627
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Liverpool más de 7.5 tiros a puerta,0.13282,Liverpool,,7.528986598403855
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Fenerbahce más de 8.5 tiros a puerta,0.07643,Fenerbahce,,13.083867591259978
+Fenerbahce vs Liverpool,tiros a puerta por equipo,Liverpool más de 8.5 tiros a puerta,0.07097,Liverpool,,14.090460758066788
+Fenerbahce vs Liverpool,tarjetas,Más de 2.5 tarjetas,0.74181,,,1.3480540839298474
+Fenerbahce vs Liverpool,tarjetas,Más de 3.5 tarjetas,0.56867,,,1.7584891061599872
+AEK vs Real Madrid,moneyline,Gana AEK,0.11085536144438392,AEK,8.75,9.020763515364113
+AEK vs Real Madrid,moneyline,Gana Real Madrid,0.7291750855356339,Real Madrid,1.3,1.371412737265186
+AEK vs Real Madrid,doble oportunidad,AEK o empate,0.2708249116752517,AEK,,3.692422509488743
+AEK vs Real Madrid,doble oportunidad,Real Madrid o empate,0.8891446357665017,Real Madrid,,1.1246764134587999
+AEK vs Real Madrid,empate no válido,AEK (DNB),0.13196588509728252,AEK,,7.577716007912353
+AEK vs Real Madrid,empate no válido,Real Madrid (DNB),0.8680341149027175,Real Madrid,,1.152028454678964
+AEK vs Real Madrid,goles por equipo,AEK más de 0.5 goles,0.55886,AEK,,1.7893569051282967
+AEK vs Real Madrid,goles por equipo,Real Madrid más de 0.5 goles,0.90717,Real Madrid,,1.1023292216453366
+AEK vs Real Madrid,goles por equipo,AEK más de 1.5 goles,0.19931,AEK,,5.017309718528925
+AEK vs Real Madrid,goles por equipo,Real Madrid más de 1.5 goles,0.68765,Real Madrid,,1.4542281683996219
+AEK vs Real Madrid,goles por equipo,AEK más de 2.5 goles,0.052,AEK,,19.23076923076923
+AEK vs Real Madrid,goles por equipo,Real Madrid más de 2.5 goles,0.43049,Real Madrid,,2.322934330646473
+AEK vs Real Madrid,goles totales,Más de 1.5 goles,0.83286,,,1.2006819873688255
+AEK vs Real Madrid,goles totales,Más de 2.5 goles,0.62375,,,1.6032064128256511
+AEK vs Real Madrid,goles totales,Más de 3.5 goles,0.40121,,,2.4924603075696017
+AEK vs Real Madrid,goles totales,Menos de 2.5 goles,0.37625,,,2.6578073089700998
+AEK vs Real Madrid,goles totales,Menos de 3.5 goles,0.59879,,,1.670034569715593
+AEK vs Real Madrid,goles totales,Menos de 4.5 goles,0.77504,,,1.2902559867877788
+AEK vs Real Madrid,ambos anotan,Ambos anotan: sí,0.50997,,,1.9608996607643585
+AEK vs Real Madrid,ambos anotan,Ambos anotan: no,0.49002999999999997,,,2.040691386241659
+AEK vs Real Madrid,córners totales,Más de 6.5 córners,0.78817,,,1.2687618153444054
+AEK vs Real Madrid,córners totales,Más de 7.5 córners,0.68739,,,1.4547782190605043
+AEK vs Real Madrid,córners totales,Más de 8.5 córners,0.57819,,,1.7295352738719107
+AEK vs Real Madrid,córners totales,Más de 9.5 córners,0.46705,,,2.1410983834707205
+AEK vs Real Madrid,córners totales,Más de 10.5 córners,0.36378,,,2.748914178899335
+AEK vs Real Madrid,córners por equipo,AEK más de 2.5 córners,0.69998,AEK,,1.4286122460641733
+AEK vs Real Madrid,córners por equipo,Real Madrid más de 2.5 córners,0.87455,Real Madrid,,1.1434452003887714
+AEK vs Real Madrid,córners por equipo,AEK más de 3.5 córners,0.51528,AEK,,1.9406924390622575
+AEK vs Real Madrid,córners por equipo,Real Madrid más de 3.5 córners,0.75815,Real Madrid,,1.3190001978500296
+AEK vs Real Madrid,córners por equipo,AEK más de 4.5 córners,0.34779,AEK,,2.8752983121998907
+AEK vs Real Madrid,córners por equipo,Real Madrid más de 4.5 córners,0.61738,Real Madrid,,1.619747967216301
+AEK vs Real Madrid,córners por equipo,AEK más de 5.5 córners,0.21568,AEK,,4.636498516320475
+AEK vs Real Madrid,córners por equipo,Real Madrid más de 5.5 córners,0.47543,Real Madrid,,2.103359064425888
+AEK vs Real Madrid,córners por equipo,AEK más de 6.5 córners,0.12434,AEK,,8.042464211034261
+AEK vs Real Madrid,córners por equipo,Real Madrid más de 6.5 córners,0.34376,Real Madrid,,2.9090062834535724
+AEK vs Real Madrid,tiros por equipo,AEK más de 6.5 tiros,0.91739,AEK,,1.0900489431975495
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 6.5 tiros,0.96695,Real Madrid,,1.0341796370029475
+AEK vs Real Madrid,tiros por equipo,AEK más de 7.5 tiros,0.86379,AEK,,1.1576887900994455
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 7.5 tiros,0.94024,Real Madrid,,1.063558240449247
+AEK vs Real Madrid,tiros por equipo,AEK más de 8.5 tiros,0.79608,AEK,,1.2561551602853984
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 8.5 tiros,0.90203,Real Madrid,,1.1086105783621387
+AEK vs Real Madrid,tiros por equipo,AEK más de 9.5 tiros,0.71454,AEK,,1.3995017773672573
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 9.5 tiros,0.85134,Real Madrid,,1.174618836187657
+AEK vs Real Madrid,tiros por equipo,AEK más de 10.5 tiros,0.62365,AEK,,1.6034634811192174
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 10.5 tiros,0.78873,Real Madrid,,1.2678609917208676
+AEK vs Real Madrid,tiros por equipo,AEK más de 11.5 tiros,0.52949,AEK,,1.8886097943303934
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 11.5 tiros,0.71596,Real Madrid,,1.3967260740823508
+AEK vs Real Madrid,tiros por equipo,AEK más de 12.5 tiros,0.43717,AEK,,2.287439668778736
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 12.5 tiros,0.63675,Real Madrid,,1.5704750687082842
+AEK vs Real Madrid,tiros por equipo,AEK más de 13.5 tiros,0.35244,AEK,,2.837362387924186
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 13.5 tiros,0.55302,Real Madrid,,1.8082528660807928
+AEK vs Real Madrid,tiros por equipo,AEK más de 14.5 tiros,0.27619,AEK,,3.6206958977515478
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 14.5 tiros,0.46964,Real Madrid,,2.129290520398603
+AEK vs Real Madrid,tiros por equipo,AEK más de 15.5 tiros,0.21025,AEK,,4.756242568370987
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 15.5 tiros,0.39212,Real Madrid,,2.550239722533918
+AEK vs Real Madrid,tiros por equipo,AEK más de 16.5 tiros,0.15786,AEK,,6.334726973267452
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 16.5 tiros,0.3199,Real Madrid,,3.125976867771178
+AEK vs Real Madrid,tiros por equipo,AEK más de 17.5 tiros,0.11438,AEK,,8.742787200559539
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 17.5 tiros,0.25693,Real Madrid,,3.89211069162807
+AEK vs Real Madrid,tiros por equipo,AEK más de 18.5 tiros,0.08132,AEK,,12.297097884899163
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 18.5 tiros,0.20202,Real Madrid,,4.95000495000495
+AEK vs Real Madrid,tiros por equipo,AEK más de 19.5 tiros,0.05683,AEK,,17.596339961288052
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 19.5 tiros,0.15496,Real Madrid,,6.453278265358803
+AEK vs Real Madrid,tiros por equipo,AEK más de 20.5 tiros,0.03823,AEK,,26.15746795710175
+AEK vs Real Madrid,tiros por equipo,Real Madrid más de 20.5 tiros,0.11749,Real Madrid,,8.511362669163333
+AEK vs Real Madrid,tiros a puerta por equipo,AEK más de 1.5 tiros a puerta,0.85374,AEK,,1.1713167943401972
+AEK vs Real Madrid,tiros a puerta por equipo,Real Madrid más de 1.5 tiros a puerta,0.96489,Real Madrid,,1.0363875674947403
+AEK vs Real Madrid,tiros a puerta por equipo,AEK más de 2.5 tiros a puerta,0.67063,AEK,,1.4911352012286956
+AEK vs Real Madrid,tiros a puerta por equipo,Real Madrid más de 2.5 tiros a puerta,0.89517,Real Madrid,,1.117106247975245
+AEK vs Real Madrid,tiros a puerta por equipo,AEK más de 3.5 tiros a puerta,0.46579,AEK,,2.146890229502566
+AEK vs Real Madrid,tiros a puerta por equipo,Real Madrid más de 3.5 tiros a puerta,0.77991,Real Madrid,,1.2821992281160648
+AEK vs Real Madrid,tiros a puerta por equipo,AEK más de 4.5 tiros a puerta,0.28813,AEK,,3.470655606844133
+AEK vs Real Madrid,tiros a puerta por equipo,Real Madrid más de 4.5 tiros a puerta,0.6293,Real Madrid,,1.589067217543302
+AEK vs Real Madrid,tiros a puerta por equipo,AEK más de 5.5 tiros a puerta,0.15972,AEK,,6.260956674179814
+AEK vs Real Madrid,tiros a puerta por equipo,Real Madrid más de 5.5 tiros a puerta,0.46959,Real Madrid,,2.129517238442045
+AEK vs Real Madrid,tiros a puerta por equipo,AEK más de 6.5 tiros a puerta,0.07984,AEK,,12.525050100200401
+AEK vs Real Madrid,tiros a puerta por equipo,Real Madrid más de 6.5 tiros a puerta,0.32388,Real Madrid,,3.0875632950475485
+AEK vs Real Madrid,tiros a puerta por equipo,AEK más de 7.5 tiros a puerta,0.03698,AEK,,27.041644131963224
+AEK vs Real Madrid,tiros a puerta por equipo,Real Madrid más de 7.5 tiros a puerta,0.20864,Real Madrid,,4.792944785276074
+AEK vs Real Madrid,tiros a puerta por equipo,AEK más de 8.5 tiros a puerta,0.01584,AEK,,63.131313131313135
+AEK vs Real Madrid,tiros a puerta por equipo,Real Madrid más de 8.5 tiros a puerta,0.12425,Real Madrid,,8.048289738430583
+AEK vs Real Madrid,tarjetas,Más de 2.5 tarjetas,0.72874,,,1.372231522902544
+AEK vs Real Madrid,tarjetas,Más de 3.5 tarjetas,0.5511,,,1.8145527127563055
+Dortmund vs Betis,moneyline,Gana Dortmund,0.5506919062518656,Dortmund,1.75,1.8158973986130058
+Dortmund vs Betis,moneyline,Gana Betis,0.2273699456671142,Betis,4.33,4.39811865664986
+Dortmund vs Betis,doble oportunidad,Dortmund o empate,0.7726300554485317,Dortmund,,1.2942804812575848
+Dortmund vs Betis,doble oportunidad,Betis o empate,0.4493080948637803,Betis,,2.225644299382535
+Dortmund vs Betis,empate no válido,Dortmund (DNB),0.707773944826702,Dortmund,,1.4128804928596932
+Dortmund vs Betis,empate no válido,Betis (DNB),0.29222605517329797,Betis,,3.422008346952406
+Dortmund vs Betis,goles por equipo,Dortmund más de 0.5 goles,0.84559,Dortmund,,1.1826062276043947
+Dortmund vs Betis,goles por equipo,Betis más de 0.5 goles,0.68382,Betis,,1.4623731391301804
+Dortmund vs Betis,goles por equipo,Dortmund más de 1.5 goles,0.56528,Dortmund,,1.7690348146051513
+Dortmund vs Betis,goles por equipo,Betis más de 1.5 goles,0.3213,Betis,,3.1123560535325243
+Dortmund vs Betis,goles por equipo,Dortmund más de 2.5 goles,0.30054,Dortmund,,3.327344113928263
+Dortmund vs Betis,goles por equipo,Betis más de 2.5 goles,0.11211,Betis,,8.919810900008919
+Dortmund vs Betis,goles totales,Más de 1.5 goles,0.80874,,,1.2364913321957614
+Dortmund vs Betis,goles totales,Más de 2.5 goles,0.59073,,,1.692820747211078
+Dortmund vs Betis,goles totales,Más de 3.5 goles,0.36912,,,2.7091460771564804
+Dortmund vs Betis,goles totales,Menos de 2.5 goles,0.40927,,,2.4433747892589244
+Dortmund vs Betis,goles totales,Menos de 3.5 goles,0.63088,,,1.585087496829825
+Dortmund vs Betis,goles totales,Menos de 4.5 goles,0.80132,,,1.2479408975190935
+Dortmund vs Betis,ambos anotan,Ambos anotan: sí,0.58276,,,1.7159722698881188
+Dortmund vs Betis,ambos anotan,Ambos anotan: no,0.41724000000000006,,,2.3967021378583064
+Dortmund vs Betis,córners totales,Más de 6.5 córners,0.76279,,,1.310976808820252
+Dortmund vs Betis,córners totales,Más de 7.5 córners,0.65603,,,1.5243205341219153
+Dortmund vs Betis,córners totales,Más de 8.5 córners,0.54192,,,1.8452908178328906
+Dortmund vs Betis,córners totales,Más de 9.5 córners,0.43009,,,2.325094747610965
+Dortmund vs Betis,córners totales,Más de 10.5 córners,0.32755,,,3.0529690123645246
+Dortmund vs Betis,córners por equipo,Dortmund más de 2.5 córners,0.86713,Dortmund,,1.1532296195495486
+Dortmund vs Betis,córners por equipo,Betis más de 2.5 córners,0.66611,Betis,,1.5012535467115042
+Dortmund vs Betis,córners por equipo,Dortmund más de 3.5 córners,0.74499,Dortmund,,1.3422998966429078
+Dortmund vs Betis,córners por equipo,Betis más de 3.5 córners,0.47568,Betis,,2.1022536158762195
+Dortmund vs Betis,córners por equipo,Dortmund más de 4.5 córners,0.60313,Dortmund,,1.6580173428614062
+Dortmund vs Betis,córners por equipo,Betis más de 4.5 córners,0.30911,Betis,,3.2350943029989323
+Dortmund vs Betis,córners por equipo,Dortmund más de 5.5 córners,0.45836,Dortmund,,2.181691247054717
+Dortmund vs Betis,córners por equipo,Betis más de 5.5 córners,0.18612,Betis,,5.372877713303245
+Dortmund vs Betis,córners por equipo,Dortmund más de 6.5 córners,0.32827,Dortmund,,3.0462728851250493
+Dortmund vs Betis,córners por equipo,Betis más de 6.5 córners,0.10465,Betis,,9.555661729574773
+Dortmund vs Betis,tiros por equipo,Dortmund más de 6.5 tiros,0.96938,Dortmund,,1.0315872000660216
+Dortmund vs Betis,tiros por equipo,Betis más de 6.5 tiros,0.84883,Betis,,1.178092197495376
+Dortmund vs Betis,tiros por equipo,Dortmund más de 7.5 tiros,0.94474,Dortmund,,1.0584922835912527
+Dortmund vs Betis,tiros por equipo,Betis más de 7.5 tiros,0.76784,Betis,,1.3023546572202542
+Dortmund vs Betis,tiros por equipo,Dortmund más de 8.5 tiros,0.90861,Dortmund,,1.1005822079880256
+Dortmund vs Betis,tiros por equipo,Betis más de 8.5 tiros,0.67064,Betis,,1.4911129667183585
+Dortmund vs Betis,tiros por equipo,Dortmund más de 9.5 tiros,0.86054,Dortmund,,1.1620610314453717
+Dortmund vs Betis,tiros por equipo,Betis más de 9.5 tiros,0.56869,Betis,,1.7584272626562802
+Dortmund vs Betis,tiros por equipo,Dortmund más de 10.5 tiros,0.79964,Dortmund,,1.2505627532389576
+Dortmund vs Betis,tiros por equipo,Betis más de 10.5 tiros,0.46567,Betis,,2.1474434685506907
+Dortmund vs Betis,tiros por equipo,Dortmund más de 11.5 tiros,0.72883,Dortmund,,1.3720620720881413
+Dortmund vs Betis,tiros por equipo,Betis más de 11.5 tiros,0.36927,Betis,,2.708045603487963
+Dortmund vs Betis,tiros por equipo,Dortmund más de 12.5 tiros,0.65097,Dortmund,,1.5361691014946923
+Dortmund vs Betis,tiros por equipo,Betis más de 12.5 tiros,0.28333,Betis,,3.529453287685737
+Dortmund vs Betis,tiros por equipo,Dortmund más de 13.5 tiros,0.57094,Dortmund,,1.751497530388482
+Dortmund vs Betis,tiros por equipo,Betis más de 13.5 tiros,0.21135,Betis,,4.731488052992666
+Dortmund vs Betis,tiros por equipo,Dortmund más de 14.5 tiros,0.48757,Dortmund,,2.0509875505055684
+Dortmund vs Betis,tiros por equipo,Betis más de 14.5 tiros,0.1517,Betis,,6.591957811470007
+Dortmund vs Betis,tiros por equipo,Dortmund más de 15.5 tiros,0.41011,Dortmund,,2.4383701933627564
+Dortmund vs Betis,tiros por equipo,Betis más de 15.5 tiros,0.10676,Betis,,9.366804046459348
+Dortmund vs Betis,tiros por equipo,Dortmund más de 16.5 tiros,0.33576,Dortmund,,2.9783178460805337
+Dortmund vs Betis,tiros por equipo,Betis más de 16.5 tiros,0.07269,Betis,,13.757050488375292
+Dortmund vs Betis,tiros por equipo,Dortmund más de 17.5 tiros,0.26832,Dortmund,,3.7268932617769828
+Dortmund vs Betis,tiros por equipo,Betis más de 17.5 tiros,0.04823,Betis,,20.73398299813394
+Dortmund vs Betis,tiros por equipo,Dortmund más de 18.5 tiros,0.21156,Dortmund,,4.726791453961051
+Dortmund vs Betis,tiros por equipo,Betis más de 18.5 tiros,0.03155,Betis,,31.695721077654515
+Dortmund vs Betis,tiros por equipo,Dortmund más de 19.5 tiros,0.16467,Dortmund,,6.072751563733528
+Dortmund vs Betis,tiros por equipo,Betis más de 19.5 tiros,0.02029,Betis,,49.28536224741252
+Dortmund vs Betis,tiros por equipo,Dortmund más de 20.5 tiros,0.12603,Dortmund,,7.934618741569468
+Dortmund vs Betis,tiros por equipo,Betis más de 20.5 tiros,0.01247,Betis,,80.1924619085806
+Dortmund vs Betis,tiros a puerta por equipo,Dortmund más de 1.5 tiros a puerta,0.96158,Dortmund,,1.0399550739408057
+Dortmund vs Betis,tiros a puerta por equipo,Betis más de 1.5 tiros a puerta,0.87824,Betis,,1.1386409182000363
+Dortmund vs Betis,tiros a puerta por equipo,Dortmund más de 2.5 tiros a puerta,0.88677,Dortmund,,1.1276881265717154
+Dortmund vs Betis,tiros a puerta por equipo,Betis más de 2.5 tiros a puerta,0.71178,Betis,,1.4049284891399028
+Dortmund vs Betis,tiros a puerta por equipo,Dortmund más de 3.5 tiros a puerta,0.76478,Dortmund,,1.3075655744135568
+Dortmund vs Betis,tiros a puerta por equipo,Betis más de 3.5 tiros a puerta,0.5153,Betis,,1.9406171162429653
+Dortmund vs Betis,tiros a puerta por equipo,Dortmund más de 4.5 tiros a puerta,0.60836,Dortmund,,1.6437635610493786
+Dortmund vs Betis,tiros a puerta por equipo,Betis más de 4.5 tiros a puerta,0.33158,Betis,,3.0158634417033596
+Dortmund vs Betis,tiros a puerta por equipo,Dortmund más de 5.5 tiros a puerta,0.44892,Dortmund,,2.227568386349461
+Dortmund vs Betis,tiros a puerta por equipo,Betis más de 5.5 tiros a puerta,0.19072,Betis,,5.243288590604027
+Dortmund vs Betis,tiros a puerta por equipo,Dortmund más de 6.5 tiros a puerta,0.3067,Dortmund,,3.260515161395501
+Dortmund vs Betis,tiros a puerta por equipo,Betis más de 6.5 tiros a puerta,0.09981,Betis,,10.01903616872057
+Dortmund vs Betis,tiros a puerta por equipo,Dortmund más de 7.5 tiros a puerta,0.19519,Dortmund,,5.12321327936882
+Dortmund vs Betis,tiros a puerta por equipo,Betis más de 7.5 tiros a puerta,0.04833,Betis,,20.691082143596113
+Dortmund vs Betis,tiros a puerta por equipo,Dortmund más de 8.5 tiros a puerta,0.11569,Dortmund,,8.643789437289307
+Dortmund vs Betis,tiros a puerta por equipo,Betis más de 8.5 tiros a puerta,0.0216,Betis,,46.29629629629629
+Dortmund vs Betis,tarjetas,Más de 2.5 tarjetas,0.67765,,,1.4756880395484395
+Dortmund vs Betis,tarjetas,Más de 3.5 tarjetas,0.48733,,,2.051997619682761
+Porto vs Napoli,moneyline,Gana Porto,0.4785193774304638,Porto,2.05,2.089779530705244
+Porto vs Napoli,moneyline,Gana Napoli,0.27036016832557747,Napoli,3.7,3.6987697048470687
+Porto vs Napoli,doble oportunidad,Porto o empate,0.7296398339057141,Porto,,1.3705392078816006
+Porto vs Napoli,doble oportunidad,Napoli o empate,0.5214806248008277,Napoli,,1.9176167865909421
+Porto vs Napoli,empate no válido,Porto (DNB),0.6389804343599319,Porto,,1.564993145684816
+Porto vs Napoli,empate no válido,Napoli (DNB),0.361019565640068,Napoli,,2.76993297642208
+Porto vs Napoli,goles por equipo,Porto más de 0.5 goles,0.76983,Porto,,1.2989880882792304
+Porto vs Napoli,goles por equipo,Napoli más de 0.5 goles,0.64048,Napoli,,1.5613290032475642
+Porto vs Napoli,goles por equipo,Porto más de 1.5 goles,0.43293,Porto,,2.30984223777516
+Porto vs Napoli,goles por equipo,Napoli más de 1.5 goles,0.27671,Napoli,,3.6138918000795055
+Porto vs Napoli,goles por equipo,Porto más de 2.5 goles,0.18616,Porto,,5.371723248818221
+Porto vs Napoli,goles por equipo,Napoli más de 2.5 goles,0.08754,Napoli,,11.42334932602239
+Porto vs Napoli,goles totales,Más de 1.5 goles,0.71745,,,1.3938253536831835
+Porto vs Napoli,goles totales,Más de 2.5 goles,0.458,,,2.1834061135371177
+Porto vs Napoli,goles totales,Más de 3.5 goles,0.24485,,,4.084133142740453
+Porto vs Napoli,goles totales,Menos de 2.5 goles,0.542,,,1.8450184501845017
+Porto vs Napoli,goles totales,Menos de 3.5 goles,0.75515,,,1.3242402171753955
+Porto vs Napoli,goles totales,Menos de 4.5 goles,0.88737,,,1.1269256341774005
+Porto vs Napoli,ambos anotan,Ambos anotan: sí,0.49781,,,2.008798537594665
+Porto vs Napoli,ambos anotan,Ambos anotan: no,0.50219,,,1.9912782014775283
+Porto vs Napoli,córners totales,Más de 6.5 córners,0.7666,,,1.3044612575006522
+Porto vs Napoli,córners totales,Más de 7.5 córners,0.65927,,,1.5168292201980977
+Porto vs Napoli,córners totales,Más de 8.5 córners,0.54578,,,1.832240096742277
+Porto vs Napoli,córners totales,Más de 9.5 córners,0.43452,,,2.3013900395839086
+Porto vs Napoli,córners totales,Más de 10.5 córners,0.33171,,,3.014681498899641
+Porto vs Napoli,córners por equipo,Porto más de 2.5 córners,0.84512,Porto,,1.1832639151836426
+Porto vs Napoli,córners por equipo,Napoli más de 2.5 córners,0.72058,Napoli,,1.3877709622803853
+Porto vs Napoli,córners por equipo,Porto más de 3.5 córners,0.71157,Porto,,1.4053431145214104
+Porto vs Napoli,córners por equipo,Napoli más de 3.5 córners,0.5401,Napoli,,1.851508979818552
+Porto vs Napoli,córners por equipo,Porto más de 4.5 córners,0.55883,Porto,,1.789452964228835
+Porto vs Napoli,córners por equipo,Napoli más de 4.5 córners,0.3702,Napoli,,2.7012425715829282
+Porto vs Napoli,córners por equipo,Porto más de 5.5 córners,0.41184,Porto,,2.428127428127428
+Porto vs Napoli,córners por equipo,Napoli más de 5.5 córners,0.23411,Napoli,,4.271496305155696
+Porto vs Napoli,córners por equipo,Porto más de 6.5 córners,0.28564,Porto,,3.500910236661532
+Porto vs Napoli,córners por equipo,Napoli más de 6.5 córners,0.13725,Napoli,,7.285974499089253
+Porto vs Napoli,tiros por equipo,Porto más de 6.5 tiros,0.96387,Porto,,1.0374843080498408
+Porto vs Napoli,tiros por equipo,Napoli más de 6.5 tiros,0.84611,Napoli,,1.181879424661096
+Porto vs Napoli,tiros por equipo,Porto más de 7.5 tiros,0.93523,Porto,,1.069255691113416
+Porto vs Napoli,tiros por equipo,Napoli más de 7.5 tiros,0.7642,Napoli,,1.308557969118032
+Porto vs Napoli,tiros por equipo,Porto más de 8.5 tiros,0.89507,Porto,,1.1172310545543924
+Porto vs Napoli,tiros por equipo,Napoli más de 8.5 tiros,0.66713,Napoli,,1.4989582240342962
+Porto vs Napoli,tiros por equipo,Porto más de 9.5 tiros,0.84177,Porto,,1.187972961735391
+Porto vs Napoli,tiros por equipo,Napoli más de 9.5 tiros,0.56427,Napoli,,1.7722012511740832
+Porto vs Napoli,tiros por equipo,Porto más de 10.5 tiros,0.77766,Porto,,1.2859090090785177
+Porto vs Napoli,tiros por equipo,Napoli más de 10.5 tiros,0.46158,Napoli,,2.1664716842150873
+Porto vs Napoli,tiros por equipo,Porto más de 11.5 tiros,0.70302,Porto,,1.422434639128332
+Porto vs Napoli,tiros por equipo,Napoli más de 11.5 tiros,0.36648,Napoli,,2.728661864221786
+Porto vs Napoli,tiros por equipo,Porto más de 12.5 tiros,0.62135,Porto,,1.6093988895147664
+Porto vs Napoli,tiros por equipo,Napoli más de 12.5 tiros,0.28104,Napoli,,3.5582123541132935
+Porto vs Napoli,tiros por equipo,Porto más de 13.5 tiros,0.53764,Porto,,1.8599806562011756
+Porto vs Napoli,tiros por equipo,Napoli más de 13.5 tiros,0.20902,Napoli,,4.78423117405033
+Porto vs Napoli,tiros por equipo,Porto más de 14.5 tiros,0.45348,Porto,,2.205168915938961
+Porto vs Napoli,tiros por equipo,Napoli más de 14.5 tiros,0.15001,Napoli,,6.666222251849876
+Porto vs Napoli,tiros por equipo,Porto más de 15.5 tiros,0.37536,Porto,,2.6641091219096333
+Porto vs Napoli,tiros por equipo,Napoli más de 15.5 tiros,0.10457,Napoli,,9.56297217175098
+Porto vs Napoli,tiros por equipo,Porto más de 16.5 tiros,0.3046,Porto,,3.282994090610637
+Porto vs Napoli,tiros por equipo,Napoli más de 16.5 tiros,0.07094,Napoli,,14.096419509444601
+Porto vs Napoli,tiros por equipo,Porto más de 17.5 tiros,0.24277,Porto,,4.119125097829221
+Porto vs Napoli,tiros por equipo,Napoli más de 17.5 tiros,0.04759,Napoli,,21.01281781886951
+Porto vs Napoli,tiros por equipo,Porto más de 18.5 tiros,0.18886,Porto,,5.294927459493805
+Porto vs Napoli,tiros por equipo,Napoli más de 18.5 tiros,0.03145,Napoli,,31.79650238473768
+Porto vs Napoli,tiros por equipo,Porto más de 19.5 tiros,0.14481,Porto,,6.905600441958429
+Porto vs Napoli,tiros por equipo,Napoli más de 19.5 tiros,0.02007,Napoli,,49.82561036372695
+Porto vs Napoli,tiros por equipo,Porto más de 20.5 tiros,0.10868,Porto,,9.201324990798675
+Porto vs Napoli,tiros por equipo,Napoli más de 20.5 tiros,0.01245,Napoli,,80.32128514056225
+Porto vs Napoli,tiros a puerta por equipo,Porto más de 1.5 tiros a puerta,0.95488,Porto,,1.0472520107238605
+Porto vs Napoli,tiros a puerta por equipo,Napoli más de 1.5 tiros a puerta,0.86818,Napoli,,1.1518348729526136
+Porto vs Napoli,tiros a puerta por equipo,Porto más de 2.5 tiros a puerta,0.86856,Porto,,1.151330938564981
+Porto vs Napoli,tiros a puerta por equipo,Napoli más de 2.5 tiros a puerta,0.69745,Napoli,,1.4337945372428131
+Porto vs Napoli,tiros a puerta por equipo,Porto más de 3.5 tiros a puerta,0.73266,Porto,,1.364889580432943
+Porto vs Napoli,tiros a puerta por equipo,Napoli más de 3.5 tiros a puerta,0.49445,Napoli,,2.0224491859642026
+Porto vs Napoli,tiros a puerta por equipo,Porto más de 4.5 tiros a puerta,0.5687,Porto,,1.7583963425356075
+Porto vs Napoli,tiros a puerta por equipo,Napoli más de 4.5 tiros a puerta,0.31322,Napoli,,3.1926441478832768
+Porto vs Napoli,tiros a puerta por equipo,Porto más de 5.5 tiros a puerta,0.40665,Porto,,2.4591171769334808
+Porto vs Napoli,tiros a puerta por equipo,Napoli más de 5.5 tiros a puerta,0.17812,Napoli,,5.6141926790927466
+Porto vs Napoli,tiros a puerta por equipo,Porto más de 6.5 tiros a puerta,0.26705,Porto,,3.744617112900206
+Porto vs Napoli,tiros a puerta por equipo,Napoli más de 6.5 tiros a puerta,0.09147,Napoli,,10.932546190007653
+Porto vs Napoli,tiros a puerta por equipo,Porto más de 7.5 tiros a puerta,0.16303,Porto,,6.1338403974728575
+Porto vs Napoli,tiros a puerta por equipo,Napoli más de 7.5 tiros a puerta,0.04423,Napoli,,22.609088853719197
+Porto vs Napoli,tiros a puerta por equipo,Porto más de 8.5 tiros a puerta,0.09238,Porto,,10.824853864472828
+Porto vs Napoli,tiros a puerta por equipo,Napoli más de 8.5 tiros a puerta,0.01924,Napoli,,51.975051975051976
+Porto vs Napoli,tarjetas,Más de 2.5 tarjetas,0.59341,,,1.6851755110294737
+Porto vs Napoli,tarjetas,Más de 3.5 tarjetas,0.39324,,,2.5429762994608893
+PSV Eindhoven vs Club Brugge,moneyline,Gana PSV Eindhoven,0.5182955347585299,PSV Eindhoven,2.1,1.929401148450744
+PSV Eindhoven vs Club Brugge,moneyline,Gana Club Brugge,0.26106100174622415,Club Brugge,4.33,3.830522342713195
+PSV Eindhoven vs Club Brugge,doble oportunidad,PSV Eindhoven o empate,0.738938993791193,PSV Eindhoven,,1.3532916903862524
+PSV Eindhoven vs Club Brugge,doble oportunidad,Club Brugge o empate,0.48170446077888723,Club Brugge,,2.0759616765496833
+PSV Eindhoven vs Club Brugge,empate no válido,PSV Eindhoven (DNB),0.6650300735052195,PSV Eindhoven,,1.5036913965848666
+PSV Eindhoven vs Club Brugge,empate no válido,Club Brugge (DNB),0.33496992649478047,Club Brugge,,2.985342626021032
+PSV Eindhoven vs Club Brugge,goles por equipo,PSV Eindhoven más de 0.5 goles,0.89112,PSV Eindhoven,,1.1221833198671334
+PSV Eindhoven vs Club Brugge,goles por equipo,Club Brugge más de 0.5 goles,0.79232,Club Brugge,,1.2621163166397416
+PSV Eindhoven vs Club Brugge,goles por equipo,PSV Eindhoven más de 1.5 goles,0.65287,PSV Eindhoven,,1.5316985004671682
+PSV Eindhoven vs Club Brugge,goles por equipo,Club Brugge más de 1.5 goles,0.46901,Club Brugge,,2.132150700411505
+PSV Eindhoven vs Club Brugge,goles por equipo,PSV Eindhoven más de 2.5 goles,0.39032,PSV Eindhoven,,2.5620004099200657
+PSV Eindhoven vs Club Brugge,goles por equipo,Club Brugge más de 2.5 goles,0.21535,Club Brugge,,4.643603436266543
+PSV Eindhoven vs Club Brugge,goles totales,Más de 1.5 goles,0.89574,,,1.1163953825886976
+PSV Eindhoven vs Club Brugge,goles totales,Más de 2.5 goles,0.73335,,,1.3636053726051682
+PSV Eindhoven vs Club Brugge,goles totales,Más de 3.5 goles,0.53135,,,1.8819986826009223
+PSV Eindhoven vs Club Brugge,goles totales,Menos de 2.5 goles,0.26665,,,3.750234389649353
+PSV Eindhoven vs Club Brugge,goles totales,Menos de 3.5 goles,0.46865,,,2.133788541555532
+PSV Eindhoven vs Club Brugge,goles totales,Menos de 4.5 goles,0.66004,,,1.5150596933519183
+PSV Eindhoven vs Club Brugge,ambos anotan,Ambos anotan: sí,0.70885,,,1.4107356986668549
+PSV Eindhoven vs Club Brugge,ambos anotan,Ambos anotan: no,0.29115,,,3.434655675768504
+PSV Eindhoven vs Club Brugge,córners totales,Más de 6.5 córners,0.8218,,,1.2168410805548795
+PSV Eindhoven vs Club Brugge,córners totales,Más de 7.5 córners,0.7336,,,1.3631406761177753
+PSV Eindhoven vs Club Brugge,córners totales,Más de 8.5 córners,0.63139,,,1.5838071556407292
+PSV Eindhoven vs Club Brugge,córners totales,Más de 9.5 córners,0.52308,,,1.9117534602737631
+PSV Eindhoven vs Club Brugge,córners totales,Más de 10.5 córners,0.41746,,,2.3954390839840944
+PSV Eindhoven vs Club Brugge,córners por equipo,PSV Eindhoven más de 2.5 córners,0.87807,PSV Eindhoven,,1.1388613664058673
+PSV Eindhoven vs Club Brugge,córners por equipo,Club Brugge más de 2.5 córners,0.75912,Club Brugge,,1.3173147855411529
+PSV Eindhoven vs Club Brugge,córners por equipo,PSV Eindhoven más de 3.5 córners,0.76196,PSV Eindhoven,,1.3124048506483281
+PSV Eindhoven vs Club Brugge,córners por equipo,Club Brugge más de 3.5 córners,0.59225,Club Brugge,,1.6884761502743773
+PSV Eindhoven vs Club Brugge,córners por equipo,PSV Eindhoven más de 4.5 córners,0.62317,PSV Eindhoven,,1.6046985573759969
+PSV Eindhoven vs Club Brugge,córners por equipo,Club Brugge más de 4.5 córners,0.42224,Club Brugge,,2.3683213338385753
+PSV Eindhoven vs Club Brugge,córners por equipo,PSV Eindhoven más de 5.5 córners,0.48051,PSV Eindhoven,,2.081122141058459
+PSV Eindhoven vs Club Brugge,córners por equipo,Club Brugge más de 5.5 córners,0.28166,Club Brugge,,3.550379890648299
+PSV Eindhoven vs Club Brugge,córners por equipo,PSV Eindhoven más de 6.5 córners,0.35069,PSV Eindhoven,,2.8515212866064044
+PSV Eindhoven vs Club Brugge,córners por equipo,Club Brugge más de 6.5 córners,0.17663,Club Brugge,,5.66155239766744
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 6.5 tiros,0.98356,PSV Eindhoven,,1.016714791166782
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 6.5 tiros,0.90431,Club Brugge,,1.1058154836284018
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 7.5 tiros,0.96879,PSV Eindhoven,,1.0322154440074731
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 7.5 tiros,0.84404,Club Brugge,,1.1847779726079333
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 8.5 tiros,0.94643,PSV Eindhoven,,1.0566021787136926
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 8.5 tiros,0.76842,Club Brugge,,1.3013716457145832
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 9.5 tiros,0.91383,PSV Eindhoven,,1.0942954378823195
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 9.5 tiros,0.67954,Club Brugge,,1.4715837183977396
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 10.5 tiros,0.87084,PSV Eindhoven,,1.148316567911442
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 10.5 tiros,0.58477,Club Brugge,,1.7100740462062007
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 11.5 tiros,0.81723,PSV Eindhoven,,1.2236457300882249
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 11.5 tiros,0.49038,Club Brugge,,2.039234879073372
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 12.5 tiros,0.75431,PSV Eindhoven,,1.325714891755379
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 12.5 tiros,0.4008,Club Brugge,,2.4950099800399204
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 13.5 tiros,0.6852,PSV Eindhoven,,1.4594279042615295
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 13.5 tiros,0.31526,Club Brugge,,3.171985028230667
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 14.5 tiros,0.61181,PSV Eindhoven,,1.6344943691668983
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 14.5 tiros,0.24195,Club Brugge,,4.133085348212441
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 15.5 tiros,0.53526,PSV Eindhoven,,1.8682509434667265
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 15.5 tiros,0.18057,Club Brugge,,5.538018496981779
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 16.5 tiros,0.45898,PSV Eindhoven,,2.17874417185934
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 16.5 tiros,0.13125,Club Brugge,,7.619047619047619
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 17.5 tiros,0.38739,PSV Eindhoven,,2.5813779395441285
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 17.5 tiros,0.09342,Club Brugge,,10.70434596446157
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 18.5 tiros,0.3208,PSV Eindhoven,,3.117206982543641
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 18.5 tiros,0.06576,Club Brugge,,15.206812652068127
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 19.5 tiros,0.26187,PSV Eindhoven,,3.818688662313362
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 19.5 tiros,0.04495,Club Brugge,,22.24694104560623
+PSV Eindhoven vs Club Brugge,tiros por equipo,PSV Eindhoven más de 20.5 tiros,0.20919,PSV Eindhoven,,4.780343228643817
+PSV Eindhoven vs Club Brugge,tiros por equipo,Club Brugge más de 20.5 tiros,0.02961,Club Brugge,,33.77237419790611
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,PSV Eindhoven más de 1.5 tiros a puerta,0.9652,PSV Eindhoven,,1.0360547036883547
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,Club Brugge más de 1.5 tiros a puerta,0.92514,Club Brugge,,1.0809174827593662
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,PSV Eindhoven más de 2.5 tiros a puerta,0.89568,PSV Eindhoven,,1.1164701679171132
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,Club Brugge más de 2.5 tiros a puerta,0.80505,Club Brugge,,1.242158872119744
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,PSV Eindhoven más de 3.5 tiros a puerta,0.77833,PSV Eindhoven,,1.2848020762401553
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,Club Brugge más de 3.5 tiros a puerta,0.63796,Club Brugge,,1.567496394758292
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,PSV Eindhoven más de 4.5 tiros a puerta,0.62727,PSV Eindhoven,,1.5942098298978111
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,Club Brugge más de 4.5 tiros a puerta,0.45485,Club Brugge,,2.1985269869187647
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,PSV Eindhoven más de 5.5 tiros a puerta,0.46991,PSV Eindhoven,,2.128067076674257
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,Club Brugge más de 5.5 tiros a puerta,0.2978,Club Brugge,,3.3579583613163195
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,PSV Eindhoven más de 6.5 tiros a puerta,0.32409,PSV Eindhoven,,3.085562652349656
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,Club Brugge más de 6.5 tiros a puerta,0.17646,Club Brugge,,5.66700668706789
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,PSV Eindhoven más de 7.5 tiros a puerta,0.20771,PSV Eindhoven,,4.814404698858986
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,Club Brugge más de 7.5 tiros a puerta,0.09659,Club Brugge,,10.353038616834041
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,PSV Eindhoven más de 8.5 tiros a puerta,0.12415,PSV Eindhoven,,8.054772452678213
+PSV Eindhoven vs Club Brugge,tiros a puerta por equipo,Club Brugge más de 8.5 tiros a puerta,0.04957,Club Brugge,,20.173492031470648
+PSV Eindhoven vs Club Brugge,tarjetas,Más de 2.5 tarjetas,0.66479,,,1.504234419891996
+PSV Eindhoven vs Club Brugge,tarjetas,Más de 3.5 tarjetas,0.4716,,,2.1204410517387617
+RB Leipzig vs Man City,moneyline,Gana RB Leipzig,0.19138092414267086,RB Leipzig,5.25,5.225181164108702
+RB Leipzig vs Man City,moneyline,Gana Man City,0.5992219722763734,Man City,1.55,1.6688306608669876
+RB Leipzig vs Man City,doble oportunidad,RB Leipzig o empate,0.4007780266079808,RB Leipzig,,2.495146773548405
+RB Leipzig vs Man City,doble oportunidad,Man City o empate,0.8086190747416834,Man City,,1.2366762437795003
+RB Leipzig vs Man City,empate no válido,RB Leipzig (DNB),0.24206959651869653,RB Leipzig,,4.1310433626585725
+RB Leipzig vs Man City,empate no válido,Man City (DNB),0.7579304034813035,Man City,,1.3193823541143483
+RB Leipzig vs Man City,goles por equipo,RB Leipzig más de 0.5 goles,0.67938,RB Leipzig,,1.471930289381495
+RB Leipzig vs Man City,goles por equipo,Man City más de 0.5 goles,0.88323,Man City,,1.1322079186621832
+RB Leipzig vs Man City,goles por equipo,RB Leipzig más de 1.5 goles,0.31875,RB Leipzig,,3.1372549019607847
+RB Leipzig vs Man City,goles por equipo,Man City más de 1.5 goles,0.63248,Man City,,1.5810776625347835
+RB Leipzig vs Man City,goles por equipo,RB Leipzig más de 2.5 goles,0.11283,RB Leipzig,,8.862891075068687
+RB Leipzig vs Man City,goles por equipo,Man City más de 2.5 goles,0.36606,Man City,,2.731792602305633
+RB Leipzig vs Man City,goles totales,Más de 1.5 goles,0.84314,,,1.1860426500936974
+RB Leipzig vs Man City,goles totales,Más de 2.5 goles,0.63946,,,1.5638194726800738
+RB Leipzig vs Man City,goles totales,Más de 3.5 goles,0.42301,,,2.3640103070849388
+RB Leipzig vs Man City,goles totales,Menos de 2.5 goles,0.36054,,,2.7736173517501523
+RB Leipzig vs Man City,goles totales,Menos de 3.5 goles,0.57699,,,1.7331322899876949
+RB Leipzig vs Man City,goles totales,Menos de 4.5 goles,0.75937,,,1.3168810988055888
+RB Leipzig vs Man City,ambos anotan,Ambos anotan: sí,0.60291,,,1.6586223482775209
+RB Leipzig vs Man City,ambos anotan,Ambos anotan: no,0.39709000000000005,,,2.5183207837014274
+RB Leipzig vs Man City,córners totales,Más de 6.5 córners,0.78072,,,1.2808689414899068
+RB Leipzig vs Man City,córners totales,Más de 7.5 córners,0.67914,,,1.4724504520422887
+RB Leipzig vs Man City,córners totales,Más de 8.5 córners,0.56635,,,1.7656925929195726
+RB Leipzig vs Man City,córners totales,Más de 9.5 córners,0.45408,,,2.2022551092318534
+RB Leipzig vs Man City,córners totales,Más de 10.5 córners,0.34941,,,2.8619673163332475
+RB Leipzig vs Man City,córners por equipo,RB Leipzig más de 2.5 córners,0.72169,RB Leipzig,,1.3856364921226565
+RB Leipzig vs Man City,córners por equipo,Man City más de 2.5 córners,0.85672,Man City,,1.1672425063031096
+RB Leipzig vs Man City,córners por equipo,RB Leipzig más de 3.5 córners,0.54304,RB Leipzig,,1.8414849734826164
+RB Leipzig vs Man City,córners por equipo,Man City más de 3.5 córners,0.73015,Man City,,1.3695815928233925
+RB Leipzig vs Man City,córners por equipo,RB Leipzig más de 4.5 córners,0.37369,RB Leipzig,,2.676014878642725
+RB Leipzig vs Man City,córners por equipo,Man City más de 4.5 córners,0.58338,Man City,,1.7141485823991223
+RB Leipzig vs Man City,córners por equipo,RB Leipzig más de 5.5 córners,0.23863,RB Leipzig,,4.19058793948791
+RB Leipzig vs Man City,córners por equipo,Man City más de 5.5 córners,0.4339,Man City,,2.3046784973496197
+RB Leipzig vs Man City,córners por equipo,RB Leipzig más de 6.5 córners,0.14122,RB Leipzig,,7.0811499787565495
+RB Leipzig vs Man City,córners por equipo,Man City más de 6.5 córners,0.30651,Man City,,3.26253629571629
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 6.5 tiros,0.91671,RB Leipzig,,1.090857523098908
+RB Leipzig vs Man City,tiros por equipo,Man City más de 6.5 tiros,0.96004,Man City,,1.0416232656972626
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 7.5 tiros,0.8629,RB Leipzig,,1.158882836945185
+RB Leipzig vs Man City,tiros por equipo,Man City más de 7.5 tiros,0.93041,Man City,,1.07479498285702
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 8.5 tiros,0.79543,RB Leipzig,,1.257181650176634
+RB Leipzig vs Man City,tiros por equipo,Man City más de 8.5 tiros,0.88724,Man City,,1.1270907533474595
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 9.5 tiros,0.71169,RB Leipzig,,1.4051061557700684
+RB Leipzig vs Man City,tiros por equipo,Man City más de 9.5 tiros,0.8319,Man City,,1.2020675561966583
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 10.5 tiros,0.61978,RB Leipzig,,1.6134757494594856
+RB Leipzig vs Man City,tiros por equipo,Man City más de 10.5 tiros,0.76326,Man City,,1.3101695359379504
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 11.5 tiros,0.52536,RB Leipzig,,1.903456677326024
+RB Leipzig vs Man City,tiros por equipo,Man City más de 11.5 tiros,0.68551,Man City,,1.4587679246108738
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 12.5 tiros,0.43298,RB Leipzig,,2.309575500023096
+RB Leipzig vs Man City,tiros por equipo,Man City más de 12.5 tiros,0.60171,Man City,,1.6619301656944376
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 13.5 tiros,0.34903,RB Leipzig,,2.865083230667851
+RB Leipzig vs Man City,tiros por equipo,Man City más de 13.5 tiros,0.51724,Man City,,1.933338488902637
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 14.5 tiros,0.27399,RB Leipzig,,3.649768239716778
+RB Leipzig vs Man City,tiros por equipo,Man City más de 14.5 tiros,0.43681,Man City,,2.2893248780934505
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 15.5 tiros,0.21025,RB Leipzig,,4.756242568370987
+RB Leipzig vs Man City,tiros por equipo,Man City más de 15.5 tiros,0.3598,Man City,,2.7793218454697053
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 16.5 tiros,0.15565,RB Leipzig,,6.424670735624799
+RB Leipzig vs Man City,tiros por equipo,Man City más de 16.5 tiros,0.28895,Man City,,3.460806367883717
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 17.5 tiros,0.11274,RB Leipzig,,8.869966294128082
+RB Leipzig vs Man City,tiros por equipo,Man City más de 17.5 tiros,0.22796,Man City,,4.386734514827163
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 18.5 tiros,0.07987,RB Leipzig,,12.520345561537498
+RB Leipzig vs Man City,tiros por equipo,Man City más de 18.5 tiros,0.17547,Man City,,5.698979882601015
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 19.5 tiros,0.05553,RB Leipzig,,18.008283810552854
+RB Leipzig vs Man City,tiros por equipo,Man City más de 19.5 tiros,0.13253,Man City,,7.545461404964913
+RB Leipzig vs Man City,tiros por equipo,RB Leipzig más de 20.5 tiros,0.03776,RB Leipzig,,26.483050847457626
+RB Leipzig vs Man City,tiros por equipo,Man City más de 20.5 tiros,0.0997,Man City,,10.030090270812437
+RB Leipzig vs Man City,tiros a puerta por equipo,RB Leipzig más de 1.5 tiros a puerta,0.92311,RB Leipzig,,1.0832945152798692
+RB Leipzig vs Man City,tiros a puerta por equipo,Man City más de 1.5 tiros a puerta,0.95166,Man City,,1.050795452157283
+RB Leipzig vs Man City,tiros a puerta por equipo,RB Leipzig más de 2.5 tiros a puerta,0.80061,RB Leipzig,,1.2490476012040819
+RB Leipzig vs Man City,tiros a puerta por equipo,Man City más de 2.5 tiros a puerta,0.86294,Man City,,1.1588291190581037
+RB Leipzig vs Man City,tiros a puerta por equipo,RB Leipzig más de 3.5 tiros a puerta,0.63006,RB Leipzig,,1.5871504301177666
+RB Leipzig vs Man City,tiros a puerta por equipo,Man City más de 3.5 tiros a puerta,0.72618,Man City,,1.3770690462419786
+RB Leipzig vs Man City,tiros a puerta por equipo,RB Leipzig más de 4.5 tiros a puerta,0.44842,RB Leipzig,,2.2300521832210873
+RB Leipzig vs Man City,tiros a puerta por equipo,Man City más de 4.5 tiros a puerta,0.55969,Man City,,1.7867033536421948
+RB Leipzig vs Man City,tiros a puerta por equipo,RB Leipzig más de 5.5 tiros a puerta,0.29226,RB Leipzig,,3.4216108944090875
+RB Leipzig vs Man City,tiros a puerta por equipo,Man City más de 5.5 tiros a puerta,0.39655,Man City,,2.5217500945656286
+RB Leipzig vs Man City,tiros a puerta por equipo,RB Leipzig más de 6.5 tiros a puerta,0.17313,RB Leipzig,,5.776006469127245
+RB Leipzig vs Man City,tiros a puerta por equipo,Man City más de 6.5 tiros a puerta,0.25839,Man City,,3.870118812647548
+RB Leipzig vs Man City,tiros a puerta por equipo,RB Leipzig más de 7.5 tiros a puerta,0.0942,RB Leipzig,,10.615711252653927
+RB Leipzig vs Man City,tiros a puerta por equipo,Man City más de 7.5 tiros a puerta,0.15606,Man City,,6.407791874919902
+RB Leipzig vs Man City,tiros a puerta por equipo,RB Leipzig más de 8.5 tiros a puerta,0.04794,RB Leipzig,,20.85940759282436
+RB Leipzig vs Man City,tiros a puerta por equipo,Man City más de 8.5 tiros a puerta,0.08774,Man City,,11.397310234784591
+RB Leipzig vs Man City,tarjetas,Más de 2.5 tarjetas,0.69173,,,1.4456507596894743
+RB Leipzig vs Man City,tarjetas,Más de 3.5 tarjetas,0.5052,,,1.9794140934283453
+Lens vs Como,moneyline,Gana Lens,0.3169716414601846,Lens,3.1,3.1548563631539004
+Lens vs Como,moneyline,Gana Como,0.44018475012605984,Como,2.2,2.2717733854106044
+Lens vs Como,doble oportunidad,Lens o empate,0.559815250989586,Lens,,1.786303603255358
+Lens vs Como,doble oportunidad,Como o empate,0.6830283596554613,Como,,1.4640680520270464
+Lens vs Como,empate no válido,Lens (DNB),0.4186343072349006,Lens,,2.3887196598985097
+Lens vs Como,empate no válido,Como (DNB),0.5813656927650993,Como,,1.72008773899916
+Lens vs Como,goles por equipo,Lens más de 0.5 goles,0.72863,Lens,,1.3724386863016895
+Lens vs Como,goles por equipo,Como más de 0.5 goles,0.79218,Como,,1.2623393673155092
+Lens vs Como,goles por equipo,Lens más de 1.5 goles,0.37732,Lens,,2.6502703275734127
+Lens vs Como,goles por equipo,Como más de 1.5 goles,0.47243,Como,,2.1167157039138074
+Lens vs Como,goles por equipo,Lens más de 2.5 goles,0.14814,Lens,,6.7503712704198735
+Lens vs Como,goles por equipo,Como más de 2.5 goles,0.21717,Como,,4.604687571948244
+Lens vs Como,goles totales,Más de 1.5 goles,0.78812,,,1.2688423082779272
+Lens vs Como,goles totales,Más de 2.5 goles,0.55628,,,1.7976558567627814
+Lens vs Como,goles totales,Más de 3.5 goles,0.33274,,,3.005349522149426
+Lens vs Como,goles totales,Menos de 2.5 goles,0.44372,,,2.2536734877850897
+Lens vs Como,goles totales,Menos de 3.5 goles,0.66726,,,1.498666187093487
+Lens vs Como,goles totales,Menos de 4.5 goles,0.82877,,,1.2066073820239631
+Lens vs Como,ambos anotan,Ambos anotan: sí,0.58141,,,1.7199566570922413
+Lens vs Como,ambos anotan,Ambos anotan: no,0.41859,,,2.3889725029264914
+Lens vs Como,córners totales,Más de 6.5 córners,0.74622,,,1.3400873736967651
+Lens vs Como,córners totales,Más de 7.5 córners,0.6338,,,1.577784790154623
+Lens vs Como,córners totales,Más de 8.5 córners,0.51586,,,1.9385104485713178
+Lens vs Como,córners totales,Más de 9.5 córners,0.40635,,,2.460932693490833
+Lens vs Como,córners totales,Más de 10.5 córners,0.30626,,,3.2651995036896757
+Lens vs Como,córners por equipo,Lens más de 2.5 córners,0.7594,Lens,,1.316829075585989
+Lens vs Como,córners por equipo,Como más de 2.5 córners,0.79756,Como,,1.2538241636992828
+Lens vs Como,córners por equipo,Lens más de 3.5 córners,0.58792,Lens,,1.7009116886651245
+Lens vs Como,córners por equipo,Como más de 3.5 córners,0.64091,Como,,1.56028147477805
+Lens vs Como,córners por equipo,Lens más de 4.5 córners,0.41912,Lens,,2.3859515174651653
+Lens vs Como,córners por equipo,Como más de 4.5 córners,0.47535,Como,,2.1037130535394972
+Lens vs Como,córners por equipo,Lens más de 5.5 córners,0.27921,Lens,,3.581533612692955
+Lens vs Como,córners por equipo,Como más de 5.5 córners,0.32931,Como,,3.036652394400413
+Lens vs Como,córners por equipo,Lens más de 6.5 córners,0.17375,Lens,,5.755395683453238
+Lens vs Como,córners por equipo,Como más de 6.5 córners,0.21228,Como,,4.710759374411155
+Lens vs Como,tiros por equipo,Lens más de 6.5 tiros,0.93674,Lens,,1.0675320793389842
+Lens vs Como,tiros por equipo,Como más de 6.5 tiros,0.92798,Como,,1.0776094312377422
+Lens vs Como,tiros por equipo,Lens más de 7.5 tiros,0.89371,Lens,,1.1189311969207014
+Lens vs Como,tiros por equipo,Como más de 7.5 tiros,0.87841,Como,,1.138420555321547
+Lens vs Como,tiros por equipo,Lens más de 8.5 tiros,0.8355,Lens,,1.196888090963495
+Lens vs Como,tiros por equipo,Como más de 8.5 tiros,0.81432,Como,,1.2280184693977796
+Lens vs Como,tiros por equipo,Lens más de 9.5 tiros,0.7645,Lens,,1.3080444735120995
+Lens vs Como,tiros por equipo,Como más de 9.5 tiros,0.7363,Como,,1.3581420616596498
+Lens vs Como,tiros por equipo,Lens más de 10.5 tiros,0.68245,Lens,,1.4653088138325152
+Lens vs Como,tiros por equipo,Como más de 10.5 tiros,0.64986,Como,,1.5387929707937094
+Lens vs Como,tiros por equipo,Lens más de 11.5 tiros,0.59374,Lens,,1.6842388924445042
+Lens vs Como,tiros por equipo,Como más de 11.5 tiros,0.55832,Como,,1.7910875483593638
+Lens vs Como,tiros por equipo,Lens más de 12.5 tiros,0.50309,Lens,,1.9877159156413364
+Lens vs Como,tiros por equipo,Como más de 12.5 tiros,0.46633,Como,,2.144404177299337
+Lens vs Como,tiros por equipo,Lens más de 13.5 tiros,0.41669,Lens,,2.3998656075259786
+Lens vs Como,tiros por equipo,Como más de 13.5 tiros,0.38092,Como,,2.6252231439672373
+Lens vs Como,tiros por equipo,Lens más de 14.5 tiros,0.33583,Lens,,2.977697049102224
+Lens vs Como,tiros por equipo,Como más de 14.5 tiros,0.30193,Como,,3.312025966283576
+Lens vs Como,tiros por equipo,Lens más de 15.5 tiros,0.26428,Lens,,3.783865597093991
+Lens vs Como,tiros por equipo,Como más de 15.5 tiros,0.2331,Como,,4.29000429000429
+Lens vs Como,tiros por equipo,Lens más de 16.5 tiros,0.20257,Lens,,4.936565137976996
+Lens vs Como,tiros por equipo,Como más de 16.5 tiros,0.17633,Como,,5.671184710486021
+Lens vs Como,tiros por equipo,Lens más de 17.5 tiros,0.15315,Lens,,6.52954619653934
+Lens vs Como,tiros por equipo,Como más de 17.5 tiros,0.13084,Como,,7.642922653622745
+Lens vs Como,tiros por equipo,Lens más de 18.5 tiros,0.11202,Lens,,8.926977325477594
+Lens vs Como,tiros por equipo,Como más de 18.5 tiros,0.09403,Como,,10.634903754121025
+Lens vs Como,tiros por equipo,Lens más de 19.5 tiros,0.0806,Lens,,12.406947890818858
+Lens vs Como,tiros por equipo,Como más de 19.5 tiros,0.06707,Como,,14.909795735798419
+Lens vs Como,tiros por equipo,Lens más de 20.5 tiros,0.05748,Lens,,17.397355601948504
+Lens vs Como,tiros por equipo,Como más de 20.5 tiros,0.04692,Como,,21.312872975277067
+Lens vs Como,tiros a puerta por equipo,Lens más de 1.5 tiros a puerta,0.9154,Lens,,1.0924186148131965
+Lens vs Como,tiros a puerta por equipo,Como más de 1.5 tiros a puerta,0.92652,Como,,1.0793075162975434
+Lens vs Como,tiros a puerta por equipo,Lens más de 2.5 tiros a puerta,0.78597,Lens,,1.2723131926154942
+Lens vs Como,tiros a puerta por equipo,Como más de 2.5 tiros a puerta,0.80713,Como,,1.2389577887081387
+Lens vs Como,tiros a puerta por equipo,Lens más de 3.5 tiros a puerta,0.60979,Lens,,1.6399088210695485
+Lens vs Como,tiros a puerta por equipo,Como más de 3.5 tiros a puerta,0.64438,Como,,1.551879325863621
+Lens vs Como,tiros a puerta por equipo,Lens más de 4.5 tiros a puerta,0.42722,Lens,,2.3407143860306165
+Lens vs Como,tiros a puerta por equipo,Como más de 4.5 tiros a puerta,0.46467,Como,,2.152064906277573
+Lens vs Como,tiros a puerta por equipo,Lens más de 5.5 tiros a puerta,0.27043,Lens,,3.6978145915763783
+Lens vs Como,tiros a puerta por equipo,Como más de 5.5 tiros a puerta,0.30507,Como,,3.2779362113613266
+Lens vs Como,tiros a puerta por equipo,Lens más de 6.5 tiros a puerta,0.15671,Lens,,6.381213706847043
+Lens vs Como,tiros a puerta por equipo,Como más de 6.5 tiros a puerta,0.18477,Como,,5.4121340044379505
+Lens vs Como,tiros a puerta por equipo,Lens más de 7.5 tiros a puerta,0.08372,Lens,,11.944577161968466
+Lens vs Como,tiros a puerta por equipo,Como más de 7.5 tiros a puerta,0.1016,Como,,9.84251968503937
+Lens vs Como,tiros a puerta por equipo,Lens más de 8.5 tiros a puerta,0.04118,Lens,,24.283632831471586
+Lens vs Como,tiros a puerta por equipo,Como más de 8.5 tiros a puerta,0.05208,Como,,19.201228878648234
+Lens vs Como,tarjetas,Más de 2.5 tarjetas,0.72592,,,1.3775622658144149
+Lens vs Como,tarjetas,Más de 3.5 tarjetas,0.54905,,,1.8213277479282395
+Slavia Praha vs Arsenal,moneyline,Gana Slavia Praha,0.0854026269217879,Slavia Praha,,11.709241694822857
+Slavia Praha vs Arsenal,moneyline,Gana Arsenal,0.7483920146867253,Arsenal,1.31,1.33619811592805
+Slavia Praha vs Arsenal,doble oportunidad,Slavia Praha o empate,0.25160798698674336,Slavia Praha,,3.974436630474245
+Slavia Praha vs Arsenal,doble oportunidad,Arsenal o empate,0.9145973747516808,Arsenal,,1.0933772910418713
+Slavia Praha vs Arsenal,empate no válido,Slavia Praha (DNB),0.10242645210220301,Slavia Praha,,9.763102982442284
+Slavia Praha vs Arsenal,empate no válido,Arsenal (DNB),0.897573547897797,Arsenal,,1.1141148291881993
+Slavia Praha vs Arsenal,goles por equipo,Slavia Praha más de 0.5 goles,0.51808,Slavia Praha,,1.9302038295243977
+Slavia Praha vs Arsenal,goles por equipo,Arsenal más de 0.5 goles,0.91089,Arsenal,,1.0978273995762386
+Slavia Praha vs Arsenal,goles por equipo,Slavia Praha más de 1.5 goles,0.16694,Slavia Praha,,5.990176111177669
+Slavia Praha vs Arsenal,goles por equipo,Arsenal más de 1.5 goles,0.69749,Arsenal,,1.433712311287617
+Slavia Praha vs Arsenal,goles por equipo,Slavia Praha más de 2.5 goles,0.0387,Slavia Praha,,25.839793281653748
+Slavia Praha vs Arsenal,goles por equipo,Arsenal más de 2.5 goles,0.44263,Arsenal,,2.259223279036667
+Slavia Praha vs Arsenal,goles totales,Más de 1.5 goles,0.82634,,,1.2101556260135053
+Slavia Praha vs Arsenal,goles totales,Más de 2.5 goles,0.61435,,,1.627736632212908
+Slavia Praha vs Arsenal,goles totales,Más de 3.5 goles,0.39308,,,2.5440113971710594
+Slavia Praha vs Arsenal,goles totales,Menos de 2.5 goles,0.38565,,,2.5930247633864902
+Slavia Praha vs Arsenal,goles totales,Menos de 3.5 goles,0.60692,,,1.6476636129967706
+Slavia Praha vs Arsenal,goles totales,Menos de 4.5 goles,0.78163,,,1.2793777106815245
+Slavia Praha vs Arsenal,ambos anotan,Ambos anotan: sí,0.47409,,,2.109304140564028
+Slavia Praha vs Arsenal,ambos anotan,Ambos anotan: no,0.52591,,,1.9014660303093687
+Slavia Praha vs Arsenal,córners totales,Más de 6.5 córners,0.79566,,,1.2568182389462836
+Slavia Praha vs Arsenal,córners totales,Más de 7.5 córners,0.69734,,,1.434020707259013
+Slavia Praha vs Arsenal,córners totales,Más de 8.5 córners,0.59033,,,1.6939677807328104
+Slavia Praha vs Arsenal,córners totales,Más de 9.5 córners,0.48047,,,2.0812953982558744
+Slavia Praha vs Arsenal,córners totales,Más de 10.5 córners,0.37651,,,2.6559719529361767
+Slavia Praha vs Arsenal,córners por equipo,Slavia Praha más de 2.5 córners,0.58315,Slavia Praha,,1.7148246591785992
+Slavia Praha vs Arsenal,córners por equipo,Arsenal más de 2.5 córners,0.91724,Arsenal,,1.090227203349178
+Slavia Praha vs Arsenal,córners por equipo,Slavia Praha más de 3.5 córners,0.38286,Slavia Praha,,2.611920806561145
+Slavia Praha vs Arsenal,córners por equipo,Arsenal más de 3.5 córners,0.82939,Arsenal,,1.2057053979430667
+Slavia Praha vs Arsenal,córners por equipo,Slavia Praha más de 4.5 córners,0.22731,Slavia Praha,,4.399278518322995
+Slavia Praha vs Arsenal,córners por equipo,Arsenal más de 4.5 córners,0.71352,Arsenal,,1.401502410584146
+Slavia Praha vs Arsenal,córners por equipo,Slavia Praha más de 5.5 córners,0.12306,Slavia Praha,,8.126117341134405
+Slavia Praha vs Arsenal,córners por equipo,Arsenal más de 5.5 córners,0.58462,Arsenal,,1.7105128117409598
+Slavia Praha vs Arsenal,córners por equipo,Slavia Praha más de 6.5 córners,0.06178,Slavia Praha,,16.186468112657817
+Slavia Praha vs Arsenal,córners por equipo,Arsenal más de 6.5 córners,0.45439,Arsenal,,2.2007526574088336
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 6.5 tiros,0.73063,Slavia Praha,,1.3686818225367148
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 6.5 tiros,0.97706,Arsenal,,1.0234785990624935
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 7.5 tiros,0.61879,Slavia Praha,,1.6160571437806042
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 7.5 tiros,0.95832,Arsenal,,1.043492779029969
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 8.5 tiros,0.50138,Slavia Praha,,1.994495193266584
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 8.5 tiros,0.92977,Arsenal,,1.0755348096841155
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 9.5 tiros,0.38991,Slavia Praha,,2.564694416660255
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 9.5 tiros,0.89005,Arsenal,,1.1235323858210213
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 10.5 tiros,0.29123,Slavia Praha,,3.433712186244549
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 10.5 tiros,0.83941,Arsenal,,1.1913129459977843
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 11.5 tiros,0.20937,Slavia Praha,,4.7762334622916365
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 11.5 tiros,0.77707,Arsenal,,1.286885351384045
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 12.5 tiros,0.14495,Slavia Praha,,6.89893066574681
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 12.5 tiros,0.70615,Arsenal,,1.4161297174821212
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 13.5 tiros,0.09809,Slavia Praha,,10.194719135487817
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 13.5 tiros,0.63,Arsenal,,1.5873015873015872
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 14.5 tiros,0.06359,Slavia Praha,,15.725743041358706
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 14.5 tiros,0.55068,Arsenal,,1.8159366601292948
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 15.5 tiros,0.04077,Slavia Praha,,24.52783909737552
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 15.5 tiros,0.47334,Arsenal,,2.1126463007563276
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 16.5 tiros,0.02471,Slavia Praha,,40.46944556859571
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 16.5 tiros,0.4003,Arsenal,,2.498126405196103
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 17.5 tiros,0.01462,Slavia Praha,,68.39945280437757
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 17.5 tiros,0.33062,Arsenal,,3.0246204101385272
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 18.5 tiros,0.00846,Slavia Praha,,118.20330969267138
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 18.5 tiros,0.26812,Arsenal,,3.7296732806206174
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 19.5 tiros,0.00467,Slavia Praha,,214.13276231263384
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 19.5 tiros,0.21313,Arsenal,,4.691972035846667
+Slavia Praha vs Arsenal,tiros por equipo,Slavia Praha más de 20.5 tiros,0.00278,Slavia Praha,,359.71223021582733
+Slavia Praha vs Arsenal,tiros por equipo,Arsenal más de 20.5 tiros,0.16651,Arsenal,,6.005645306588193
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Slavia Praha más de 1.5 tiros a puerta,0.75062,Slavia Praha,,1.3322320215288697
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Arsenal más de 1.5 tiros a puerta,0.97457,Arsenal,,1.0260935592107288
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Slavia Praha más de 2.5 tiros a puerta,0.51453,Slavia Praha,,1.94352127184032
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Arsenal más de 2.5 tiros a puerta,0.9199,Arsenal,,1.0870746820306554
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Slavia Praha más de 3.5 tiros a puerta,0.30084,Slavia Praha,,3.3240260603643135
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Arsenal más de 3.5 tiros a puerta,0.82409,Arsenal,,1.2134596949362326
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Slavia Praha más de 4.5 tiros a puerta,0.15449,Slavia Praha,,6.4729108680173475
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Arsenal más de 4.5 tiros a puerta,0.68999,Arsenal,,1.4492963666140088
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Slavia Praha más de 5.5 tiros a puerta,0.07127,Slavia Praha,,14.031149151115477
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Arsenal más de 5.5 tiros a puerta,0.53809,Arsenal,,1.8584251705105095
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Slavia Praha más de 6.5 tiros a puerta,0.02882,Slavia Praha,,34.69812630117974
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Arsenal más de 6.5 tiros a puerta,0.39171,Arsenal,,2.5529090398509102
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Slavia Praha más de 7.5 tiros a puerta,0.01086,Slavia Praha,,92.08103130755065
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Arsenal más de 7.5 tiros a puerta,0.26609,Arsenal,,3.7581269495283554
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Slavia Praha más de 8.5 tiros a puerta,0.00363,Slavia Praha,,275.4820936639118
+Slavia Praha vs Arsenal,tiros a puerta por equipo,Arsenal más de 8.5 tiros a puerta,0.17011,Arsenal,,5.87854917406384
+Slavia Praha vs Arsenal,tarjetas,Más de 2.5 tarjetas,0.70031,,,1.4279390555611087
+Slavia Praha vs Arsenal,tarjetas,Más de 3.5 tarjetas,0.51378,,,1.946358363501888
+Viking vs Sabah,moneyline,Gana Viking,0.5286050837545959,Viking,1.52,1.8917714390810672
+Viking vs Sabah,moneyline,Gana Sabah,0.2817521551816583,Sabah,,3.54921863634106
+Viking vs Sabah,doble oportunidad,Viking o empate,0.7182478470496333,Viking,,1.3922770588282691
+Viking vs Sabah,doble oportunidad,Sabah o empate,0.4713949184766957,Sabah,,2.1213635548543506
+Viking vs Sabah,empate no válido,Viking (DNB),0.6523111763010708,Viking,,1.5330106800721979
+Viking vs Sabah,empate no válido,Sabah (DNB),0.3476888236989292,Sabah,,2.8761350145264384
+Viking vs Sabah,goles por equipo,Viking más de 0.5 goles,0.85448,Viking,,1.170302406141747
+Viking vs Sabah,goles por equipo,Sabah más de 0.5 goles,0.73463,Sabah,,1.3612294624504853
+Viking vs Sabah,goles por equipo,Viking más de 1.5 goles,0.57587,Viking,,1.7365030301977877
+Viking vs Sabah,goles por equipo,Sabah más de 1.5 goles,0.38534,Sabah,,2.5951108112316397
+Viking vs Sabah,goles por equipo,Viking más de 2.5 goles,0.30861,Viking,,3.2403356987783933
+Viking vs Sabah,goles por equipo,Sabah más de 2.5 goles,0.15326,Sabah,,6.524859715516116
+Viking vs Sabah,goles totales,Más de 1.5 goles,0.83928,,,1.191497474025355
+Viking vs Sabah,goles totales,Más de 2.5 goles,0.63465,,,1.575671630032301
+Viking vs Sabah,goles totales,Más de 3.5 goles,0.41659,,,2.4004416812693536
+Viking vs Sabah,goles totales,Menos de 2.5 goles,0.36535,,,2.737101409607226
+Viking vs Sabah,goles totales,Menos de 3.5 goles,0.58341,,,1.7140604377710358
+Viking vs Sabah,goles totales,Menos de 4.5 goles,0.76425,,,1.3084723585214262
+Viking vs Sabah,ambos anotan,Ambos anotan: sí,0.63102,,,1.5847358245380494
+Viking vs Sabah,ambos anotan,Ambos anotan: no,0.36898,,,2.7101739931703617
+Viking vs Sabah,córners totales,Más de 6.5 córners,0.78667,,,1.2711810543175666
+Viking vs Sabah,córners totales,Más de 7.5 córners,0.68719,,,1.4552016181841996
+Viking vs Sabah,córners totales,Más de 8.5 córners,0.57704,,,1.7329821156245668
+Viking vs Sabah,córners totales,Más de 9.5 córners,0.46468,,,2.1520185934406473
+Viking vs Sabah,córners totales,Más de 10.5 córners,0.35907,,,2.784972289525719
+Viking vs Sabah,córners por equipo,Viking más de 2.5 córners,0.83986,Viking,,1.1906746362488985
+Viking vs Sabah,córners por equipo,Sabah más de 2.5 córners,0.75898,Sabah,,1.3175577749084297
+Viking vs Sabah,córners por equipo,Viking más de 3.5 córners,0.70342,Viking,,1.4216257712319809
+Viking vs Sabah,córners por equipo,Sabah más de 3.5 córners,0.59094,Sabah,,1.692219176227705
+Viking vs Sabah,córners por equipo,Viking más de 4.5 córners,0.55356,Viking,,1.8064889081581037
+Viking vs Sabah,córners por equipo,Sabah más de 4.5 córners,0.4224,Sabah,,2.3674242424242427
+Viking vs Sabah,córners por equipo,Viking más de 5.5 córners,0.40502,Viking,,2.4690138758579825
+Viking vs Sabah,córners por equipo,Sabah más de 5.5 córners,0.28158,Sabah,,3.5513885929398397
+Viking vs Sabah,córners por equipo,Viking más de 6.5 córners,0.27898,Viking,,3.5844863431070326
+Viking vs Sabah,córners por equipo,Sabah más de 6.5 córners,0.17485,Sabah,,5.719187875321704
+Viking vs Sabah,tiros por equipo,Viking más de 6.5 tiros,0.95717,Viking,,1.0447464922636522
+Viking vs Sabah,tiros por equipo,Sabah más de 6.5 tiros,0.89812,Sabah,,1.1134369571994833
+Viking vs Sabah,tiros por equipo,Viking más de 7.5 tiros,0.92439,Viking,,1.0817944806845594
+Viking vs Sabah,tiros por equipo,Sabah más de 7.5 tiros,0.83651,Sabah,,1.1954429713930497
+Viking vs Sabah,tiros por equipo,Viking más de 8.5 tiros,0.87876,Viking,,1.1379671355091265
+Viking vs Sabah,tiros por equipo,Sabah más de 8.5 tiros,0.75926,Sabah,,1.317071885783526
+Viking vs Sabah,tiros por equipo,Viking más de 9.5 tiros,0.81943,Viking,,1.2203604944900723
+Viking vs Sabah,tiros por equipo,Sabah más de 9.5 tiros,0.66992,Sabah,,1.4927155481251493
+Viking vs Sabah,tiros por equipo,Viking más de 10.5 tiros,0.74663,Viking,,1.3393514860104736
+Viking vs Sabah,tiros por equipo,Sabah más de 10.5 tiros,0.57281,Sabah,,1.7457795778704979
+Viking vs Sabah,tiros por equipo,Viking más de 11.5 tiros,0.66863,Viking,,1.4955954713369128
+Viking vs Sabah,tiros por equipo,Sabah más de 11.5 tiros,0.47649,Sabah,,2.098679930323826
+Viking vs Sabah,tiros por equipo,Viking más de 12.5 tiros,0.58563,Viking,,1.7075627956218091
+Viking vs Sabah,tiros por equipo,Sabah más de 12.5 tiros,0.38515,Sabah,,2.596391016487083
+Viking vs Sabah,tiros por equipo,Viking más de 13.5 tiros,0.50024,Viking,,1.999040460578922
+Viking vs Sabah,tiros por equipo,Sabah más de 13.5 tiros,0.30333,Sabah,,3.2967395246101607
+Viking vs Sabah,tiros por equipo,Viking más de 14.5 tiros,0.41755,Viking,,2.3949227637408694
+Viking vs Sabah,tiros por equipo,Sabah más de 14.5 tiros,0.23297,Sabah,,4.292398162853586
+Viking vs Sabah,tiros por equipo,Viking más de 15.5 tiros,0.34203,Viking,,2.923720141508055
+Viking vs Sabah,tiros por equipo,Sabah más de 15.5 tiros,0.1731,Sabah,,5.777007510109763
+Viking vs Sabah,tiros por equipo,Viking más de 16.5 tiros,0.27312,Viking,,3.6613942589338024
+Viking vs Sabah,tiros por equipo,Sabah más de 16.5 tiros,0.12648,Sabah,,7.906388361796331
+Viking vs Sabah,tiros por equipo,Viking más de 17.5 tiros,0.21405,Viking,,4.67180565288484
+Viking vs Sabah,tiros por equipo,Sabah más de 17.5 tiros,0.09054,Sabah,,11.04484205875856
+Viking vs Sabah,tiros por equipo,Viking más de 18.5 tiros,0.16361,Viking,,6.112095837662735
+Viking vs Sabah,tiros por equipo,Sabah más de 18.5 tiros,0.06316,Sabah,,15.832805573147564
+Viking vs Sabah,tiros por equipo,Viking más de 19.5 tiros,0.12267,Viking,,8.151952392598027
+Viking vs Sabah,tiros por equipo,Sabah más de 19.5 tiros,0.04317,Sabah,,23.164234422052353
+Viking vs Sabah,tiros por equipo,Viking más de 20.5 tiros,0.09011,Viking,,11.097547442015316
+Viking vs Sabah,tiros por equipo,Sabah más de 20.5 tiros,0.02882,Sabah,,34.69812630117974
+Viking vs Sabah,tiros a puerta por equipo,Viking más de 1.5 tiros a puerta,0.94159,Viking,,1.0620333690884567
+Viking vs Sabah,tiros a puerta por equipo,Sabah más de 1.5 tiros a puerta,0.89913,Sabah,,1.1121862244614238
+Viking vs Sabah,tiros a puerta por equipo,Viking más de 2.5 tiros a puerta,0.84095,Viking,,1.189131339556454
+Viking vs Sabah,tiros a puerta por equipo,Sabah más de 2.5 tiros a puerta,0.75,Sabah,,1.3333333333333333
+Viking vs Sabah,tiros a puerta por equipo,Viking más de 3.5 tiros a puerta,0.68836,Viking,,1.4527282236039283
+Viking vs Sabah,tiros a puerta por equipo,Sabah más de 3.5 tiros a puerta,0.56195,Sabah,,1.7795177506895632
+Viking vs Sabah,tiros a puerta por equipo,Viking más de 4.5 tiros a puerta,0.51545,Viking,,1.9400523814142983
+Viking vs Sabah,tiros a puerta por equipo,Sabah más de 4.5 tiros a puerta,0.37752,Sabah,,2.6488662852299214
+Viking vs Sabah,tiros a puerta por equipo,Viking más de 5.5 tiros a puerta,0.3516,Viking,,2.844141069397042
+Viking vs Sabah,tiros a puerta por equipo,Sabah más de 5.5 tiros a puerta,0.23037,Sabah,,4.34084299170899
+Viking vs Sabah,tiros a puerta por equipo,Viking más de 6.5 tiros a puerta,0.2218,Viking,,4.508566275924256
+Viking vs Sabah,tiros a puerta por equipo,Sabah más de 6.5 tiros a puerta,0.12857,Sabah,,7.777864198491095
+Viking vs Sabah,tiros a puerta por equipo,Viking más de 7.5 tiros a puerta,0.12928,Viking,,7.735148514851485
+Viking vs Sabah,tiros a puerta por equipo,Sabah más de 7.5 tiros a puerta,0.06643,Sabah,,15.053439710973956
+Viking vs Sabah,tiros a puerta por equipo,Viking más de 8.5 tiros a puerta,0.07051,Viking,,14.18238547723727
+Viking vs Sabah,tiros a puerta por equipo,Sabah más de 8.5 tiros a puerta,0.0308,Sabah,,32.467532467532465
+Viking vs Sabah,tarjetas,Más de 2.5 tarjetas,0.71475,,,1.3990905911157747
+Viking vs Sabah,tarjetas,Más de 3.5 tarjetas,0.5342,,,1.8719580681392736

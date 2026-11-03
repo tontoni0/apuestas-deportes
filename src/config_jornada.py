@@ -135,7 +135,19 @@ ARBITROS = {
     "Viking vs Sabah": {"arbitro": "Sander van der Eijk (NED)", "factor_tarjetas": 1.0},
 }
 
-# 6) Parámetros generales
+# 6) Parlays. Partidos que no entran a ningún parlay y partidos que no entran a parlays de goles.
+EXCLUIR_PARLAYS = ["Viking vs Sabah"]                  # Sabah sin historial: probabilidad poco confiable
+EXCLUIR_GOLES = ["PSV Eindhoven vs Club Brugge"]       # Dixon-Coles espera casi 4 goles; el PSV lleva 2 en 3 partidos de Champions
+#    Parlay armado a mano: (partido, selección). El texto debe ser igual al de la tabla de patas.
+PARLAY_PERSONAL = [
+    ("Slavia Praha vs Arsenal", "Gana Arsenal"),
+    ("AEK vs Real Madrid", "Real Madrid más de 1.5 goles"),
+    ("Ath Madrid vs Bayern Munich", "Bayern Munich más de 11.5 tiros"),
+    ("Villarreal vs Paris SG", "Ambos anotan: sí"),
+    ("Fenerbahce vs Liverpool", "Más de 2.5 goles"),
+]
+
+# 7) Parámetros generales
 MODO_DATOS = "auto"          # "auto" intenta football-data.co.uk (fresco) y si falla usa el espejo de GitHub
 TEMPORADAS_ENTRENAR = (2021, 2022, 2023)   # 2021-22, 2022-23, 2023-24
 TEMPORADAS_PROBAR = (2024, 2025)           # 2024-25, 2025-26

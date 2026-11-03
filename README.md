@@ -16,6 +16,8 @@ Además del 1X2 predice goles totales por línea, goles por equipo, goles al des
 | `resultados/backtest_2024_2026.csv` | Métricas del backtest por modelo |
 | `resultados/jornada4_estadisticas.csv` | Goles, córners, tarjetas, faltas, tiros y fueras de juego esperados con probabilidades por línea |
 | `resultados/backtest_estadisticas_2024_2026.csv` | Backtest de las estadísticas contra el promedio de la liga |
+| `resultados/jornada4_parlays.csv` | Parlays sugeridos con probabilidad y cuota justa |
+| `resultados/jornada4_patas_parlay.csv` | Todas las patas posibles por partido (moneyline, goles, córners, tiros) con su probabilidad |
 | `src/futbol_modelo.py` | Código del modelo (cada bloque `# %%` es una celda del notebook) |
 | `src/config_jornada.py` | Resultados, partidos, cuotas y bajas de la jornada |
 | `tools/build_notebook.py` | Regenera el notebook a partir de `src/` |
