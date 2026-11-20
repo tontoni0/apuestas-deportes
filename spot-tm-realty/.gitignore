@@ -1,0 +1,14 @@
+node_modules/
+out/
+gen/a1.png
+gen/a3.png
+gen/a4.png
+gen/b1.png
+gen/b3.png
+gen/b4.png
+gen/m1.mp3
+gen/m2.mp3
+gen/m3.mp3
+gen/sfx_*.mp3
+gen/clipA.mp4
+gen/clipB.mp4
